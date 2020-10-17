@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="[Simon Weck Visual Computing & Design]">
+    <link rel="shortcut icon" type="image/x-icon" href="../Main/Ressources/logo.ico">
+
+    <link rel="stylesheet" href="../Main/Project-Sites/main.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Header/Header.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Features/Features.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Navigation/Navigation.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Pictures/Pictures.css">
+    <script defer type="text/javascript" src="../Main/Project-Sites/Features/Features.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Navigation/Navigation.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Pictures/Pictures.js"></script>
+
+    
+    <title>Crazier Machines</title>
+</head>
+
+<body>
+    
+    <header>
+        <div id="title">
+            <h1>Crazier Machines</h1>            
+            <video autoplay loop muted width="100%" height="100%">
+                <source src="videos/header.webm"  type="video/webm">
+                <source src="videos/header.mp4" type="video/mp4">            
+            </video>
+        </div>
+
+        <div id="information">
+            <div id="description">
+                <h1>Description</h1>
+                <p>
+                    Crazier Machines is the name of a little game we create for a simulation course at my university.
+                    We had to create a 2D physics engine that features algorithms for collision detection and collision resolution.
+                    Goal of the game is to transport a ball into a bucket and the user has certain objects at disposal to achieve that.
+                    Objects can be freely placed into the scene and when the simulation is running the moveable objects collide  phisically correcttly with the other objects.
+                </p>  
+                <div id="Tools">
+                    <h2>Tools</h2>
+                    <div class="icon"> 
+                        <span class="Java" title="Java"></span>
+                        <span class="JavaFX" title="JavaFX"></span>
+                        <span class="OpenGL" title="OpenGL"></span>
+                        <span class="Maya" title="Autodesk Maya"></span>
+                        <span class="Eclipse" title="Eclipse"></span>
+                    </div>
+                </div>             
+            </div>
+
+            <div id="sideInformation">
+                <h2>Role</h2>
+                <p>Simulation Programming</p>
+                <p>UI Programming</p>          
+                <p>Graphics Programming</p>
+                <h2>Type</h2>
+                <p>University Project</p>
+                <p>Group Project (4 Members)</p>
+                <h2>Created</h2>
+                <p>March 2020 - June 2020</p>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>   
+        <div id="topNavigation" onclick="scrollToTop();">
+            <picture>
+                <source srcset="../Main/Ressources/arrow.webp" type="image/webp">                             
+                <img width="100" height="100" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>
+        </div>
+
+        <a href="../" id="backNavigation">
+            <picture>
+                <source srcset="../Main/Ressources/logo.webp" type="image/webp">                             
+                <img width="100px" alt="Arrow Image" src="../Main/Ressources/logo.png">
+            </picture>
+        </a>
+
+        <div id="projectLinks">
+            <a href="downloads/Crazier Machines.zip" class="transition" download>
+                <div class="icon">
+                    <span class="Download"></span>
+                    <h1>Download</h1>
+                </div>                
+            </a>
+            <a href="downloads/Documentation Crazier Machines.pdf" class="transition" target="_blank"> 
+                <div class="icon">
+                    <span class="Documentation"></span>
+                    <h1>Documentation</h1>
+                </div>                
+            </a>
+            <a href="https://github.com/BenjoBoy1234/CrazyMachines" class="transition" target="_blank">
+                <div class="icon">
+                    <span class="Github"></span>
+                    <h1>Code</h1> 
+                </div>            
+            </a>  
+        </div>
+    </nav>
+
+    <main>
+        <section id="features">  
+
+            <h1>Features</h1>
+
+            <article>      
+                <h1>2D Physics</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/6.webm"  type="video/webm">
+                    <source src="videos/6.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   We test collision using the Separating Axis Theorem and a convex bounding polygon each object has.
+                   We create the bounding polygon manually with a separate programm. We first tried to automate this process by creating a bounding polygon out of the
+                   3D modell data we got but the polygon didnt always interpret the form of the object correcttly and sometimes had too many edges. 
+                   After a collision occurs we calculate the new velocity and acceleration using physically correct formulas. 
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Level Editor</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/1.webm"  type="video/webm">
+                    <source src="videos/1.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   Objects can be added to the scene through drag and drop.
+                   Selecting an object by clicking on it opens a transformation menue where the user can scale, rotate and position the element.
+                   All object specific settings can also be edited through a menue inside the sidebar which appears when the user selected an object.
+                </p>
+            </article> 
+        
+            <article>     
+                <h1>Level Export/Import</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/2.webm"  type="video/webm">
+                    <source src="videos/2.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    Levels generated inside the editor can be saved localy.
+                    Saved levels can be imported back into the game to be played.
+                </p>
+            </article> 
+            
+            <article>      
+                <h1>Special Objects</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/3.webm"  type="video/webm">
+                    <source src="videos/3.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   We modelled special objects like a hair dryer that emmits wind or a portal that transports an object.
+                   Settings of these objects like the wind force or the rotation direction of the fidget spinner can also be edited.
+                </p>
+            </article> 
+
+            <article>      
+                <h1>Campaign Mode</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/4.webm"  type="video/webm">
+                    <source src="videos/4.mp4"  type="video/mp4">
+                </video>
+                <p>
+                  You can choose between 12 really crazy levels. Can you beat them all ?
+                </p>
+            </article> 
+
+            <article>      
+                <h1>3D!</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/5.webm"  type="video/webm">
+                    <source src="videos/5.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    Although the simulation is running in 2D all objects are rendered in 3D and the user can rotate the camera to watch the simulation in 3D.
+                    The 3D engine is selfwritten and utilizes OpenGL. We used the same rendering engine from my Universe Simulation project because the engine 
+                    was developed not only for the project but as a more general system that can be used in multiple future projects.
+                </p>
+            </article> 
+
+        </section>
+
+        <section id="pictures">  
+
+            <h1>Pictures</h1>
+
+            <div id="Images">
+                <picture><source srcset="pictures/1.webp" type="image/webp"><img src="pictures/1.PNG" alt=""></picture>
+                <picture><source srcset="pictures/2.webp" type="image/webp"><img src="pictures/2.PNG" alt=""></picture>
+                <picture><source srcset="pictures/3.webp" type="image/webp"><img src="pictures/3.PNG" alt=""></picture>
+                <picture><source srcset="pictures/4.webp" type="image/webp"><img src="pictures/4.PNG" alt=""></picture>
+                <picture><source srcset="pictures/5.webp" type="image/webp"><img src="pictures/5.PNG" alt=""></picture>
+                <picture><source srcset="pictures/6.webp" type="image/webp"><img src="pictures/6.PNG" alt=""></picture>
+                <picture><source srcset="pictures/7.webp" type="image/webp"><img src="pictures/7.PNG" alt=""></picture>
+            </div>
+
+            <div id="Mobileprev">
+                <picture onclick="changeNavigationImagesMobile(-1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture>  
+            </div>
+            <div id="Mobilenext">
+                <picture onclick="changeNavigationImagesMobile(1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture> 
+            </div>
+            
+            <picture id="MainImage" onclick="enlargeImg();">
+                <source id="webpSource" srcset="pictures/1.webp" type="image/webp">               
+                <img id="pngSource" src="pictures/1.PNG" alt="" width="65%" height="65%">
+            </picture>
+
+            <picture id="prev" onclick="changeNavigationImages(-1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>  
+
+            <div id="NavigationImages">
+                <picture id="Img1" onmouseover="imgHover(0);">
+                    <source srcset="pictures/1.webp" type="image/webp">               
+                    <img src="pictures/1.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img2" onmouseover="imgHover(1);">
+                    <source srcset="pictures/2.webp" type="image/webp">               
+                    <img src="pictures/2.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img3" onmouseover="imgHover(2);">
+                    <source srcset="pictures/3.webp" type="image/webp">               
+                    <img src="pictures/3.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img4" onmouseover="imgHover(3);">
+                    <source srcset="pictures/4.webp" type="image/webp">               
+                    <img src="pictures/4.PNG" alt="" width="15%" height="15%">
+                </picture>  
+            </div> 
+
+            <picture id="next" onclick="changeNavigationImages(1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture> 
+
+        </section>
+        
+    </main>
+
+</body>
+</html>
