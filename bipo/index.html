@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>[BiPo Turnier]</title>
+        <meta name="description" content="BiPo Turnier">
+        <link rel="shortcut icon" type="image/x-icon" href="../Main/Ressources/logo.ico">
+ 
+        <script async type="text/javascript" src="JS/main.js"></script>         
+        <link rel="stylesheet" href="CSS/main.css">
+
+        <script async type="text/javascript" src="JS/Burger.js"></script>       
+        <link rel="stylesheet" href="CSS/Burger.css">
+
+        <script async type="text/javascript" src="JS/tree.js"></script>       
+        <link rel="stylesheet" href="CSS/tree.css">
+
+        <script async type="text/javascript" src="JS/new.js"></script>       
+        <link rel="stylesheet" href="CSS/new.css">      
+
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>BiPo</h1>
+        </header>
+
+       <nav>
+            <div id="NavigationShelf" onclick="navigation();">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>           
+            <div id="NavigationLinks">
+                <div onclick="newMenue(); navigation();">Neues Turnier</div>
+                <!-- <div onclick="navigation();">Eintragen</div> -->
+            </div>
+        </nav>
+
+        <main>
+
+            <div id="tree">
+
+            </div>
+
+
+            <div id="new">
+                <h2>Teams</h2>
+                <div id="Buttons">
+                    <img onclick="done();" src="res/done.png" alt="" width="200px" height="200px">    
+                    <img onclick="open1();" src="res/add.png" alt="" width="200px" height="200px"> 
+                </div>    
+                <div id="addedTeams"></div> 
+                <div id="inputNamen">                  
+                    <input type="text" placeholder="Team" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Team'">          
+                    <input type="text" placeholder="Spieler" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Spieler'">  
+                    <input type="text" placeholder="Spieler" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Spieler'">
+                </div>     
+                                           
+            </div>
+          
+        </main>
+
+    </body>
+</html>

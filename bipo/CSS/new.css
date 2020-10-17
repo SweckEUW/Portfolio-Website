@@ -1,0 +1,91 @@
+#new{
+    display: none;
+    text-align: center;
+}
+
+#new h2{
+    margin-bottom: 50px;
+    font-size: 180px;
+    text-shadow: 0px 0px 5px black;
+}
+
+#Buttons img{
+    cursor: pointer;
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#inputNamen{
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#inputNamen input{
+    text-align: center;
+    display: block;
+    margin : 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: none;
+    height: 100px;
+    width: 800px;
+    font-size: 80px;
+
+    border:none;
+    border-bottom:1px solid #757575;
+
+    text-shadow: 0px 0px 5px rgb(44, 44, 44);
+    color: rgb(58, 58, 58);
+}
+
+#inputNamen input:nth-child(1){
+    height: 150px;
+    font-size: 130px;
+
+    text-shadow: 0px 0px 5px rgb(22, 22, 22);
+    color: rgb(24, 24, 24);
+}
+
+#inputNamen input:nth-child(1)::placeholder { 
+    opacity: 0.5; 
+    text-shadow: 0px 0px 5px rgb(22, 22, 22);
+    color: rgb(24, 23, 23);
+    font-size: 100px;
+}
+
+#inputNamen input::placeholder { 
+    text-shadow: 0px 0px 5px rgb(58, 58, 58);
+    color: rgb(58, 58, 58);
+    opacity: 0.5; 
+    font-size: 60px;
+}
+
+
+#inputNamen input:focus{
+    outline: none;
+}
+
+#addedTeams h3{
+    font-size: 130px;
+    text-shadow: 0px 0px 5px rgb(37, 37, 37);
+    color: rgb(37, 37, 37);
+}
+
+#addedTeams h4{
+    font-size: 80px;
+    text-shadow: 0px 0px 5px rgb(92, 92, 92);
+    color: rgb(92, 92, 92);
+}
+
+#addedTeams div{
+    margin-bottom: 40px;
+}
