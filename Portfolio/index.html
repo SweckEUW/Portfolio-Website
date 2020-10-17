@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="[Simon Weck Visual Computing & Design]">
+    <link rel="shortcut icon" type="image/x-icon" href="../Main/Ressources/logo.ico">
+
+    <link rel="stylesheet" href="../Main/Project-Sites/main.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Header/Header.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Features/Features.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Navigation/Navigation.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Pictures/Pictures.css">
+    <script defer type="text/javascript" src="../Main/Project-Sites/Features/Features.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Navigation/Navigation.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Pictures/Pictures.js"></script>
+
+
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="title">
+            <h1>Portfolio Website</h1>            
+            <video autoplay loop muted width="100%" height="100%">
+                <source src="videos/header.webm"  type="video/webm">
+                <source src="videos/header.mp4" type="video/mp4">            
+            </video>
+        </div>
+
+        <div id="information">
+            <div id="description">
+                <h1>Description</h1>
+                <p>
+                  This is my portfolio website to present my projects.
+                  I started out concept designing in Adobe XD and programmed it later from scratch using plain JS, CSS and HTML.
+                  The landing screen shows endless procedural genrated terrain with biomes utilizing WebGL.
+                </p>  
+                <div id="Tools">
+                    <h2>Tools</h2>                   
+                    <div class="icon">
+                        <span class="XD" title="Adobe XD"></span>      
+                        <span class="PS" title="Adobe Photoshop"></span>      
+                        <span class="PR" title="Adobe Premiere"></span>   
+                        <span class="HTML" title="Hypertext Markup Language"></span>                                
+                        <span class="CSS" title="Cascading Style Sheets"></span>
+                        <span class="JS" title="JavaScript"></span>     
+                        <span class="WebGL" title="WebGL"></span>  
+                        <span class="ThreeJS" title="Three.js WebGL library"></span>  
+                        <span class="VisualStudio" title="Visual Studio Code"></span>  
+                    </div>
+                </div>             
+            </div>
+
+            <div id="sideInformation">
+                <h2>Role</h2>
+                <p>Web Design</p>
+                <p>Web Developement</p>   
+                <p>Computer Graphics</p>    
+                <p>Video Editing</p>    
+                <h2>Type</h2>
+                <p>Personal Project</p>
+                <h2>Created</h2>
+                <p>February 2020 - March 2020</p>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>   
+        <div id="topNavigation" onclick="scrollToTop();">
+            <picture>
+                <source srcset="../Main/Ressources/arrow.webp" type="image/webp">                             
+                <img width="100" height="100" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>
+        </div>
+
+        <a href="../" id="backNavigation">
+            <picture>
+                <source srcset="../Main/Ressources/logo.webp" type="image/webp">                             
+                <img width="100px" alt="Arrow Image" src="../Main/Ressources/logo.png">
+            </picture>
+        </a>
+
+        <div id="projectLinks" style=" right: -90px;">
+            <a href="/" class="transition">
+                <div class="icon">
+                    <span class="LiveSite"></span>
+                    <h1>Visit Site</h1>               
+                </div>              
+            </a>
+            <a href="https://github.com/SweckEUW/Personal-Website" class="transition" target="_blank">
+                <div class="icon">
+                    <span class="Github"></span>
+                    <h1>Code</h1> 
+                </div>              
+            </a>  
+        </div>
+    </nav>
+
+    <main>
+        <section id="features">  
+
+            <h1>Features</h1>
+
+            <article>     
+                <h1>Landing Screen</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/1.webm"  type="video/webm">
+                    <source src="videos/1.mp4"  type="video/mp4">                    
+                </video>
+                <p>
+                    The landing screen shows endless procedural genrated terrain with biomes using the WebGL library Three.js.
+                    Its chunk based and chunks behind you despawn while chunks ahead of you spawn.
+                    The biomes and the terrain are generated using simplex noise just like my procedural planets but in 2D.
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Animations</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/2.webm"  type="video/webm">
+                    <source src="videos/2.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    I focused on animations to make navigation more satisfying.
+                    I used plain CSS/JavaScript to realize all animations.
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Project Websites</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/3.webm"  type="video/webm">
+                    <source src="videos/3.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    Every project I did has its own website which provides more information about it.
+                    I also provided links to certain media like the source code or a download link. 
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Picture Gallery</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/4.webm"  type="video/webm">
+                    <source src="videos/4.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    Besides videos and text I also uploaded images of the project inside a gallery.
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Mobile friendly</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/5.webm"  type="video/webm">
+                    <source src="videos/5.mp4"  type="video/mp4">                    
+                </video>
+                <p>
+                    Although the website is designed for desktop I still tried to make a working mobile version. 
+                    This is my first attempt developing for mobile and I think it works just fine. Give it a try and tell me what you think!
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Bandwith usage</h1>
+                <style scoped> @media (max-device-width: 901px){#features img { width: 70%;height: 600px;object-fit: cover;}};</style>
+                <picture>
+                    <source srcset="../Main/Ressources/icon.webp" type="image/webp">               
+                    <img style="margin-bottom: 2vw; filter: none" src="../Main/Ressources/icon.png" alt="" width="25%" height="25%">
+                </picture>
+                <p>
+                    To lower the bandwith usage I used WebP and WebM file formats for pictures and videos to lower their size
+                     but I also provided fallbacks like mp4 videos or png images if the browser doesnt support new formats.
+                    Size and quality of videos and pictures are also lowered as much as possible.
+                    All Icons are stored in one picture to have less http requests.
+                </p>
+            </article> 
+
+        </section>
+
+        <section id="pictures">  
+
+            <h1>Pictures</h1>
+
+            <div id="Images">             
+                <picture><source srcset="pictures/1.webp" type="image/webp"><img src="pictures/1.PNG" alt=""></picture>
+                <picture><source srcset="pictures/2.webp" type="image/webp"><img src="pictures/2.PNG" alt=""></picture>
+                <picture><source srcset="pictures/3.webp" type="image/webp"><img src="pictures/3.PNG" alt=""></picture>
+                <picture><source srcset="pictures/4.webp" type="image/webp"><img src="pictures/4.PNG" alt=""></picture>
+                <picture><source srcset="pictures/5.webp" type="image/webp"><img src="pictures/5.PNG" alt=""></picture>
+                <picture><source srcset="pictures/6.webp" type="image/webp"><img src="pictures/6.PNG" alt=""></picture>
+                <picture><source srcset="pictures/7.webp" type="image/webp"><img src="pictures/7.PNG" alt=""></picture>
+                <picture><source srcset="pictures/8.webp" type="image/webp"><img src="pictures/8.PNG" alt=""></picture>       
+            </div>
+
+            <div id="Mobileprev">
+                <picture onclick="changeNavigationImagesMobile(-1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture>  
+            </div>
+            <div id="Mobilenext">
+                <picture onclick="changeNavigationImagesMobile(1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture> 
+            </div>
+              
+            <picture id="MainImage" onclick="enlargeImg();">
+                <source id="webpSource" srcset="pictures/1.webp" type="image/webp">               
+                <img id="pngSource" src="pictures/1.PNG" alt=""width="65%" height="65%">
+            </picture>
+
+            <picture id="prev" onclick="changeNavigationImages(-1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>  
+
+            <div id="NavigationImages">
+                <picture id="Img1" onmouseover="imgHover(0);">
+                    <source srcset="pictures/1.webp" type="image/webp">               
+                    <img src="pictures/1.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img2" onmouseover="imgHover(1);">
+                    <source srcset="pictures/2.webp" type="image/webp">               
+                    <img src="pictures/2.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img3" onmouseover="imgHover(2);">
+                    <source srcset="pictures/3.webp" type="image/webp">               
+                    <img src="pictures/3.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img4" onmouseover="imgHover(3);">
+                    <source srcset="pictures/4.webp" type="image/webp">               
+                    <img src="pictures/4.PNG" alt="" width="15%" height="15%">
+                </picture>  
+            </div> 
+
+            <picture id="next" onclick="changeNavigationImages(1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture> 
+
+        </section>
+
+    </main>
+    
+    
+</body>
+</html>
