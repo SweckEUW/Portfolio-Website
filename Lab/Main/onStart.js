@@ -1,0 +1,4 @@
+setUpWork();
+setUpHome();
+initHomeScreen();
+init();
