@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="[Simon Weck Visual Computing & Design]">
+    <link rel="shortcut icon" type="image/x-icon" href="../Main/Ressources/logo.ico">
+
+    <link rel="stylesheet" href="../Main/Project-Sites/main.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Header/Header.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Features/Features.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Navigation/Navigation.css">
+    <link rel="stylesheet" href="../Main/Project-Sites/Pictures/Pictures.css">
+    <script defer type="text/javascript" src="../Main/Project-Sites/Features/Features.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Navigation/Navigation.js"></script>
+    <script defer type="text/javascript" src="../Main/Project-Sites/Pictures/Pictures.js"></script>
+
+
+    <title>Arcade Automat</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="title">
+            <h1>Arcade Automat</h1>            
+            <video autoplay loop muted width="100%" height="100%">
+                <source src="videos/header.webm"  type="video/webm">
+                <source src="videos/header.mp4" type="video/mp4">            
+            </video>
+        </div>
+
+        <div id="information">
+            <div id="description">
+                <h1>Description</h1>
+                <p>
+                   I created this application together with a fellow student for the course Algorithms and Datastructures.
+                   We had to implement certain algorithms of the course and we decided to make this little Arcade Automat which features the games Pac-Man and Snake.
+                   We used merge and heap sort to sort a high score list, the A* path finding algorithm in the pacman game and a binary search algorithm to search
+                   for names inside the high score list. 
+                </p>  
+                <div id="Tools">
+                    <h2>Tools</h2>
+                    <div class="icon">
+                        <span class="Java" title="Java"></span>                       
+                        <span class="JavaFX" title="JavaFX"></span>  
+                        <span class="Eclipse" title="Eclipse"></span>  
+                    </div>
+                </div>             
+            </div>
+
+            <div id="sideInformation">
+                <h2>Role</h2>
+                <p>UI Programming</p>
+                <p>Game Programming</p>       
+                <h2>Type</h2>
+                <p>University Project</p>
+                <p>Group Project (2 Members)</p>
+                <h2>Created</h2>
+                <p>April 2019 - July 2019</p>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>   
+        <div id="topNavigation" onclick="scrollToTop();">
+            <picture>
+                <source srcset="../Main/Ressources/arrow.webp" type="image/webp">                             
+                <img width="100" height="100" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>
+        </div>
+
+        <a href="../" id="backNavigation">
+            <picture>
+                <source srcset="../Main/Ressources/logo.webp" type="image/webp">                             
+                <img width="100px" alt="Arrow Image" src="../Main/Ressources/logo.png">
+            </picture>
+        </a>
+
+        <div id="projectLinks">
+            <a href="downloads/Arcade Automat.zip" class="transition" download>
+                <div class="icon">
+                    <span class="Download"></span>
+                    <h1>Download</h1>
+                </div>             
+            </a>
+            <a href="downloads/Arcade Automat Dokumentation.pdf" class="transition" target="_blank"> 
+                <div class="icon">
+                    <span class="Documentation"></span>
+                    <h1>Documentation</h1>
+                </div>               
+            </a>
+            <a href="https://github.com/SweckEUW/Arcade-Automat" class="transition" target="_blank">
+                <div class="icon">
+                    <span class="Github"></span>
+                    <h1>Code</h1> 
+                </div>               
+            </a>  
+        </div>
+    </nav>
+
+    <main>
+        <section id="features">  
+
+            <h1>Features</h1>
+
+            <article>     
+                <h1>Retro Menue</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/1.webm"  type="video/webm">
+                    <source src="videos/1.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   We aimed for a retro menue that can only be controled with a keyboard. 
+                   It also features a settings menue where you can turn off sounds, change window size, change controls and more.
+                   By pressing the enter key durring a game you can return to the menue and restart/resume the game.
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Sorted Highscores</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/2.webm"  type="video/webm">
+                    <source src="videos/2.mp4"  type="video/mp4">
+                </video>
+                <p>
+                    We used merge and heap sort to sort the high score list and a binary search algorithm to search for names. 
+                    If you loose a game of Pac-Man or Snake you can enter your name and the score will be saved together with ur name. 
+                    The Highscores also get saved locally into a file, so they wont get lost when you close the programm. 
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Pac-Man</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/3.webm"  type="video/webm">
+                    <source src="videos/3.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   I tired to copy the original Pac-Man as good as possible. I used the A*Pathfindin algorithm for the ghosts to move arround. 
+                   The ghosts also follow the original patterns of the game where they chase Pac-Man. 
+                   Ghosts also turn invisible and move back to their home when you touch them with the power-up on. 
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Multiple Levels</h1>
+                <video loop muted muted width="70%" height="70%">  
+                    <source src="videos/4.webm"  type="video/webm">
+                    <source src="videos/4.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   The characters don't follow a strict path so it's pretty easy to add new levels just by defining the walls of the Level. 
+                   Future work would be a level editor to make very own Pac-Man levels. 
+                   This level features the logo and name of my university in flashing colors.  
+                </p>
+            </article> 
+
+            <article>     
+                <h1>Snake</h1>
+                <video loop muted muted width="70%" height="70%">
+                    <source src="videos/5.webm"  type="video/webm"> 
+                    <source src="videos/5.mp4"  type="video/mp4">
+                </video>
+                <p>
+                   This Snake version features unique power-ups that can make the boundaries passable or increase speed. 
+                </p>
+            </article> 
+        </section>
+
+        <section id="pictures">  
+
+            <h1>Pictures</h1>
+
+            <div id="Images">
+                <picture><source srcset="pictures/1.webp" type="image/webp"><img src="pictures/1.PNG" alt=""></picture>
+                <picture><source srcset="pictures/2.webp" type="image/webp"><img src="pictures/2.PNG" alt=""></picture>
+                <picture><source srcset="pictures/3.webp" type="image/webp"><img src="pictures/3.PNG" alt=""></picture>
+                <picture><source srcset="pictures/4.webp" type="image/webp"><img src="pictures/4.PNG" alt=""></picture>
+                <picture><source srcset="pictures/5.webp" type="image/webp"><img src="pictures/5.PNG" alt=""></picture>
+                <picture><source srcset="pictures/6.webp" type="image/webp"><img src="pictures/6.PNG" alt=""></picture>
+                <picture><source srcset="pictures/7.webp" type="image/webp"><img src="pictures/7.PNG" alt=""></picture>
+                <picture><source srcset="pictures/8.webp" type="image/webp"><img src="pictures/8.PNG" alt=""></picture>
+                <picture><source srcset="pictures/9.webp" type="image/webp"><img src="pictures/9.PNG" alt=""></picture>
+                <picture><source srcset="pictures/10.webp" type="image/webp"><img src="pictures/10.PNG" alt=""></picture>
+                <picture><source srcset="pictures/11.webp" type="image/webp"><img src="pictures/11.PNG" alt=""></picture>
+                <picture><source srcset="pictures/12.webp" type="image/webp"><img src="pictures/12.PNG" alt=""></picture>
+            </div>
+    
+            <div id="Mobileprev">
+                <picture onclick="changeNavigationImagesMobile(-1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture>  
+            </div>
+            <div id="Mobilenext">
+                <picture onclick="changeNavigationImagesMobile(1);">
+                    <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                    <img width="100px" height="100px" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+                </picture> 
+            </div>
+            
+            <picture id="MainImage" onclick="enlargeImg();">
+                <source id="webpSource" srcset="pictures/1.webp" type="image/webp">               
+                <img id="pngSource" src="pictures/1.PNG" alt=""width="65%" height="65%">
+            </picture>
+
+            <picture id="prev" onclick="changeNavigationImages(-1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture>  
+
+            <div id="NavigationImages">
+                <picture id="Img1" onmouseover="imgHover(0);">
+                    <source srcset="pictures/1.webp" type="image/webp">               
+                    <img src="pictures/1.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img2" onmouseover="imgHover(1);">
+                    <source srcset="pictures/2.webp" type="image/webp">               
+                    <img src="pictures/2.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img3" onmouseover="imgHover(2);">
+                    <source srcset="pictures/3.webp" type="image/webp">               
+                    <img src="pictures/3.PNG" alt="" width="15%" height="15%">
+                </picture>
+
+                <picture id="Img4" onmouseover="imgHover(3);">
+                    <source srcset="pictures/4.webp" type="image/webp">               
+                    <img src="pictures/4.PNG" alt="" width="15%" height="15%">
+                </picture>  
+            </div> 
+
+            <picture id="next" onclick="changeNavigationImages(1);">
+                <source srcset="../Main//Ressources/arrow.webp" type="image/webp">                             
+                <img width="3%" height="3%" alt="Arrow Image" src="../Main/Ressources/arrow.png">
+            </picture> 
+
+        </section>
+
+    </main>
+    
+    
+</body>
+</html>

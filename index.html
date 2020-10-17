@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="[Simon Weck Visual Computing & Design]">
+        <link rel="shortcut icon" type="image/x-icon" href="Main/Ressources/logo.ico">
+
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/main.js"></script>  
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/THREEJS/three.min.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Utility/OBJLoader.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Noise/perlin.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/TerrainColor.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/TerrainEntity.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/Terrain.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/TerrainNoise.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/TerrainHandler.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Utility/Uitlity.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Utility/Settings.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Utility/CameraControls.js"></script>  
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/prepareEntities.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/Entity.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/DesertEntities.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/CandyLandEntities.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/ForestEntities.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/TerrainEntity/Clouds.js"></script>
+        <script defer type="text/javascript" src="Main/Main-Site/Home/Procedural Terrain/Terrain/Biomes.js"></script>
+        <script type="text/javascript" src="Main/Main-Site/Home/home.js"></script>
+        <script type="text/javascript" src="Main/Main-Site/Work/work.js"></script>
+        <script type="text/javascript" src="Main/Main-Site/About/about.js"></script>
+        <script type="text/javascript" src="Main/Main-Site/Navigation/navigation.js"></script>         
+        <link rel="stylesheet" href="Main/Main-Site/main.css">
+        <link rel="stylesheet" href="Main/Main-Site/Home/home.css">
+        <link rel="stylesheet" href="Main/Main-Site/Work/work.css">
+        <link rel="stylesheet" href="Main/Main-Site/About/about.css">
+        <link rel="stylesheet" href="Main/Main-Site/Navigation/Navigation.css">      
+        <script defer type="text/javascript" src="Main/Main-Site/onStart.js"></script>
+  
+        <title>[Simon Weck]</title>
+    </head>
+
+    <body>
+        <!-- Title screen -->
+        <header>
+            <!-- Home -->
+            <div id="home">
+                <div id="homeText">
+                    <h1 style="opacity: 0;">Simon Weck</h1>
+                    <h2 style="opacity: 0;">[Visual Computing & Design]</h2>
+                </div>
+                <div class="Arrow" onclick="translateToWork();">
+                    <picture style="opacity: 0;">
+                        <source srcset="Main/Ressources/arrow.webp" type="image/webp">                             
+                        <img width="30" height="30" alt="Arrow Image" src="Main/Ressources/arrow.png">
+                    </picture>                
+                </div>
+                <canvas id="myCanvas" style="opacity: 0;transform: scaleY(0);" width="100%" height="100%"></canvas>
+            </div>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <!-- Navigation shelf button -->
+            <div id="NavigationShelf" onclick="navigation()" style="opacity: 0;">
+                <div></div> <!-- Shelf Board 1 --> 
+                <div></div> <!-- Shelf Board 2 --> 
+                <div></div> <!-- Shelf Board 3 --> 
+            </div>
+            
+            <!-- Links inside Menu -->
+            <div id="NavigationLinksWrapper" onclick="navigation();">
+                <div id="NavigationLinks">
+                    <a onclick="translateToHome();" id="HomeLink"><span>[</span><span>H</span><span>o</span><span>m</span><span>e</span><span>]</span></a>
+                    <a onclick="translateToWork();" id="WorkLink"><span>[</span><span>W</span><span>o</span><span>r</span><span>k</span><span>]</span></a>
+                    <a onclick="translateToAbout();" id="AboutLink"><span>[</span><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span><span>]</span></a>
+                    <a onclick="translateToContact();" id="ContactLink"><span>[</span><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>]</span></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main content (Work/About)-->
+        <main>
+
+            <!-- Work -->
+            <section id="work">
+
+                <h1 class="title">[Work]</h1>
+
+                <!-- Work6 Universe Simulation -->
+                <article>
+                    <a href="UniverseSimulation" id="work6">
+                        <div class="projectText">
+                            <h2>UNIVERSE SIMULATION</h2>       
+                            <h3>Interactive 3D Visualization</h3>                
+                            <h4>[Computer Graphics, Image Processing, Java, OpenGL, OpenCV]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto">
+                            <source src="UniverseSimulation/videos/UniverseSimulation.webm" type="video/webm">
+                            <source src="UniverseSimulation/videos/UniverseSimulation.mp4" type="video/mp4">            
+                        </video>
+                    </a>
+                </article>
+
+                 <!-- Work5 Crazier Machines -->
+                 <article>
+                    <a href="CrazierMachines" id="work5">
+                        <div class="projectText">
+                            <h2>CRAZIER MACHINES</h2>
+                            <h3>Physics Simulation Game</h3>
+                            <h4>[Physics Simulation, Computer Graphics, UI Programming, Java, JavaFX, OpenGL]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto"> 
+                            <source src="CrazierMachines/videos/CrazierMachines.webm" type="video/webm">
+                            <source src="CrazierMachines/videos/CrazierMachines.mp4" type="video/mp4">        
+                        </video>
+                    </a>
+                </article>
+
+                <!-- Work4 Portfolio Website -->
+                <article>
+                    <a href="Portfolio" id="work4">
+                        <div class="projectText">
+                            <h2>PORTFOLIO WEBSITE</h2>     
+                            <h3>Website</h3>                   
+                            <h4>[Computer Graphics, Web Developement, Web Design, WebGL, HTML , CSS, JS, ThreeJS, Adobe Suit]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto"> 
+                            <source src="Portfolio/videos/Portfolio.webm" type="video/webm">
+                            <source src="Portfolio/videos/Portfolio.mp4" type="video/mp4">        
+                        </video>
+                    </a>
+                </article>
+
+                 <!-- Work3 Open File App -->
+                 <article>
+                    <a href="OpenFile" id="work3">
+                        <div class="projectText">
+                            <h2>'OPEN FILE' APP</h2>                        
+                            <h3>App Concept</h3>
+                            <h4>[App Design, UI Design, UX Design, Animation Design, Adobe Suit]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto"> 
+                           <source src="OpenFile/videos/OpenFile.webm" type="video/webm">
+                            <source src="OpenFile/videos/OpenFile.mp4" type="video/mp4">        
+                        </video>
+                    </a>
+                </article>
+
+                <!-- Work2 Revitalize Website -->
+                <article>
+                    <a href="Revitalize" id="work2">
+                        <div class="projectText">
+                            <h2>'REVITALIZE' WEBSITE</h2>
+                            <h3>Corporate Design & Website</h3>
+                            <h4>[Web Developement, Web & Corporate Design, HTML , CSS, JS, Adobe Suit]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto">
+                            <source src="Revitalize/videos/Revitalize.webm" type="video/webm">
+                            <source src="Revitalize/videos/Revitalize.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                </article>
+
+                <!-- Work1 Brush Cleaner -->
+                <article>
+                    <a href="BrushCleaner" id="work1">
+                        <div class="projectText">
+                            <h2>BRUSH CLEANER</h2>
+                            <h3>Product Concept</h3>
+                            <h4>[3D Modeling, Industrial Design, Product Concept, SolidWorks]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto">
+                            <source src="BrushCleaner/videos/BrushCleaner.webm" type="video/webm">
+                            <source src="BrushCleaner/videos/BrushCleaner.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                </article>
+
+                <!-- Work0 Arcade Automat -->
+                <article>
+                    <a href="ArcadeAutomat" id="work0">
+                        <div class="projectText">
+                            <h2>ARCADE AUTOMAT</h2>
+                            <h3>Game</h3>
+                            <h4>[Java, JavaFX, Pathfinding, Sorting, Searching]</h4>
+                        </div>
+                        <video loop muted width="70%" height="700px" preload="auto">
+                            <source src="ArcadeAutomat/videos/ArcadeAutomat.webm" type="video/webm">
+                            <source src="ArcadeAutomat/videos/ArcadeAutomat.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                </article>
+            </section>
+
+            <!-- About -->
+            <section id="about">
+
+               <h1 class="title" style="margin-top: 0;">[About]</h1>
+
+                <div id="aboutContainer">
+                    <div id="aboutOverlay">
+                        <h2>Hey!</h2>
+                        <h3>I'm Simon Weck, 22 years old from North Rhine Westphalia, Germany.?I'm curently studying Visual Computingpc & Design B.Sc. at the University Hamm Lippstadt.?I love building visual experiences for the Web, Augmented Reality, Virtual Reality and Games.</h3> 
+                    </div>                   
+                    <picture>
+                        <source srcset="Main/Main-Site/About/me.webp" type="image/webp">
+                        <img src="Main/Main-Site/About/me.jpg" alt="" width="60%" height="60%">
+                    </picture> 
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" style="display: none;">
+
+                <h1 class="title">[Skills]</h1>
+
+                <div id="skillsContainer">
+                    <div id="skillsOverlay">
+                        <div class="skillsText">
+                            <h2>Visual Computing</h2>
+                            <h3>[Computer Graphics]</h3>
+                            <h3>[Image Processing]</h3> 
+                            <h3>[Web Development]</h3>
+                            <h3>[UI Programming]</h3>                        
+                            <h2>Design</h2>
+                            <h3>[UI/UX Design]</h3>
+                            <h3>[Web Design]</h3>
+                            <h3>[3D Modeling]</h3>                                                   
+                        </div>                      
+                        <div class="icon">
+                            <span class="OpenGL" title="OpenGL"></span>
+                            <span class="Java" title="Java"></span>
+                            <span class="JavaFX" title="JavaFX"></span>
+                            <span class="JS" title="JavaScript"></span>
+                            <span class="HTML" title="Hypertext Markup Language"></span>                                
+                            <span class="CSS" title="Cascading Style Sheets"></span>  
+                            <span class="XD" title="Adobe XD"></span>                                  
+                            <span class="PS" title="Adobe Photoshop"></span>        
+                            <span class="ID" title="Adobe InDesign"></span>
+                            <span class="AI" title="Adobe Illustrator"></span>
+                            <span class="PR" title="Adobe Premiere"></span>
+                            <span class="Maya" title="Autodesk Maya"></span>                         
+                        </div>  
+                    </div>
+                    <picture>
+                        <source srcset="Main/Main-Site/About/design.webp" type="image/webp">
+                        <img src="Main/Main-Site/About/design.jpg" alt="" width="60%" height="60%">
+                    </picture> 
+                </div>
+
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                
+                <h1 class="title">[Contact]</h1>
+
+                <span id="contactContainer" onclick="copyEmail()" title="click to copy email">
+                    <div id="contactOverlay">
+                        <h2>Hello@Sweck.de</h2>
+                        <h3>[Let's have a chat!]</h3>
+                    </div>
+                    <picture>
+                        <source srcset="Main/Main-Site/About/contact.webp" type="image/webp">               
+                        <img src="Main/Main-Site/About/contact.jpg" alt="" width="60%" height="60%">
+                    </picture>
+                </span>
+
+            </section>
+
+        </main>
+
+    </body>
+</html>
