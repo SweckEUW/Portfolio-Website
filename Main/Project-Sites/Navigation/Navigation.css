@@ -1,0 +1,105 @@
+nav{
+    font-size: 3vw;
+}
+
+nav img{
+    position: relative;
+    filter: drop-shadow(0px 0px 5px black) drop-shadow(0px 0px 2px black);
+}
+
+#topNavigation{
+    z-index: 30;
+    bottom: -2.5vw;
+    right: -2.5vw;
+    margin: 2%;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+    transform: scale(0.5);
+}
+
+#topNavigation img{
+    transform: rotate(180deg);
+}
+
+#backNavigation{
+    z-index: 30;
+    margin: 1%;
+    left: 0;
+    top: 0;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#backNavigation img{
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255)) drop-shadow(0px 0px 50px rgb(255, 255, 255));
+    opacity: 0.8;
+    transition: opacity 1s ease,filter .2s ease;
+}
+
+#projectLinks{
+    z-index: 30;
+    position: fixed;
+    right: -165px;
+    top: 45%;
+    opacity: 0.8;
+}
+
+#projectLinks .icon h1{
+    display: inline-block;   
+    font-size: 23px;
+}
+
+#projectLinks a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#projectLinks .icon span{
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+.transition:hover{
+    transform: translateX(-190px);
+}
+
+/*DESKTOP SMALL*/
+@media (max-width: 1200px) { 
+    #backNavigation img, #topNavigation img{
+        width: 80px;
+    }
+}
+  
+/*MOBILE*/
+@media (max-device-width: 900px){
+    #projectLinks{
+        display: none;
+    }
+
+    #topNavigation img{
+        width: 200px;
+        height: 200px;
+        filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.5)) drop-shadow(0px 0px 5px black);
+    }
+
+    #backNavigation img{
+        opacity: 0;
+        margin: 4%;
+        width: 200px;
+    }
+
+    #backNavigation img.handyLogo{
+        opacity: 0.8;
+    }
+}

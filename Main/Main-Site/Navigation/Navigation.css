@@ -1,0 +1,113 @@
+#NavigationShelf{
+   position: fixed;
+   top:0;
+   right: 0;
+   z-index: 21;
+   will-change: opacity;
+   transition: opacity 7s;
+   margin: 3%;
+}
+
+#NavigationShelf:hover{
+   cursor: pointer;
+}
+
+#NavigationShelf div{
+   background-color: white;
+   box-shadow: 0px 0px 2px rgba(0,0,0,0.7), 0px 0px 10px rgba(0,0,0,0.4);
+   border-radius: 10px;
+   margin: 13%;
+   transform-origin: center;
+   transition: transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0),opacity 1s ease; 
+   will-change: transform, opacity;
+   height: 3px;
+   width: 50px;
+}
+
+#NavigationLinks{
+   width: 100%;
+}
+
+#NavigationLinksWrapper{
+   z-index: 20;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   pointer-events: none;
+}
+
+#NavigationLinks a{
+   cursor: pointer;
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   text-shadow: 0px 0px 5px black; 
+   font-size: 120px;
+}
+
+#NavigationLinks a span{
+   opacity: 0; 
+   display: inline-block;
+   transform: translateY(-50px);
+   will-change: transform, opacity;
+}
+
+#NavigationLinks a span.NavigationLinksOpen{
+   opacity: 1;
+   transform: translateY(0px);
+   transition: opacity 1.5s,transform 1s cubic-bezier(.42,-0.01,.05,1);
+}
+
+#NavigationLinks a span.NavigationLinksClose{
+   opacity: 0;
+   transform: translateY(-50px);
+   transition: opacity 0.5s,transform 1s cubic-bezier(.42,-0.01,.05,1);
+}
+
+.TopShelfAnimation{
+   transform: rotate(45deg) translateY(14px);
+}
+
+.BottomShelfAnimation{
+   transform: rotate(-45deg) translateY(-14px);
+}
+
+
+/*DESKTOP SMALL*/
+@media (max-width: 1200px) { 
+
+}
+  
+/*MOBILE*/
+@media (max-device-width: 900px){
+   #NavigationShelf div{
+      height: 10px;
+      width: 100px;
+      margin: 0;
+      margin-bottom: 10px;
+   }
+
+   #NavigationShelf{
+      margin: 0;
+      margin-right: 7%;
+      margin-top: 7%;
+   }
+
+   #NavigationLinks a{
+      font-size: 230px;
+      margin-bottom: 5%;
+   }
+
+   .TopShelfAnimation{
+      transform: rotate(45deg) translateY(30px);
+   }
+   
+   .BottomShelfAnimation{
+      transform: rotate(-45deg) translateY(-30px);
+   }
+}
