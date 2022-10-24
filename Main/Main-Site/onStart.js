@@ -1,10 +1,10 @@
-setUpHome();
+// setUpHome();
 setUpWork();
-setUpAbout();
-setUpNavigation();
-setUpProceduralTerrain();
+// setUpAbout();
+// setUpNavigation();
+// setUpProceduralTerrain();
 
-initHomeScreen();
+// initHomeScreen();
 
 // setTimeout(function() {
 //     initHomeScreen();

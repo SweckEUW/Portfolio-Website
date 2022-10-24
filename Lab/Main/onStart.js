@@ -1,4 +1,0 @@
-setUpWork();
-setUpHome();
-initHomeScreen();
-init();

@@ -19,12 +19,12 @@ window.addEventListener("scroll", function(){
         let media = elements[i].childNodes[1];
 
         if (isElementInViewport(media)) {
-            elements[i].style.filter = "blur(0)";
+            // elements[i].style.filter = "blur(0)";
             for (let x = 0; x < video.length; x++) 
                 video[x].play();
             
         }else { 
-            elements[i].style.filter = "blur(20px)";
+            // elements[i].style.filter = "blur(20px)";
             for (let x = 0; x < video.length; x++)  
                 video[x].pause();
             

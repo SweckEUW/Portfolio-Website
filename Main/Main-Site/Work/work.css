@@ -1,10 +1,20 @@
+#work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #work article{
-    text-align: center;
     padding-bottom: 350px; 
+    width: 100%;
 }
 
 #work article a{
     color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .projectText{
@@ -40,6 +50,7 @@
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     will-change: transform, filter;
     object-fit: cover;
+    width: 70%;
 }
 
 #work h2{

@@ -19,40 +19,50 @@ body{
     scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
 #home, #work, #contact, #about{
     transition: filter .5s;
 }
 
-main{
-    display: none;
-}
-
 .title{
-    margin: 5%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 10%;
+    margin: 2%;
     text-align: center;
     color: white;
-    font-size: 10vw;
+    font-size: 5vw;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+
+.reel{
+    filter: none !important;
+    margin-bottom: 200px; 
+}
+
+.legal{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.legal a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(2, 2, 2);
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+.legal a:hover{
+    color: rgb(105, 105, 105);
 }
 
 /*DESKTOP SMALL*/
 @media (max-width: 1200px) { 
     .title{
-        font-size: 150px;
+        font-size: 100px;
     }
 }
   
 /*MOBILE*/
 @media (max-device-width: 900px){
     .title{
-        font-size: 200px;
+        font-size: 70px;
     }
 }
 
