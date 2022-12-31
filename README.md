@@ -2,8 +2,4 @@ This is my portfolio website to present my projects. I started out concept desig
 
 More Information:
 
-https://SweckEUW.github.io/Portfolio/
-
-Visit the Site:
-
-https://SweckEUW.github.io/
+https://sweck.de/
