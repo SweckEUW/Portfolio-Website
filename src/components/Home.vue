@@ -46,7 +46,7 @@
               @click="open('resume')"
               
             >
-              <i class="fa fa-file"></i>
+              <i class="fa fa-file"></i> 
             </button>
           </div>
         </div>
