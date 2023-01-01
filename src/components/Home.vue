@@ -48,7 +48,7 @@
               <i class="fa fa-file"></i> 
             </button>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   </div>
