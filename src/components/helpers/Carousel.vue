@@ -5,7 +5,7 @@
       class="carousel slide"
       data-ride="carousel"
       style="height: 200px;"
-    >
+    > 
       <div class="carousel-inner">
         <div class="carousel-item active" v-for="image in images" :key="image">
           <img
