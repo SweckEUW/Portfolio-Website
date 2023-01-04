@@ -1,17 +1,16 @@
-<script>
-
-export default {
-	data: () => {
-		return {};
-	},
-};
-</script>
-
 <template>
-	<div>
-		Footer
+	<div class="AppFooter">
+		Imprint
 	</div>
 </template>
+
+<script>
+export default {
+	data: ()=>({
+       
+    }),
+};
+</script>
 
 <style scoped>
 

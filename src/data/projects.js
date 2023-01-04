@@ -3,41 +3,172 @@
 
 const projects = [
 	{
-		id: 1,
-		title: 'Google Health Platform',
+		title: 'Universe Simulation',
 		category: 'Web Application',
-		img: '/src/assets/images/web-project-2.jpg',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
 	},
+
 	{
-		id: 2,
-		title: 'Phoenix Digital Agency',
-		category: 'Mobile Application',
-		img: '/src/assets/images/mobile-project-2.jpg',
+		title: 'Brush Cleaner',
+		category: '',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
 	},
+
 	{
-		id: 3,
-		title: 'Project Management UI',
-		category: 'UI/UX Design',
-		img: '/src/assets/images/ui-project-1.jpg',
-	},
-	{
-		id: 4,
-		title: 'Cloud Storage Platform',
-		category: 'UI/UX Design',
-		img: '/src/assets/images/ui-project-2.jpg',
-	},
-	{
-		id: 5,
-		title: 'React Social App',
-		category: 'Mobile Application',
-		img: '/src/assets/images/mobile-project-1.jpg',
-	},
-	{
-		id: 6,
-		title: 'Apple Design System',
+		title: 'Arcade Automat',
 		category: 'Web Application',
-		img: '/src/assets/images/web-project-1.jpg',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
 	},
+
+	{
+		title: 'OpenFile',
+		category: 'Web Application',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
+	},
+
+	{
+		title: 'Revitalize',
+		category: 'Web Application',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
+	},
+
+	{
+		title: 'Crazier Machines',
+		category: 'Web Application',
+		description: "",
+		role: "",
+		type: "",
+		created: "",
+		tools: "",
+		features: [
+
+		],
+		content: [
+			{
+				type: "Executeable",
+				url: "",
+			},
+			{
+				type: "Documentation",
+				url: "",
+			},
+			{
+				type: "Code",
+				url: "",
+			}
+		],
+		images: "",
+	}
 ];
 
 export default projects;

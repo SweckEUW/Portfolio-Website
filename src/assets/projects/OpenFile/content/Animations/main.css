@@ -1,0 +1,56 @@
+@font-face {
+    font-family: interstate;
+    src: url(SFUI.woff2);
+}
+
+*{
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    margin: 0;
+    color: rgb(42, 42, 42);
+    background-color: #F3F6FF;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: interstate;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    font-size: 4vw;
+    margin-bottom: 7%;
+}
+
+section{
+    margin-bottom: 5%;
+}
+
+section h2{
+    font-size: 4vw;
+}
+
+/*DESKTOP SMALL*/
+@media (max-width: 1200px) { 
+    video{
+        width: 30%;
+        height: 30%;
+    }
+
+    h1{
+        font-size: 60px;
+        margin-bottom: 7%;
+    }
+    
+    section h2{
+        font-size: 50px;
+    }
+}
