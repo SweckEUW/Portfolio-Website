@@ -5,7 +5,8 @@ const projects = [
 	{
 		title: 'Universe Simulation',
 		category: 'Web Application',
-		description: "",
+		description_short: "",
+		description_long: "",
 		role: "",
 		type: "",
 		created: "",
