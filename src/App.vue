@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- App header -->
-		<!-- <AppHeader/> -->
+		<AppHeader/>
 
 		<!-- Render active component contents with vue transition -->
 		<router-view v-slot="{ Component }">
@@ -27,6 +27,10 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: Overpass, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -37,13 +41,17 @@ body {
 }
 
 h1{
-    margin: 2%;
+	margin: 0;
     text-align: center;
     color: white;
     font-size: 5vw;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 }
 
+a{
+	text-decoration: none;
+	color: white;
+}
 /*DESKTOP SMALL*/
 @media (max-width: 1200px) { 
     h1{

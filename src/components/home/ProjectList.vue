@@ -1,5 +1,6 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
+        <h1>[My Work]</h1>
 		<div v-for="project in projects" :key="project.title" class="pl-element">
             <video :src="getTrailer(project.title)" muted loop class="pl-video"/>
             <div class="pl-overlay">
@@ -24,34 +25,33 @@ export default {
         },
         playVideo(element){
             let video = element.getElementsByTagName("video")[0];
-            video.classList.add("pl-video-active");
+            element.classList.add("pl-element-active");
             video.play();
         },
         closeVideo(element){
             let video = element.getElementsByTagName("video")[0];
-            video.classList.remove("pl-video-active");
+            element.classList.remove("pl-element-active");
             video.pause();
         },
+        // checkScrollDirectionIsUp(){
+        //     var st = window.pageYOffset || document.documentElement.scrollTop;
+        //     let scrollTop = st > this.lastScrollTop;
+        //     this.lastScrollTop = st <= 0 ? 0 : st;
+        //     return scrollTop;
+        // },
         isElementInViewport(el){
             var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-            );
+            return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
         }
     },
     mounted(){
         // let test = await fetch("https://api.storyblok.com/v2/cdn/stories?token=FL4I5ToKxfYVjeC803C6dgtt").then(response => response.json());
         // this.projects = test.stories;
-        // console.log(this.projects);
 
         window.addEventListener("scroll", () => {
-            console.log("scroll");
             let elements = document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
             for (let i = 0; elements.length > i; i++){
-                if(this.isElementInViewport(elements[i]))
+                if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2)) // if(this.isElementInViewport(elements[i]))
                     this.playVideo(elements[i]);                
                 else         
                     this.closeVideo(elements[i]);    
@@ -62,32 +62,37 @@ export default {
 </script>
 
 <style scoped>
+.ProjectList{
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
 .pl-element{
     display: flex;
     align-content: center;
     position: relative;
     margin: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     cursor: pointer;
     will-change: transform, filter;
     justify-content: center;
+    width: 90%;
+    height: 300px;
+    transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
+    filter: blur(10px) grayscale(100%);
+}
+.pl-element-active{
+    filter: blur(1px);
+    height: 700px;
 }
 .pl-element *{
     pointer-events: none;
 }
 .pl-video{
-    width: 90%;
-    height: 500px;
-    object-fit: cover;
-    filter: blur(10px) grayscale(100%);
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
-    transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
-}
-.pl-video-active{
-    filter: blur(0px);
     width: 100%;
-    height: 130vh;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .pl-overlay{
     position: absolute;
