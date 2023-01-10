@@ -1,0 +1,1 @@
+import{_ as e,P as t,r as s,o as c,c as n,a as r}from"./index-e1d5ce18.js";const a={components:{ProjectList:t},data:()=>({}),mounted(){setTimeout(()=>{scroll(0,0)},0)}};function p(_,i,l,m,d,u){const o=s("ProjectList");return c(),n("div",null,[r(o)])}const P=e(a,[["render",p]]);export{P as default};
