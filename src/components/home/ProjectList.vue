@@ -1,7 +1,7 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
         <h1>[My Work]</h1>
-		<div v-for="project in projects" :key="project.title" class="pl-element">
+		<div v-for="project in projects" :key="project.title" class="pl-element" @click="$router.push('/work/' + project.title.replaceAll(' ','-'))">
             <video :src="getTrailer(project.title)" muted loop class="pl-video"/>
             <div class="pl-overlay">
                 <div class="p-overlay-title">{{ project.title }}</div>
@@ -33,12 +33,12 @@ export default {
             element.classList.remove("pl-element-active");
             video.pause();
         },
-        // checkScrollDirectionIsUp(){
-        //     var st = window.pageYOffset || document.documentElement.scrollTop;
-        //     let scrollTop = st > this.lastScrollTop;
-        //     this.lastScrollTop = st <= 0 ? 0 : st;
-        //     return scrollTop;
-        // },
+        checkScrollDirectionIsUp(){
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+            let scrollTop = st > this.lastScrollTop;
+            this.lastScrollTop = st <= 0 ? 0 : st;
+            return scrollTop;
+        },
         isElementInViewport(el){
             var rect = el.getBoundingClientRect();
             return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
@@ -49,9 +49,10 @@ export default {
         // this.projects = test.stories;
 
         window.addEventListener("scroll", () => {
+            let a = this.checkScrollDirectionIsUp() ? 200 : -200;
             let elements = document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
             for (let i = 0; elements.length > i; i++){
-                if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2)) // if(this.isElementInViewport(elements[i]))
+                if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
                     this.playVideo(elements[i]);                
                 else         
                     this.closeVideo(elements[i]);    

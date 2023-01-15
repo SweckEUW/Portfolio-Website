@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<h1>HEY I AM SIMON</h1>
-		<h1>I do Graphics Programming</h1>
 		<ProjectList/>
 	</div>
 </template>
@@ -13,20 +11,10 @@ export default {
 	components: {ProjectList},
 	data: ()=>({
        
-    }),
-	mounted(){
-		setTimeout(() => {
-			scroll(0,0);
-		}, 0);
-	}
+    })
 };
 </script>
 
 <style scoped>
-h1{
-	margin: 0;
-}
-div{
-	margin-top: 400px;
-}
+
 </style>

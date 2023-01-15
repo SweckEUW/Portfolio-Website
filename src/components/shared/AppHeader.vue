@@ -1,25 +1,16 @@
 <template>
 	<div class="AppHeader">
-		
-		<div class="ah-container">
-			<h1>
-				<RouterLink to="/">[Simon Weck]</RouterLink>
-			</h1>
 
-		<div class="ah-nav">
-			<div>
-				<RouterLink to="/Work">[Work]</RouterLink>
-			</div>
-			<div>
-				<RouterLink to="/About">[About Me]</RouterLink>
-			</div>
-			<div>
-				<RouterLink to="/Contact">[Contact]</RouterLink>
-			</div>
-		</div>
+		<div class="ap-left">
+			<h1 @click="$router.push('/')">[Simon Weck]</h1>
 		</div>
 		
-
+		<div class="ap-right">
+			<h1 @click="$router.push('/Work')">[Work]</h1>
+			<h1 @click="$router.push('/About')">[About Me]</h1>
+			<h1 @click="$router.push('/Contact')">[Contact]</h1>
+		</div>
+		
 	</div>
 </template>
 
@@ -33,27 +24,30 @@ export default {
 
 <style scoped>
 .AppHeader{
-	margin-top: 300px;
-}
-.ah-container{
-	width: 100%;
+	width: 90%;
 	z-index: 99;
 	padding: 20px 0px;
-	background: white;
 	position: fixed;
 	top: 0;
 	filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.295));
+	margin: 0 5%;
 }
-.ah-nav{
-	width: 100%;
-	display: flex;
-	justify-content: center;
+.ap-left{
+	float: left;
 }
-.ah-nav div{
+.ap-right{
+	float: right;
+}
+h1{
 	display: inline-block;
-	color: white;
-    font-size: 30px;
-	margin: 20px;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+	font-size: 30px;
+	margin: 0 20px;
+	cursor: pointer;
+}
+h1:first-child{
+	margin-left: 0;
+}
+h1:last-child{
+	margin-right: 0;
 }
 </style>

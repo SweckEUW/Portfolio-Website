@@ -27,10 +27,6 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
 	font-family: Overpass, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;

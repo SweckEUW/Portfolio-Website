@@ -9,7 +9,7 @@ export default {
 
 <template>
 	<div>
-		About
+		
 	</div>
 </template>
 

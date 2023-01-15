@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '../components/home/Home.vue';
 
 const routes = [
 	{
@@ -16,8 +16,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/About.vue'),
+		component: () => import(/* webpackChunkName: "about" */ '../components/about/About.vue'),
 		meta: {
 			title: '[Simon Weck] - About',
 		},
@@ -28,8 +27,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "projects" */ '../views/Work.vue'),
+		component: () => import(/* webpackChunkName: "projects" */ '../components/work/Work.vue'),
 		meta: {
 			title: '[Simon Weck] - Projects',
 		},
@@ -40,10 +38,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(
-				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
-			),
+		component: () => import(/* webpackChunkName: "projects" */ '../components/singleproject/SingleProject.vue'),
 		meta: {
 			title: '[Simon Weck] - Single Project',
 		},
@@ -54,8 +49,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
+		component: () => import(/* webpackChunkName: "projects" */ '../components/contact/Contact.vue'),
 		meta: {
 			title: '[Simon Weck] - Contact',
 		},
@@ -66,7 +60,7 @@ const router = createRouter({
 	history: createWebHistory(),
 	routes,
 	scrollBehavior() {
-		document.getElementById('app').scrollIntoView();
+		return { top: 0 }
 	},
 });
 
