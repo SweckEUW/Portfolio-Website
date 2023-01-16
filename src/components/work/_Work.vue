@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import ProjectList from '@/components/home/ProjectList.vue';
+import ProjectList from '@/components/shared/ProjectList.vue';
 
 export default {
 	components: {ProjectList},
-	data: ()=>({
-       
-    })
+	mounted(){
+		setTimeout(() => { window.scrollTo(0, 0);}, 0);
+	}
 };
 </script>
 

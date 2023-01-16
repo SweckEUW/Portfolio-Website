@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/home/Home.vue';
+import Home from './components/home/_Home.vue';
 
 const routes = [
 	{
@@ -16,7 +16,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "about" */ '../components/about/About.vue'),
+		component: () => import(/* webpackChunkName: "about" */ './components/about/_About.vue'),
 		meta: {
 			title: '[Simon Weck] - About',
 		},
@@ -27,7 +27,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ '../components/work/Work.vue'),
+		component: () => import(/* webpackChunkName: "projects" */ './components/work/_Work.vue'),
 		meta: {
 			title: '[Simon Weck] - Projects',
 		},
@@ -38,7 +38,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ '../components/singleproject/SingleProject.vue'),
+		component: () => import(/* webpackChunkName: "projects" */ './components/singleproject/_SingleProject.vue'),
 		meta: {
 			title: '[Simon Weck] - Single Project',
 		},
@@ -49,7 +49,7 @@ const routes = [
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ '../components/contact/Contact.vue'),
+		component: () => import(/* webpackChunkName: "projects" */ './components/contact/_Contact.vue'),
 		meta: {
 			title: '[Simon Weck] - Contact',
 		},
@@ -58,10 +58,7 @@ const routes = [
 
 const router = createRouter({
 	history: createWebHistory(),
-	routes,
-	scrollBehavior() {
-		return { top: 0 }
-	},
+	routes
 });
 
 export default router;
