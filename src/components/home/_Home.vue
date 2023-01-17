@@ -30,9 +30,6 @@ export default {
 h1{
 	margin: 0;
 }
-/* .ho-header-main{
-	
-} */
 .ho-header-second{
 	font-size: 50px;
 	color: rgb(235, 235, 235);

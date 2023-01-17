@@ -40,4 +40,12 @@ export default {
 	z-index: 1;
 	bottom: 50px;
 }
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+    .SingleProjectHeader{
+		margin-top: 50px;
+		width: 85%;
+	}
+}
 </style>

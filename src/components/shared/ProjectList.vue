@@ -107,13 +107,20 @@ export default {
 .pl-overlay div{
     color: white;
 }
-/* .p-overlay-title{
-    
+
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+    .ProjectList{
+        margin-bottom: 150px;
+        margin-top: 100px;
+    }
+    .pl-element-active{
+        height: 500px;
+    }
+    .pl-element{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
 }
-.p-overlay-category{
-    
-}
-.p-overlay-shortDescription{
-    
-} */
 </style>

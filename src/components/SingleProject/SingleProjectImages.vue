@@ -66,8 +66,7 @@ export default {
 	user-select: none;
 }
 .swiper{
-    height: 70vh;
-    width: 70vw;
+    max-height: 70vh;
 }
 .swiper-slide{
     color: white;
@@ -103,7 +102,8 @@ export default {
 .swiper-button-prev, .swiper-button-next{
 	z-index: 2;
 	color: white;
-	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0px 0px 10px black);
+    font-weight: bolder;
 }
 .swiper-button-prev{
 	left: 10%;
@@ -112,5 +112,30 @@ export default {
 .swiper-button-next{
 	right: 10%;
 	top: calc(50% + 20px);
+}
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+	.swiper{
+		max-height: none;
+	}
+	.swiper-button-prev{
+		left: -10px;
+	}
+	.swiper-button-next{
+		right: -10px;
+	}
+	.swiper-pagination-bullet{
+		width: 10px !important;
+		height: 10px !important;
+		border: 2px solid black;
+	}
+	#swiper-pagination{
+		bottom: -15px;
+	}
+	.swiper-pagination-bullet-active{
+		background: black;
+	}
+ 
 }
 </style>

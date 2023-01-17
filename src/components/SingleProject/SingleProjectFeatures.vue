@@ -70,4 +70,23 @@ export default {
 	margin-top: 10px;
 	font-size: 26px;
 }
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+	.spf-element{
+		margin: 50px 0px;
+	}
+   .spf-element video{
+		width: 100%;
+		margin: 0;
+	}
+	.spf-element h1{
+		font-size: 35px;
+		margin: 0;
+		top: -20px;
+	}
+	.spf-element div{
+		font-size: 20px;
+	}
+}
 </style>

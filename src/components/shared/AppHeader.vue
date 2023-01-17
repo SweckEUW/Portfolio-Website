@@ -58,4 +58,14 @@ h1:first-child{
 h1:last-child{
 	margin-right: 0;
 }
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+    h1{
+		font-size: 14px;
+	}
+	.AppHeader{
+		top: 4px;
+	}
+}
 </style>

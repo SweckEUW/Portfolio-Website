@@ -50,4 +50,11 @@ h1{
 	margin-top: 20px;
 	text-shadow: none;
 }
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+    .SingleProjectInformation{
+		display: block;
+	}
+}
 </style>

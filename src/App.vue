@@ -58,7 +58,7 @@ a{
 /*MOBILE*/
 @media (max-device-width: 900px){
     h1{
-        font-size: 70px;
+        font-size: 50px;
     }
 }
 
