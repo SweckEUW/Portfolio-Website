@@ -51,12 +51,16 @@ h1{
 	font-size: 26px;
 	margin: 0 15px;
 	cursor: pointer;
+	transition: .3s color ease;
 }
 h1:first-child{
 	margin-left: 0;
 }
 h1:last-child{
 	margin-right: 0;
+}
+h1:hover{
+	color: rgb(160, 160, 160);
 }
 
 /*MOBILE*/
