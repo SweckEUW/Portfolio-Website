@@ -52,13 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.Contact{
-	margin-top: 200px;
-	margin-bottom: 100px;
-}
-h1{
-	margin-bottom: 50px;
-}
 .ct-form{
 	margin-left: 21%;
     margin-right: 21%;
@@ -94,7 +87,7 @@ input{
 }
 .ct-submit{
 	width: 25%;
-	background: #6366F1;
+	background: black;
 	color: white;
 	border: none;
 	border-radius: 2px;
@@ -103,9 +96,10 @@ input{
 	line-height: 0px;
 	cursor: pointer;
 	transition: .3s background ease;
+	margin-left: auto;
 }
 .ct-submit:hover{
-	background: #3739a0;
+	background: #353535;
 }
 
 /* Spinner */

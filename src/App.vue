@@ -1,18 +1,20 @@
 <template>
-	<div>
-		<!-- App header -->
-		<AppHeader/>
+	<transition name="fade" appear>
+		<div>
+			<!-- App header -->
+			<AppHeader/>
 
-		<!-- Render active component contents with vue transition -->
-		<router-view v-slot="{ Component }">
-			<transition name="fade" mode="out-in">
-				<component :is="Component" />
-			</transition>
-		</router-view>
+			<!-- Render active component contents with vue transition -->
+			<router-view v-slot="{ Component }">
+				<transition name="fade" mode="out-in">
+					<component :is="Component" class="Page"/>
+				</transition>
+			</router-view>
 
-		<!-- App footer -->
-		<!-- <AppFooter/> -->
-	</div>
+			<!-- App footer -->
+			<AppFooter/>
+		</div>
+	</transition>
 </template>
 
 <script>
@@ -27,7 +29,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
 
-body {
+body{
 	font-family: Overpass, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -36,12 +38,19 @@ body {
 	overflow-x: hidden;
 }
 
+.Page{
+	margin-top: 200px;
+	margin-bottom: 100px;
+	min-height: calc(100vh - 300px - 80px);
+}
+
 h1{
-	margin: 0;
     text-align: center;
     color: white;
     font-size: 5vw;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+	margin: 0;
+	margin-bottom: 50px;
 }
 
 a{
