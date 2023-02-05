@@ -13,10 +13,7 @@ const routes = [
 	{
 		path: '/about',
 		name: 'About',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "about" */ './components/about/_About.vue'),
+		component: () => import('./components/about/_About.vue'),
 		meta: {
 			title: '[Simon Weck] - About',
 		},
@@ -24,10 +21,7 @@ const routes = [
 	{
 		path: '/work',
 		name: 'Work',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ './components/work/_Work.vue'),
+		component: () => import('./components/work/_Work.vue'),
 		meta: {
 			title: '[Simon Weck] - Projects',
 		},
@@ -35,10 +29,7 @@ const routes = [
 	{
 		path: '/work/:id',
 		name: 'Single Project',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ './components/singleproject/_SingleProject.vue'),
+		component: () => import('./components/singleproject/_SingleProject.vue'),
 		meta: {
 			title: '[Simon Weck] - Single Project',
 		},
@@ -46,12 +37,17 @@ const routes = [
 	{
 		path: '/contact',
 		name: 'Contact',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "projects" */ './components/contact/_Contact.vue'),
+		component: () => import('./components/contact/_Contact.vue'),
 		meta: {
 			title: '[Simon Weck] - Contact',
+		},
+	},
+	{
+		path: '/imprint',
+		name: 'Imprint',
+		component: () => import('./components/imprint/_Imprint.vue'),
+		meta: {
+			title: '[Simon Weck] - Imprint',
 		},
 	},
 ];
