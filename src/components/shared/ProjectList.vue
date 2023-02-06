@@ -3,7 +3,7 @@
         
         <h1>[My Work]</h1>
 
-		<div v-for="project in projects" :key="project.title" class="pl-element" @click="$router.push('/work/' + project.title.replaceAll(' ','-'))">
+		<div v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element" @click="$router.push('/work/' + project.title.replaceAll(' ','-'))">
             <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
             <div class="pl-overlay">
                 <div class="p-overlay-title">{{ project.title }}</div>
@@ -18,9 +18,18 @@
 import projects from "@/data/projects.js"
 
 export default {
+    props: ["projectsSelection"],
 	data: ()=>({
         projects: projects
     }),
+    computed: {
+        projectsFiltered(){
+            if(!this.projectsSelection)
+                return this.projects;
+
+            return this.projects.filter(project => this.projectsSelection.includes(project.title));
+        }
+    },
     methods: {
         getTrailer(folder){
             return new URL(`/src/assets/projects/${folder}/videos/trailer.webm`, import.meta.url);
@@ -52,7 +61,7 @@ export default {
         this.playVideo(document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element")[0]);
         
         window.onscroll = () => {
-            let a = this.checkScrollDirectionIsUp() ? 100 : -100;
+            let a = this.checkScrollDirectionIsUp() ? -100 : 100;
             let elements = document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
             for (let i = 0; elements.length > i; i++){
                 if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
@@ -66,10 +75,6 @@ export default {
 </script>
 
 <style scoped>
-.ProjectList{
-    margin-bottom: 200px;
-    margin-top: 200px;
-}
 .pl-element{
     display: flex;
     align-content: center;
@@ -81,14 +86,9 @@ export default {
     will-change: transform, filter;
     justify-content: center;
     width: 90%;
-    height: 250px;
-    transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
-    filter: blur(10px) grayscale(100%);
+    height: 70vh;
 }
-.pl-element-active{
-    filter: blur(1px);
-    height: 900px;
-}
+
 .pl-element *{
     pointer-events: none;
 }
@@ -97,15 +97,25 @@ export default {
     height: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    filter: blur(10px) grayscale(100%);
+    transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
+}
+.pl-element-active video{
+    filter: blur(1px) grayscale(0%);
 }
 .pl-overlay{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    width: 20%;
+    height: 10%;
+    left: -1px;
+    top: 120px;
+    background: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 .pl-overlay div{
-    color: white;
+    color: black;
 }
 
 
