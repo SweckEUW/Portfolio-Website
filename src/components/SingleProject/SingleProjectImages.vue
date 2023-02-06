@@ -62,11 +62,14 @@ export default {
 	margin-bottom: 40px;
 }
 .SingleProjectImages img{
-	width: 100%;
+	max-height: 70vh;
 	user-select: none;
+	object-fit: contain;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 .swiper{
     max-height: 70vh;
+	overflow: visible;
 }
 .swiper-slide{
     color: white;
@@ -107,11 +110,11 @@ export default {
 }
 .swiper-button-prev{
 	left: 10%;
-	top: calc(50% + 20px);
+	top: calc(50% + 20px + 106px);
 }
 .swiper-button-next{
 	right: 10%;
-	top: calc(50% + 20px);
+	top: calc(50% + 20px + 106px);
 }
 
 /*MOBILE*/
