@@ -1,5 +1,5 @@
 <template>
-	<transition name="fade" appear>
+	<transition name="fadeStart" appear>
 		<div>
 			<!-- App header -->
 			<AppHeader/>
@@ -69,6 +69,15 @@ a{
     h1{
         font-size: 50px;
     }
+}
+
+
+.fadeStart-enter-active, .fadeStart-leave-active {
+  transition: 1s opacity 0s ease;
+}
+
+.fadeStart-enter-from,.fadeStart-leave-to {
+  opacity: 0;
 }
 
 /* Transition Animations */

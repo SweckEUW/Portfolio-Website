@@ -3,15 +3,17 @@
 
 		<!-- Header -->
 		<div class="ho-header">
-			<div class="ho-container">
-				<h1>Simon Weck</h1>
-				<h1 class="ho-subheader">Pipeline TD & Graphics Programmer</h1>
-			</div>
+			<transition name="fade2" appear>
+				<div class="ho-container">
+					<h1>Simon Weck</h1>
+					<h1 class="ho-subheader">Pipeline TD & Graphics Programmer</h1>
+				</div>
+			</transition>
 			<video :src="getHeaderVideo()" muted loop autoplay/>
 		</div>
 
 		<!-- Work -->
-		<ProjectList/>
+		<ProjectList :projectsSelection="['Universe Simulation','Emberpoint','Monopoly Animation','AI Image Editor Toolkit','Motile']"/>
 	</div>
 </template>
 
@@ -22,7 +24,7 @@ export default {
 	components: {ProjectList},
 	methods: {
 		getHeaderVideo(){
-			return new URL(`/src/assets/home/header.mp4`, import.meta.url);
+			return new URL(`/src/assets/home/header.webm`, import.meta.url);
 		}
 	},
 	mounted(){
@@ -60,5 +62,16 @@ video{
 }
 .ho-subheader{
 	font-size: 2vw;
+}
+h1{
+	margin-bottom: 0;
+}
+
+.fade2-enter-active, .fade2-leave-active {
+  transition: 1s opacity .5s ease;
+}
+
+.fade2-enter-from,.fade2-leave-to {
+  opacity: 0;
 }
 </style>
