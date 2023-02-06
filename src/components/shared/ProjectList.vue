@@ -3,14 +3,14 @@
         
         <h1>[My Work]</h1>
 
-		<div v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element" @click="$router.push('/work/' + project.title.replaceAll(' ','-'))">
+        <router-link tag="div" :to="'/work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
             <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
             <div class="pl-overlay">
                 <div class="p-overlay-title">{{ project.title }}</div>
                 <div class="p-overlay-category">{{ project.category }}</div>
                 <div class="p-overlay-shortDescription">{{ project.description_short }}</div>
             </div>
-        </div>
+        </router-link>
 	</div>
 </template>
 

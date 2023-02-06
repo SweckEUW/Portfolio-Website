@@ -2,14 +2,21 @@
 	<div class="AppFooter">
 
 		<div class="af-socials">
-			<img :src="getIcon('LinkedIn')" titl="LinkedIn" @click="openLink('https://www.linkedin.com/in/sweck/')" alt="">
-			<img :src="getIcon('GitHub')" titl="GitHub" @click="openLink('https://github.com/SweckEUW/')" alt="">
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com/in/sweck/" target="_blank">
+				<img :src="getIcon('LinkedIn')" titl="LinkedIn" alt="">
+			</a>
+
+			<!-- GitHub -->
+			<a href="https://github.com/SweckEUW/" target="_blank">
+				<img :src="getIcon('GitHub')" titl="GitHub" alt="">
+			</a>
 		</div>
 		
 		<div class="af-imprint">
 			<p>@2023 Simon Weck</p>
 			<p>|</p>
-			<p class="af-link" @click="$router.push('/Imprint')">Imprint/Privacy Policy</p>
+			<router-link to="/Imprint" class="af-link">Imprint/Privacy Policy</router-link>
 		</div>
 	</div>
 </template>

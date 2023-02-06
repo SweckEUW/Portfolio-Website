@@ -2,13 +2,13 @@
 	<div class="AppHeader">
 
 		<div class="ap-left">
-			<h1 @click="goToHome()">[Simon Weck]</h1>
+			<router-link to="/" @click="scrollToTop()">[Simon Weck]</router-link>
 		</div>
 		
 		<div class="ap-right">
-			<h1 @click="$router.push('/Work')">[Work]</h1>
-			<h1 @click="$router.push('/About')">[About Me]</h1>
-			<h1 @click="$router.push('/Contact')">[Contact]</h1>
+			<router-link to="/Work">[Work]</router-link>
+			<router-link to="/About">[About Me]</router-link>
+			<router-link to="/Contact">[Contact]</router-link>
 		</div>
 		
 	</div>
@@ -17,13 +17,11 @@
 <script>
 export default {
 	methods:{
-		goToHome(){
+		scrollToTop(){
 			if(this.$route.path == "/"){
 				document.getElementsByTagName("html")[0].style.scrollBehavior = "smooth";
 				setTimeout(() => {window.scrollTo(0, 0); }, 0);
 				setTimeout(() => { document.getElementsByTagName("html")[0].style.scrollBehavior = ""; }, 1000);
-			}else{
-				this.$router.push('/');
 			}
 		}
 	}
@@ -46,26 +44,31 @@ export default {
 .ap-right{
 	float: right;
 }
-h1{
+a{
 	display: inline-block;
 	font-size: 26px;
-	margin: 0 15px;
 	cursor: pointer;
 	transition: .3s color ease;
+	text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.6), 0px 0px 5px rgba(0,0,0,0.6);
+	margin: 0;
+	margin-bottom: 50px;
+	margin: 0 15px;
 }
-h1:first-child{
+a:first-child{
 	margin-left: 0;
 }
-h1:last-child{
+a:last-child{
 	margin-right: 0;
 }
-h1:hover{
+a:hover{
 	color: rgb(160, 160, 160);
 }
 
 /*MOBILE*/
 @media (max-device-width: 900px){
-    h1{
+    a{
 		font-size: 14px;
 	}
 	.AppHeader{
