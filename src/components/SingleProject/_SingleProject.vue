@@ -1,5 +1,5 @@
 <template>
-	<div v-if="project != null">
+	<div class="SingleProject">
 		<SingleProjectHeader :project="project"/>
 		<SingleProjectInformation :project="project"/>
 		<SingleProjectFeatures :project="project"/>
@@ -31,5 +31,7 @@ export default {
 </script>
 
 <style scoped>
-
+.SingleProject{
+	margin-top: 0px;
+}
 </style>
