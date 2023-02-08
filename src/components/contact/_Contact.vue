@@ -4,6 +4,27 @@
 
 	<h1>[Contact]</h1>
 
+	<div class="ct-data">
+		<div>
+			<img :src="getIcon('person.svg')" alt="">
+			<p>Simon Weck</p>
+		</div>
+
+		<div>
+			<img :src="getIcon('location.svg')" alt="">
+			<p>Kaspar-von-Zumbusch Straße 6, 33378 Rheda-Wiedenbrück</p>
+		</div>
+		<div>
+			<img :src="getIcon('phone.svg')" alt="">
+			<p>0176 71236857</p>
+		</div>
+
+		<div>
+			<img :src="getIcon('mail.svg')" alt="">
+			<a href="mailto:Simon.Weck98@yahoo.de">Simon.Weck98@yahoo.de</a>
+		</div>
+	</div>
+
 	<div class="ct-form">
 
 		<!-- Spinner -->
@@ -35,6 +56,9 @@ export default {
        spinnerEnabled: false
     }),
   	methods: {
+		getIcon(icon){
+			return new URL(`/src/assets/icons/${icon}`, import.meta.url);
+		},
 		sendEmail(){
 			this.spinnerEnabled = true;
 			emailjs.sendForm('service_3nfg1cg', 'template_wwwpk9y', this.$refs.form, 'XaE1Tm4qNpspiVMOp')
@@ -52,10 +76,37 @@ export default {
 </script>
 
 <style scoped>
+.Contact{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ct-data{
+	margin-bottom:30px;
+}
+.ct-data div{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+p{
+	display: inline-block;
+	margin: 0;
+}
+a{
+	color: rgb(116, 118, 197);
+	transition: .3s color ease;
+}
+a:hover{
+	color: rgb(63, 64, 116);
+}
 .ct-form{
-	margin-left: 21%;
-    margin-right: 21%;
-    width: 50%;
 	padding: 3% 4%;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
 	border-radius: 3px;
