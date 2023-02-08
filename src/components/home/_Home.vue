@@ -6,7 +6,7 @@
 			<transition name="fade2" appear>
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
-					<h1 class="ho-subheader">Pipeline TD & Graphics Programmer</h1>
+					<h1 class="ho-subheader">Technical Director</h1>
 				</div>
 			</transition>
 			<video :src="getHeaderVideo()" muted loop autoplay/>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import ProjectList from '@/components/shared/ProjectList.vue';
+import ProjectList from '@/components/work/ProjectList.vue';
 
 export default {
 	components: {ProjectList},

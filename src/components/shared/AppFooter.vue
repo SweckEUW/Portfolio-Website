@@ -41,15 +41,14 @@ export default {
 	text-align: center;
 	color: white;
 	padding: 20px;
-	font-size: 18px;
 }
 
 .af-socials{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 img{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	object-fit: contain;
 	filter: brightness(0%) invert(1);
 	margin: 0px 12px;
@@ -69,6 +68,7 @@ img:hover{
 p{
 	display: inline-block;
 	margin: auto 4px;
+	font-size: 16px;
 }
 .af-link{
 	cursor: pointer;
