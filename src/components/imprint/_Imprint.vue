@@ -65,6 +65,14 @@
 	</div>
 </template>
 
+<script>
+export default {
+	mounted(){
+		setTimeout(() => { window.scrollTo(0, 0);}, 0);
+	}
+}
+</script>
+
 <style scoped>
 .Imprint{
     display: flex;

@@ -27,7 +27,10 @@ export default {
         getImage(image){
 			return new URL(`/src/assets/about/${image}`, import.meta.url);
 		}
-    }
+    },
+	mounted(){
+		setTimeout(() => { window.scrollTo(0, 0);}, 0);
+	}
 }
 </script>
 

@@ -54,6 +54,7 @@ video{
 	filter: blur(3px);
 	z-index: -1;
 	user-select: none;
+	opacity: 0.8;
 }
 .ho-container{
 	position: absolute;
