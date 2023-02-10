@@ -212,11 +212,7 @@ input{
 	.Contact{
 		margin-top: 100px;
 		margin-bottom: 20px;
-	}
-   .ct-form{
-		margin-left: 6%;
-		margin-right: 6%;
-		width: 80%;
+		width: 90%;
 	}
 	h1{
 		margin-bottom: 20px;
