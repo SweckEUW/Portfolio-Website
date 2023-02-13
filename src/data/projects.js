@@ -3,8 +3,7 @@ const projects = [
 		folder: "Emberpoint",
 		title: 'Emberpoint',
 		category: 'Game',
-		description_short: "",
-		description_long: "",
+		description: "",
 		roles: ["Gameplay Programming", "Level Design", "Environment Design"],
 		types: ["University Project", "Group Project (5 Members)"],
 		created: "March 2021 - June 2021 (3 Months)",
@@ -22,8 +21,7 @@ const projects = [
 		folder: "Monopoly Animation",
 		title: 'Monopoly Animation',
 		category: 'Game',
-		description_short: "",
-		description_long: "",
+		description: "",
 		roles: ["3D Modelling", "3D Animation", "Compositing"],
 		types: ["University Project", "Individual Project"],
 		created: "July 2021",
@@ -41,12 +39,11 @@ const projects = [
 		folder: "AI Image Editor Toolkit",
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
-		description_short: "",
-		description_long: "",
+		description: "",
 		roles: [],
 		types: [],
 		created: "May 2022 - August 2022 (4 Months)",
-		tools: ["Autodesk Maya", "Python", "Qt"],
+		tools: ["Autodesk Maya", "Python", "PyQt"],
 		features: [
 			
 		],
@@ -60,8 +57,7 @@ const projects = [
 		folder: "Motile",
 		title: 'Motile',
 		category: 'Web Based 3D Product Configurator',
-		description_short: "",
-		description_long: "",
+		description: "",
 		roles: ["Frontend Web Developement", "Backend Web Developement", "Web 3D Programming"],
 		types: [],
 		created: "September 20021 - February 2022 (6 Months)",
@@ -79,8 +75,7 @@ const projects = [
 		folder: "Universe Simulation",
 		title: 'Universe Simulation',
 		category: 'Interactive 3D Visualization',
-		description_short: "",
-		description_long: `
+		description: `
 			We created this application for a Computer Graphics and Image Processing course. 
 			You can create your own universe by scanning an image. Simply draw an image by hand and scan the image with the application to create the universe. 
 			By drawing the image, the user can define various attributes like planet types, distance between planets and planet sizes. 
@@ -143,8 +138,7 @@ const projects = [
 		folder: "Crazier Machines",
 		title: 'Crazier Machines',
 		category: 'Physics Simulation Game',
-		description_short: "",
-		description_long: `
+		description: `
 			"Crazier Machines" is the name of the game we create for a simulation course at my university.
 			We create a 2D physics engine that includes algorithms for physically correct collision handling.
 			Goal of the game is to transport a ball into a bucket, the user has multiple objects at hand to achieve this. 
@@ -208,8 +202,7 @@ const projects = [
 		folder: "OpenFile",
 		title: "OpenFile App",
 		category: 'App Concept',
-		description_short: "",
-		description_long: `
+		description: `
 			"Open File" is the name for our file hosting app, which we created for a User Experience Design course. 
 			The task was to create a Natural User Interface which transmits trust and safety. 
 			We specifically used heuristics, colors and icons to convey trust and safety. 
@@ -272,8 +265,7 @@ const projects = [
 		folder: "Revitalize",
 		title: "Revitalize Website",
 		category: 'Corporate Design & Website',
-		description_short: "",
-		description_long: `
+		description: `
 			We created this website for a Web Development and Corporate Design course. 
 			We designed a complete corporate identity including a logo, a target group and a corporate philosophy. 
 			Based on the corporate identity, we design the web pages starting with wireframes and went to create interactive prototypes in Adobe XD. 
@@ -341,8 +333,7 @@ const projects = [
 		folder: "Brush Cleaner",
 		title: "Brush Cleaner",
 		category: 'Product Concept',
-		description_short: "",
-		description_long: `
+		description: `
 			This is a product concept for a Computer-Aided Design course. 
 			It's a cleaning tool for makeup brushes, which is a 2 part set that can be put together to save space in the bathroom. 
 			The bottle at the bottom holds a cleaning liquid, and The bottle at the top has little nubs inside for the user to rub the brushes against. 
@@ -390,8 +381,7 @@ const projects = [
 		folder: "Arcade Automat",
 		title: 'Arcade Automat',
 		category: 'Game',
-		description_short: "",
-		description_long: `
+		description: `
 			This Application was created for a Data Structures & Algorithms course, where we implemented algorithms, which were taught at the Lecture.
 			We decided to make the classic arcade Automate games Pac-Man and Snake. 
 			We used Merge- and Heap-Sort to sort high score table, the A* search algorithm for the Ghosts in Pac-Man and a binary search algorithm to search for Names inside the high score table.

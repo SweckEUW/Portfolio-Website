@@ -40,7 +40,7 @@ body{
 
 .Page{
 	margin-top: 200px;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 	min-height: calc(100vh - 300px - 80px);
 }
 

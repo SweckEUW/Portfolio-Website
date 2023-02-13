@@ -37,7 +37,7 @@ export default {
 <style scoped>
 .AppFooter{
 	width: 100%;
-	background: rgba(0, 0, 0, 0.3);
+	background: #B2B2B2;
 	text-align: center;
 	color: white;
 	padding: 20px;

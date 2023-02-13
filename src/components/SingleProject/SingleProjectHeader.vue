@@ -1,16 +1,19 @@
 <template>
 	<div class="SingleProjectHeader">
-		<h1>[{{project.title}}]</h1>            
-		<video :src="getHeaderVideo()" autoplay muted loop/>
+	<div class="sph-overlay">
+		<h1>{{project.title}}</h1>    
+		<h2>{{project.category}}</h2>    
 	</div>
+	<img :src="getHeaderContent()"/>
+</div>
 </template>
 
 <script>
 export default {
 	props: ['project'],
 	methods: {
-		getHeaderVideo(){
-			return new URL(`/src/assets/projects/${this.project.folder}/videos/header.webm`, import.meta.url);
+		getHeaderContent(){
+			return new URL(`/src/assets/projects/${this.project.folder}/pictures/1.webp`, import.meta.url);
 		}
 	}
 };
@@ -18,27 +21,39 @@ export default {
 
 <style scoped>
 .SingleProjectHeader{
-	width: 90%;
-	margin: auto;
-	margin-top: 140px;
-	position: relative;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+	top: 0;
 }
-.SingleProjectHeader video{
-	width: calc(100% + 20px);
-	margin-left: -10px;
-	max-height: 300px;
-	min-height: 250px;
+.SingleProjectHeader img{
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	filter: blur(3px) drop-shadow(0 0 20px rgba(0,0,0,0.2));
 }
-.SingleProjectHeader h1{
+.sph-overlay{
 	position: absolute;
 	width: 100%;
-	text-align: center;
-	font-size: 5vw;
 	color: white;
 	z-index: 1;
-	bottom: 50px;
+	bottom: 40px;
+	left: 40px;
+}
+.SingleProjectHeader h1, .SingleProjectHeader h2{
+	text-align: left;
+	margin: 0px;
+}
+.SingleProjectHeader h1{
+	font-size: 5vw;
+	font-weight: bolder;
+}
+.SingleProjectHeader h2{
+	font-size: 3vw;
+	font-weight: lighter;
+	margin-left: 20px;
+	line-height: 30px;
 }
 
 /*MOBILE*/

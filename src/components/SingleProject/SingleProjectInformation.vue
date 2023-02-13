@@ -1,18 +1,19 @@
 <template>
 	<div class="SingleProjectInformation">
-		<div class="spi-description">
-			<h1>Description</h1>
-			<div>{{project.description_long}}</div>
-			<h1>Tools/Languages</h1>
-			<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
-		</div>
 		<div class="spi-sideInformation">
-			<h1>Role</h1>
+			<h1>[Role]</h1>
 			<div v-for="role in project.roles" :key="role">{{role}}</div>
-			<h1>Type</h1>
+			<h1>[Type]</h1>
 			<div v-for="pType in project.types" :key="pType">{{pType}}</div>
-			<h1>Created</h1>
+			<h1>[Created]</h1>
 			<div>{{project.created}}</div>
+			<h1>[Technology]</h1>
+			<div>
+				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
+			</div>
+		</div>
+		<div class="spi-description">
+			<div>{{project.description}}</div>
 		</div>
 	</div>
 </template>
@@ -31,32 +32,37 @@ export default {
 <style scoped>
 .SingleProjectInformation{
 	display: flex;
-	width: 90%;
+	width: 70%;
 	margin: auto;
-	margin-top: 50px;
+	margin-bottom: 200px;
+	align-items: center;
+	margin-top: 100vh;
+	padding-top: 50px;
 }
 .spi-description{
-	flex: 60%;
-	padding-right: 40px;
+	flex: 65%;
+	margin: 50px;
+	font-size: 24px !important;
 }
 .spi-sideInformation{
-	flex: 40%;
+	flex: 35%;
+	font-size: 18px;
 }
-.spi-description div, .spi-sideInformation div{
-	font-size: 22px;
+.spi-sideInformation div{
+	margin-left: 20px;
 }
 h1{
 	text-align: left;
-	font-size: 30px;
+	font-size: 26px;
 	color: black;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-top: 20px;
 	text-shadow: none;
 }
 img{
 	display: inline-block;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	object-fit: contain;
 	margin: 0 15px;
 	filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));

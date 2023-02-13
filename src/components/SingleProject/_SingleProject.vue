@@ -33,5 +33,6 @@ export default {
 <style scoped>
 .SingleProject{
 	margin-top: 0px;
+	background: white;
 }
 </style>
