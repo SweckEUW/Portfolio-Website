@@ -62,21 +62,22 @@ export default {
     margin-bottom: 50px;
 }
 .tl-bubble{
-    width: 30px;
-    height: 30px;
+    min-width: 150px;
     padding: 20px;
-    border-radius: 50%;
     border: 5px solid white;
-    background-color: #EDF1F3;
+    background-color: #747474;
     text-align: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     color: white;
-    margin-left: 10px;
+    margin-left: -50px;
+    white-space: nowrap;
 }
 .tl-bubble-first{
+    border-radius: 50%;
+    min-width: auto !important;
     border-color: #EDF1F3;
     width: 50px;
     height: 50px;

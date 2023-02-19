@@ -2,12 +2,24 @@
 	<div class="About">
 		<h1>[About Me]</h1>
 
-		<img :src="getImage('me.jpg')" alt="" class="ab-profile">
-		<p>
-			Hi, my name is Tim. I’m a Technical Director and Pipeline Developer with a passion for software engineering and the art of animation. 
-			I have a background in computer science and always seek to advance creative technology to suit the needs of filmmakers. I recently graduated from Filmakademie Baden-Wuerttemberg with my diploma in Technical Directing.
-			You’ll find my newest projects on here and I’ll regularly update this blog with new things I learned. If you have any questions, requests or just want to have a beer with me, feel free to get in touch.
-		</p>
+		<div class="ab-profile">
+			<!-- <img :src="getImage('me.jpg')" alt="" class="ab-profile"> -->
+			<p>{{ about.description }}</p>
+		</div>
+		
+		<div class="ab-skills">
+			<div class="ab-skills-title">Coding Skills</div>
+			<p>Experienced</p>
+			<span>{{ about.skills.coding.experienced }}</span>
+			<p>Knolwedge in</p> 
+			<span>{{ about.skills.coding.knowledge }}</span>
+
+			<div class="ab-skills-title">Production Software</div>
+			<p>Experienced</p>
+			<span>{{ about.skills.tools.experienced }}</span>
+			<p>Knolwedge in</p>
+			<span>{{ about.skills.tools.knowledge }}</span>
+		</div>
 
 		<Timeline v-for="timeline in about.timelines" :key="timeline.title" :timeline="timeline"/>
 	</div>
@@ -42,5 +54,19 @@ export default {
 }
 .ab-profile{
 	width: 100%;
+}
+.ab-skills{
+	margin-bottom: 50px;
+}
+.ab-skills-title{
+	font-size: 22px;
+	margin-bottom: 15px;
+	font-weight: bolder;
+}
+.ab-skills-title:nth-of-type(2){
+	margin-top: 30px;
+}
+.ab-skills p{
+	margin-bottom: 5px;
 }
 </style>

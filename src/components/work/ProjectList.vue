@@ -97,11 +97,11 @@ export default {
     height: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    filter: blur(10px) grayscale(100%);
+    /* filter: blur(10px) grayscale(100%); */
     transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
 }
 .pl-element-active video{
-    filter: blur(1px) grayscale(0%);
+    /* filter: blur(1px) grayscale(0%); */
 }
 .pl-overlay{
     position: absolute;
