@@ -3,35 +3,33 @@
 		<h1>[About Me]</h1>
 
 		<div class="ab-profile">
-			<img :src="getImage('me.jpg')" alt="" class="ab-profile">
+			<img :src="getImage('me.jpg')" alt="">
 			<p>{{ about.description }}</p>
 		</div>
 		
-		<div class="ab-skills">
-			<div class="ab-skills-title">Coding Skills</div>
-			<p>Experienced</p>
-			<span>{{ about.skills.coding.experienced }}</span>
-			<p>Knolwedge in</p> 
-			<span>{{ about.skills.coding.knowledge }}</span>
+		<div class="ab-second">
+			<div class="ab-timeline">
+				<Timeline v-for="timeline in about.timelines" :key="timeline.title" :timeline="timeline"/>
+			</div>
 
-			<div class="ab-skills-title">Production Software</div>
-			<p>Experienced</p>
-			<span>{{ about.skills.tools.experienced }}</span>
-			<p>Knolwedge in</p>
-			<span>{{ about.skills.tools.knowledge }}</span>
+			<div class="ab-skills">
+				<div class="ab-skills-title">Programming Skills</div>
+				<Bar v-for="skill in about.skills.programming" :key="skill.name" :skill="skill"/>
+				<div class="ab-skills-title" style="margin-top: 60px;">Production Software</div>
+				<Bar v-for="skill in about.skills.software" :key="skill.name" :skill="skill"/>
+			</div>
 		</div>
-
-		<Timeline v-for="timeline in about.timelines" :key="timeline.title" :timeline="timeline"/>
 	</div>
 </template>
 
 <script>
 import Timeline from '@/components/about/Timeline.vue';
+import Bar from '@/components/about/Bar.vue';
 
 import about from "@/data/about.js"
 
 export default {
-	components: {Timeline},
+	components: {Timeline,Bar},
 	data: ()=>({
         about: about
     }),
@@ -48,25 +46,43 @@ export default {
 
 <style scoped>
 .About{
-	width: 70%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
 .ab-profile{
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 150px;
+}
+.ab-profile img{
+	width: 60%;
+	flex: 1;
+	margin-right: 50px;
+}
+.ab-profile p{
+	width: 40%;
+	font-size: 22px;
+	white-space: pre-line;
+}
+
+.ab-second{
+	display: flex;
+}
+.ab-timeline{
+	width: 50%;
+	margin-right: 100px;
 }
 .ab-skills{
+	width: 30%;
 	margin-bottom: 50px;
+	font-size: 18px;
 }
 .ab-skills-title{
 	font-size: 22px;
 	margin-bottom: 15px;
 	font-weight: bolder;
-}
-.ab-skills-title:nth-of-type(2){
-	margin-top: 30px;
-}
-.ab-skills p{
-	margin-bottom: 5px;
 }
 </style>

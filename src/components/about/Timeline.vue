@@ -43,6 +43,8 @@ export default {
 <style scoped>
 .Timeline{
     position: relative;
+    margin-left: 50px;
+    margin-bottom: 150px;
 }
 .tl-title{
     margin-left: 20px;
@@ -89,7 +91,7 @@ export default {
 .tl-content{
     margin-left: 30px;
     padding: 40px;
-    font-size: 22px;
+    width: 500px !important;
     display: inline-block;
     width: 100%;
     border: 2px solid #EDF1F3;
@@ -99,7 +101,7 @@ export default {
     margin-top: 0;
 }
 .tl-content-title{
-    font-size: 22px !important; 
+    font-size: 24px !important; 
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -109,6 +111,6 @@ export default {
 }
 .tl-content-description{
     margin-bottom: 0px;
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 </style>

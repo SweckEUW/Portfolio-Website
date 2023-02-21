@@ -1,18 +1,27 @@
 const about = {
-    description: `
-        Hi, my name is Simon Weck and I'm a Computer Graphics enthusiast. One of the things that excites me most about computer graphics is the ability to create compelling and immersive experiences that can transport audiences to new worlds. I am constantly seeking out new creative challenges, and I enjoy working on projects that allow me to push the boundaries of what is possible.
-        I have a Bachelor's degree in Computer Science and have gained experience in various software applications, such as Autodesk Maya, Adobe Photoshop, and After Effects. In addition, I am proficient in programming languages such as C#, JavaScript, and Python, and have experience with game engines such as Unity.
-        I also have experience as a Web Developer, where I focused on developing 3D applications for the web. If you have any ideas for projects or are interested in collaborating, feel free to contact me.
-    `,
+    description: 
+        `Hello there,
+        my name is Simon Weck and I'm a Computer Graphics enthusiast. One of the things that excites me most about computer graphics is the ability to create compelling and immersive experiences that can transport audiences to new worlds 🪐. I am constantly seeking out new creative challenges, and I enjoy working on projects that allow me to push the boundaries of what is possible.
+        
+        I have a Bachelor's degree in Computer Science and have gained experience in various software applications, such as Autodesk Maya, Adobe Photoshop, and After Effects. In addition, I am proficient in programming languages such as C#, JavaScript, and Python, and have experience with game engines such as Unity. I also have experience as a Web Developer, where I focused on developing 3D applications for the web. If you have any ideas for projects or are interested in collaborating, feel free to contact me 📞`
+    ,
     skills: {
-        coding: {
-            experienced: "JavaScript, HTML, CSS, Vue, Babylon.js, C# (Unity), Git",
-            knowledge: "Python, QT/PySide, OpenGL (GLSL)"
-        },
-        tools: {
-            experienced: "Unity, Autodesk Maya, Adobe After Effects, Adobe InDesign",
-            knowledge: "Blender, Nuke"
-        }
+        programming: [
+            { name: "Web Development (HTML, CSS, JavaScipt)", bar: 100 },
+            { name: "C# (Unity)", bar: 80 },
+            { name: "Vue", bar: 80 },
+            { name: "Babylon.js", bar: 80 },
+            { name: "Python", bar: 60 },
+            { name: "QT/PySide", bar: 60 },
+            { name: "OpenGL (GLSL)", bar: 50 }
+        ],
+        software: [
+            { name: "Unity", bar: 80 },
+            { name: "Autodesk Maya", bar: 80 },
+            { name: "Adobe After Effects", bar: 60 },
+            { name: "Blender", bar: 30 },
+            { name: "Nuke", bar: 30 }
+        ]
     },
     timelines: [
         {
