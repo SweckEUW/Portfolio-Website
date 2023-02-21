@@ -29,7 +29,7 @@ const routes = [
 	{
 		path: '/work/:id',
 		name: 'Single Project',
-		component: () => import('./components/singleproject/_SingleProject.vue')
+		component: () => import('./components/SingleProject/_SingleProject.vue')
 	},
 	{
 		path: '/contact',
