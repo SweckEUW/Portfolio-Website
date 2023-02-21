@@ -1,75 +1,75 @@
 const projects = [
-	{
-		folder: "Emberpoint",
-		title: 'Emberpoint',
-		category: 'Game',
-		description: "",
-		roles: ["Gameplay Programming", "Level Design", "Environment Design"],
-		types: ["University Project", "Group Project (5 Members)"],
-		created: "March 2021 - June 2021 (3 Months)",
-		tools: ["Unity", "C-Sharp"],
-		features: [
+	// {
+	// 	folder: "Emberpoint",
+	// 	title: 'Emberpoint',
+	// 	category: 'Game',
+	// 	description: "",
+	// 	roles: ["Gameplay Programming", "Level Design", "Environment Design"],
+	// 	types: ["University Project", "Group Project (5 Members)"],
+	// 	created: "March 2021 - June 2021 (3 Months)",
+	// 	tools: ["Unity", "C-Sharp"],
+	// 	features: [
 			
-		],
-		contents: [
+	// 	],
+	// 	contents: [
 			
-		],
-		images: []
-	},
+	// 	],
+	// 	images: []
+	// },
 
-	{
-		folder: "Monopoly Animation",
-		title: 'Monopoly Animation',
-		category: 'Game',
-		description: "",
-		roles: ["3D Modelling", "3D Animation", "Compositing"],
-		types: ["University Project", "Individual Project"],
-		created: "July 2021",
-		tools: ["Autodesk Maya", "Adobe After Effects"],
-		features: [
+	// {
+	// 	folder: "Monopoly Animation",
+	// 	title: 'Monopoly Animation',
+	// 	category: 'Game',
+	// 	description: "",
+	// 	roles: ["3D Modelling", "3D Animation", "Compositing"],
+	// 	types: ["University Project", "Individual Project"],
+	// 	created: "July 2021",
+	// 	tools: ["Autodesk Maya", "Adobe After Effects"],
+	// 	features: [
 			
-		],
-		contents: [
+	// 	],
+	// 	contents: [
 			
-		],
-		images: []
-	},
+	// 	],
+	// 	images: []
+	// },
 
-	{
-		folder: "AI Image Editor Toolkit",
-		title: 'AI Image Editor Toolkit',
-		category: 'Autodesk Maya Plugin',
-		description: "",
-		roles: [],
-		types: [],
-		created: "May 2022 - August 2022 (4 Months)",
-		tools: ["Autodesk Maya", "Python", "PyQt"],
-		features: [
+	// {
+	// 	folder: "AI Image Editor Toolkit",
+	// 	title: 'AI Image Editor Toolkit',
+	// 	category: 'Autodesk Maya Plugin',
+	// 	description: "",
+	// 	roles: [],
+	// 	types: [],
+	// 	created: "May 2022 - August 2022 (4 Months)",
+	// 	tools: ["Autodesk Maya", "Python", "PyQt"],
+	// 	features: [
 			
-		],
-		contents: [
+	// 	],
+	// 	contents: [
 			
-		],
-		images: []
-	},
+	// 	],
+	// 	images: []
+	// },
 
-	{
-		folder: "Motile",
-		title: 'Motile',
-		category: 'Web Based 3D Product Configurator',
-		description: "",
-		roles: ["Frontend Web Developement", "Backend Web Developement", "Web 3D Programming"],
-		types: [],
-		created: "September 20021 - February 2022 (6 Months)",
-		tools: ["React", "Babylon.js", "Node.js", "mongoDB", "Python", "Blender"],
-		features: [
+	// {
+	// 	folder: "Motile",
+	// 	title: 'Motile',
+	// 	category: 'Web Based 3D Product Configurator',
+	// 	description: "",
+	// 	roles: ["Frontend Web Developement", "Backend Web Developement", "Web 3D Programming"],
+	// 	types: [],
+	// 	created: "September 20021 - February 2022 (6 Months)",
+	// 	tools: ["React", "Babylon.js", "Node.js", "mongoDB", "Python", "Blender"],
+	// 	features: [
 			
-		],
-		contents: [
+	// 	],
+	// 	contents: [
 			
-		],
-		images: []
-	},
+	// 	],
+	// 	images: []
+	// },
 
 	{
 		folder: "Universe Simulation",

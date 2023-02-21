@@ -3,7 +3,7 @@
 		<h1>[About Me]</h1>
 
 		<div class="ab-profile">
-			<!-- <img :src="getImage('me.jpg')" alt="" class="ab-profile"> -->
+			<img :src="getImage('me.jpg')" alt="" class="ab-profile">
 			<p>{{ about.description }}</p>
 		</div>
 		
