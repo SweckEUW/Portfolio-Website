@@ -1,8 +1,5 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
-        
-        <h1>[My Work]</h1>
-
         <router-link tag="div" :to="'/work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
             <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
             <div class="pl-overlay">
@@ -63,11 +60,12 @@ export default {
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
             let elements = document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
-            for (let i = 0; elements.length > i; i++){
-                if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
-                    this.playVideo(elements[i]);                
-                else         
-                    this.closeVideo(elements[i]);    
+            if(elements)
+                for (let i = 0; elements.length > i; i++){
+                    if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
+                        this.playVideo(elements[i]);                
+                    else         
+                        this.closeVideo(elements[i]);    
             }  
         };
     }
@@ -97,11 +95,11 @@ export default {
     height: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    filter: blur(10px) grayscale(100%);
+    /* filter: blur(10px) grayscale(100%); */
     transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
 }
 .pl-element-active video{
-    filter: blur(1px) grayscale(0%);
+    /* filter: blur(1px) grayscale(0%); */
 }
 .pl-overlay{
     position: absolute;

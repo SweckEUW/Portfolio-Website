@@ -3,7 +3,7 @@
 
 		<!-- Header -->
 		<div class="ho-header">
-			<transition name="fade2" appear>
+			<transition name="appearFade" appear>
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
 					<h1 class="ho-subheader">Technical Director</h1>
@@ -12,8 +12,17 @@
 			<video :src="getHeaderVideo()" muted loop autoplay/>
 		</div>
 
+		<!-- Showreel -->
+		<div class="ho-reel">
+			<h1>[Showreel]</h1>
+			<video :src="getShowreelVideo()" controls/>
+		</div>
+
 		<!-- Work -->
-		<ProjectList :projectsSelection="['Universe Simulation','Emberpoint','Monopoly Animation','AI Image Editor Toolkit','Motile']"/>
+		<div class="ho-work">
+			<h1>[My Work]</h1>
+			<ProjectList :projectsSelection="['Universe Simulation','Emberpoint','Monopoly Animation','AI Image Editor Toolkit','Motile']"/>
+		</div>
 	</div>
 </template>
 
@@ -25,7 +34,10 @@ export default {
 	methods: {
 		getHeaderVideo(){
 			return new URL(`/src/assets/home/header.webm`, import.meta.url);
-		}
+		},
+		getShowreelVideo(){
+			return new URL(`/src/assets/Reel.mp4`, import.meta.url);
+		},
 	},
 	mounted(){
 		setTimeout(() => { window.scrollTo(0, 0);}, 0);
@@ -44,9 +56,9 @@ export default {
 	align-content: center;
 	justify-content: center;
 	box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
-video{
+.ho-header video{
 	margin-left: -1%;
 	width: 101%;
 	height: 101%;
@@ -64,15 +76,30 @@ video{
 .ho-subheader{
 	font-size: 2vw;
 }
-h1{
+.ho-header h1{
 	margin-bottom: 0;
 }
 
-.fade2-enter-active, .fade2-leave-active {
+/* Showreel */
+.ho-reel{
+	margin-bottom: 100px;
+}
+.ho-reel video{
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+/* Work */
+.ho-work h1{
+	margin-bottom: 0px;
+}
+
+.appearFade-enter-active, .appearFade-leave-active {
   transition: 1s opacity .5s ease;
 }
 
-.fade2-enter-from,.fade2-leave-to {
+.appearFade-enter-from,.appearFade-leave-to {
   opacity: 0;
 }
 </style>

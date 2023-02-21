@@ -26,8 +26,9 @@ export default {
 	mounted(){
 		window.onscroll = () => {
             let elements = document.getElementsByClassName("SingleProjectFeatures")[0].getElementsByTagName("video");
-            for (let i = 0; elements.length > i; i++)
-				this.isInViewport(elements[i]) ? elements[i].play() : elements[i].pause(); 
+			if(elements)
+				for (let i = 0; elements.length > i; i++)
+					this.isInViewport(elements[i]) ? elements[i].play() : elements[i].pause(); 
         };
 	}
 };

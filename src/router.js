@@ -29,10 +29,7 @@ const routes = [
 	{
 		path: '/work/:id',
 		name: 'Single Project',
-		component: () => import('./components/singleproject/_SingleProject.vue'),
-		meta: {
-			title: '[Simon Weck] - Single Project',
-		},
+		component: () => import('./components/singleproject/_SingleProject.vue')
 	},
 	{
 		path: '/contact',

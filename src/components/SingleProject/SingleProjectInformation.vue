@@ -36,7 +36,6 @@ export default {
 	margin: auto;
 	margin-bottom: 200px;
 	align-items: center;
-	margin-top: 100vh;
 	padding-top: 50px;
 }
 .spi-description{
@@ -65,7 +64,7 @@ img{
 	height: 40px;
 	object-fit: contain;
 	margin: 0 15px;
-	filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));
+	filter: grayscale(100%) contrast(0.8) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));
 }
 img:first-of-type{
 	margin-left: 0px;

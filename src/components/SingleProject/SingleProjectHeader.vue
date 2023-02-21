@@ -1,11 +1,13 @@
 <template>
-	<div class="SingleProjectHeader">
-	<div class="sph-overlay">
-		<h1>{{project.title}}</h1>    
-		<h2>{{project.category}}</h2>    
+	<div class="SingleProjectHeader" >
+		<div class="sph-image" :style="{backgroundImage: 'url(' + getHeaderContent() + ')' }"/>
+		<transition name="appearFade" appear>
+			<div class="sph-overlay">
+				<h1>{{project.title}}</h1>    
+				<h2>{{project.category}}</h2>    
+			</div>
+		</transition>
 	</div>
-	<img :src="getHeaderContent()"/>
-</div>
 </template>
 
 <script>
@@ -23,15 +25,14 @@ export default {
 .SingleProjectHeader{
 	width: 100vw;
 	height: 100vh;
-	position: fixed;
-	z-index: -1;
-	top: 0;
 }
-.SingleProjectHeader img{
+.sph-image{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	filter: blur(3px) drop-shadow(0 0 20px rgba(0,0,0,0.2));
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .sph-overlay{
 	position: absolute;
@@ -40,6 +41,7 @@ export default {
 	z-index: 1;
 	bottom: 40px;
 	left: 40px;
+	filter: none;
 }
 .SingleProjectHeader h1, .SingleProjectHeader h2{
 	text-align: left;
@@ -54,6 +56,14 @@ export default {
 	font-weight: lighter;
 	margin-left: 20px;
 	line-height: 30px;
+}
+
+.appearFade-enter-active, .appearFade-leave-active {
+  transition: 1s opacity .5s ease;
+}
+
+.appearFade-enter-from,.appearFade-leave-to {
+  opacity: 0;
 }
 
 /*MOBILE*/

@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<h1>[My Work]</h1>
 		<ProjectList/>
 	</div>
 </template>

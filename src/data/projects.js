@@ -84,7 +84,7 @@ const projects = [
 		roles: ["Graphics Programming", "UI Programming"],
 		types: ["University Project", "Group Project (4 Members)"],
 		created: "August 2019 - January 2020 (6 Months)",
-		tools: ["Java", "OpenGL", "OpenCV"],
+		tools: ["Java", "OpenCV", "OpenGL"],
 		features: [
 			{
 				title: "Draw your Universe",
