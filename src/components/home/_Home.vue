@@ -9,13 +9,13 @@
 					<h1 class="ho-subheader">Technical Director</h1>
 				</div>
 			</transition>
-			<video :src="getHeaderVideo()" muted loop autoplay/>
+			<video :src="getMedia('header.webm')" muted loop autoplay/>
 		</div>
 
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<video :src="getShowreelVideo()" controls/>
+			<video :src="getMedia('Reel.webm')" :poster="getMedia('ReelPoster.png')" controls/>
 		</div>
 
 		<!-- Work -->
@@ -32,11 +32,8 @@ import ProjectList from '@/components/work/ProjectList.vue';
 export default {
 	components: {ProjectList},
 	methods: {
-		getHeaderVideo(){
-			return new URL(`/src/assets/home/header.webm`, import.meta.url);
-		},
-		getShowreelVideo(){
-			return new URL(`/src/assets/Reel.mp4`, import.meta.url);
+		getMedia(media){
+			return new URL(`/src/assets/home/` + media, import.meta.url);
 		},
 	},
 	mounted(){
