@@ -33,7 +33,7 @@ export default {
 	components: {ProjectList},
 	methods: {
 		getMedia(media){
-			return new URL(`/src/assets/home/` + media, import.meta.url);
+			return new URL(`/src/assets/home/${media}`, import.meta.url);
 		},
 	},
 	mounted(){
