@@ -59,7 +59,8 @@ export default {
         
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
-            let elements = document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
+            let projectList = document.getElementsByClassName("ProjectList")[0];
+            let elements = projectList ? projectList.getElementsByClassName("pl-element") : null;
             if(elements)
                 for (let i = 0; elements.length > i; i++){
                     if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
