@@ -1,0 +1,1 @@
+import{_ as e,P as t,G as s,x as n,y as c,I as r,z as a}from"./index-bbfcde44.js";const _={components:{ProjectList:t},mounted(){setTimeout(()=>{window.scrollTo(0,0)},0)}},i=a("h1",null,"[My Work]",-1);function l(p,d,m,u,f,k){const o=s("ProjectList");return n(),c("div",null,[i,r(o)])}const P=e(_,[["render",l]]);export{P as default};
