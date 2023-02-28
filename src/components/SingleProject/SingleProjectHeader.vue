@@ -15,7 +15,7 @@ export default {
 	props: ['project'],
 	methods: {
 		getHeaderContent(){
-			return new URL(`/src/assets/projects/${this.project.folder}/pictures/1.webp`, import.meta.url);
+			return new URL(`/src/assets/projects/${this.project.folder}/pictures/${this.project.headerImage}`, import.meta.url);
 		}
 	}
 };

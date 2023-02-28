@@ -52,6 +52,7 @@ export default {
 }
 .ab-profile{
 	width: 100%;
+	height: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -61,6 +62,8 @@ export default {
 	width: 60%;
 	flex: 1;
 	margin-right: 50px;
+	max-height: 600px;
+	object-fit: cover;
 }
 .ab-profile p{
 	width: 40%;

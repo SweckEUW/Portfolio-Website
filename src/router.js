@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/home/_Home.vue';
-
 const routes = [
 	{
 		path: '/',
 		name: 'Home',
-		component: Home,
+		component: () => import(/* webpackChunkName: "Home" */ './components/home/_Home.vue'),
 		meta: {
 			title: '[Simon Weck]',
 		},
@@ -13,7 +11,7 @@ const routes = [
 	{
 		path: '/about',
 		name: 'About',
-		component: () => import('./components/about/_About.vue'),
+		component: () => import(/* webpackChunkName: "About" */ './components/about/_About.vue'),
 		meta: {
 			title: '[Simon Weck] - About',
 		},
@@ -21,7 +19,7 @@ const routes = [
 	{
 		path: '/work',
 		name: 'Work',
-		component: () => import('./components/work/_Work.vue'),
+		component: () => import(/* webpackChunkName: "Work" */ './components/work/_Work.vue'),
 		meta: {
 			title: '[Simon Weck] - Projects',
 		},
@@ -29,12 +27,12 @@ const routes = [
 	{
 		path: '/work/:id',
 		name: 'Single Project',
-		component: () => import('./components/SingleProject/_SingleProject.vue')
+		component: () => import(/* webpackChunkName: "SingleProject" */ './components/SingleProject/_SingleProject.vue')
 	},
 	{
 		path: '/contact',
 		name: 'Contact',
-		component: () => import('./components/contact/_Contact.vue'),
+		component: () => import(/* webpackChunkName: "Contact" */ './components/contact/_Contact.vue'),
 		meta: {
 			title: '[Simon Weck] - Contact',
 		},
@@ -42,7 +40,7 @@ const routes = [
 	{
 		path: '/imprint',
 		name: 'Imprint',
-		component: () => import('./components/imprint/_Imprint.vue'),
+		component: () => import(/* webpackChunkName: "Imprint" */ './components/imprint/_Imprint.vue'),
 		meta: {
 			title: '[Simon Weck] - Imprint',
 		},

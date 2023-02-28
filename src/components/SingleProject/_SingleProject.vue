@@ -3,7 +3,7 @@
 		<SingleProjectHeader :project="project"/>
 		<SingleProjectInformation :project="project"/>
 		<SingleProjectFeatures :project="project"/>
-		<SingleProjectImages :project="project"/>
+		<!-- <SingleProjectImages :project="project"/> -->
 	</div>
 </template>
 

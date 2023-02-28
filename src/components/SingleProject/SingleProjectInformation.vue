@@ -34,7 +34,7 @@ export default {
 	display: flex;
 	width: 70%;
 	margin: auto;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	align-items: center;
 	padding-top: 50px;
 }
