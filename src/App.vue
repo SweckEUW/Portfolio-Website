@@ -23,6 +23,14 @@ import AppFooter from './components/shared/AppFooter.vue';
 
 export default {
 	components: {AppHeader,AppFooter},
+	mounted(){
+		let path = localStorage.getItem('path');
+		localStorage.setItem('path', path);
+		if(path){
+			localStorage.removeItem('path');
+			this.$router.push(path);
+		}	
+	}
 }
 </script>
 
