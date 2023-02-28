@@ -46,7 +46,6 @@ export default {
 }
 a{
 	display: inline-block;
-	font-size: 26px;
 	cursor: pointer;
 	transition: .3s color ease;
 	text-align: center;
@@ -55,6 +54,7 @@ a{
 	margin: 0;
 	margin-bottom: 50px;
 	margin: 0 15px;
+	font-size: 1.5vw;
 }
 a:first-child{
 	margin-left: 0;

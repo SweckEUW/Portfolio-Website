@@ -8,12 +8,12 @@ const about = {
     skills: {
         programming: [
             { name: "Web Development (HTML, CSS, JavaScipt)", bar: 100 },
-            { name: "C# (Unity)", bar: 80 },
             { name: "Vue", bar: 80 },
-            { name: "Babylon.js", bar: 80 },
+            { name: "Babylon.js (WebGL)", bar: 80 },
+            { name: "C# (Unity)", bar: 80 },
             { name: "Python", bar: 60 },
             { name: "QT/PySide", bar: 60 },
-            { name: "OpenGL (GLSL)", bar: 50 }
+            { name: "OpenGL (GLSL)", bar: 60 }
         ],
         software: [
             { name: "Unity", bar: 80 },

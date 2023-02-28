@@ -16,7 +16,7 @@
 		<div class="af-imprint">
 			<p>@2023 Simon Weck</p>
 			<p>|</p>
-			<router-link to="/Imprint" class="af-link">Imprint/Privacy Policy</router-link>
+			<router-link tag="p" to="/Imprint" class="af-link">Imprint/Privacy Policy</router-link>
 		</div>
 	</div>
 </template>
@@ -65,7 +65,7 @@ img:hover{
 	display: flex;
 	justify-content: center;
 }
-p{
+p, .af-imprint a{
 	display: inline-block;
 	margin: auto 4px;
 	font-size: 16px;
