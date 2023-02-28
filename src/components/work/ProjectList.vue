@@ -29,7 +29,7 @@ export default {
     },
     methods: {
         getTrailer(folder){
-            return new URL(`/src/assets/projects/${folder}/videos/trailer.webm`, import.meta.url);
+            return new URL(`/src/assets/projects/${folder}/videos/ProjectList.webm`, import.meta.url);
         },
         playVideo(element){
             let video = element.getElementsByTagName("video")[0];
@@ -53,10 +53,19 @@ export default {
         }
     },
     mounted(){
-        // let test = await fetch("https://api.storyblok.com/v2/cdn/stories?token=FL4I5ToKxfYVjeC803C6dgtt").then(response => response.json());
-        // this.projects = test.stories;
-        this.playVideo(document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element")[0]);
-        
+        // setTimeout(() => {
+        //     let elements =document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
+        //     for (let i = 0; elements.length > i; i++){
+        //         console.log("init");
+        //         let video = elements[i].getElementsByTagName("video")[0];
+        //         video.onended  = () => {
+        //             video.currentTime = 0.1;
+        //             video.play();
+        //             console.log("ended");
+        //         };
+        //     }  
+        // }, 0);
+
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
             let projectList = document.getElementsByClassName("ProjectList")[0];

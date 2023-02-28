@@ -1,13 +1,20 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<h1>[Features]</h1>
-
-		<div class="spf-element" v-for="(feature,i) in project.features" :key="i">
-			<h1>{{feature.title}}</h1>
-			<video v-if="feature.video" :src="getFeatureVideo(feature.video)" muted loop/>
-			<div>{{feature.description}}</div>
+		<div class="spf-video">
+			<video :src="getMedia('videos/trailer.webm')" muted autoplay loop/>
 		</div>
+
+		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature" :style="{'flexDirection' : index % 2 == 0 ? 'row-reverse' : ''}">
+			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
+			<img v-if="feature.media.includes('.webp')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
+			<div class="spf-feature-description">{{ feature.description }}</div>
+		</div>
+		
+		<div class="spf-headerImages">
+			<img v-for="image in project.headerImages" :src="getMedia('pictures/'+image)" alt="">
+		</div>
+
 	</div>
 </template>
 
@@ -15,21 +22,9 @@
 export default {
 	props: ['project'],
 	methods: {
-		getFeatureVideo(url){
-			return new URL(`/src/assets/projects/${this.project.folder}/videos/${url}`, import.meta.url);
-		},
-		isInViewport(element) {
-			const rect = element.getBoundingClientRect();
-			return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+		getMedia(media){
+			return new URL(`/src/assets/projects/${this.project.folder}/${media}`, import.meta.url);
 		}
-	},
-	mounted(){
-		window.onscroll = () => {
-            let elements = document.getElementsByClassName("SingleProjectFeatures")[0].getElementsByTagName("video");
-			if(elements)
-				for (let i = 0; elements.length > i; i++)
-					this.isInViewport(elements[i]) ? elements[i].play() : elements[i].pause(); 
-        };
 	}
 };
 </script>
@@ -38,56 +33,42 @@ export default {
 .SingleProjectFeatures{
 	width: 90%;
 	margin: auto;
-	margin-top: 40px;
 }
-.spf-element:first-of-type{
-	margin-top: 40px;
+.spf-video{
+	width: 80%;
+	margin: auto;
 }
-.spf-element{
-	position: relative;
-	margin: 100px 0px;
+.spf-video video{
+	width: 100%;
+	margin-bottom: 100px;
+}
+.spf-headerImages{
+	width: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 100px;
 }
-.spf-element:nth-child(even){
-	align-items: flex-end;
+.spf-headerImages img{
+	width: 33%;
+	padding-right: 20px;
 }
-.spf-element video{
-	text-align: left;
-	width: 70%;
-	object-fit: cover;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 80px;
-	margin: 0 100px;
-}
-.spf-element h1{
-	position: absolute;
-	top: -40px;
-	text-shadow: 0px 0px 5px black, 0px 0px 10px black;
-	font-size: 5vw;
-	margin: 0 50px;
-}
-.spf-element div{
-	text-align: center;
-	margin-top: 10px;
-	font-size: 26px;
+.spf-headerImages img:last-of-type{
+	padding-right: 0px;
 }
 
-/*MOBILE*/
-@media (max-device-width: 900px){
-	.spf-element{
-		margin: 50px 0px;
-	}
-   .spf-element video{
-		width: 100%;
-		margin: 0;
-	}
-	.spf-element h1{
-		font-size: 35px;
-		margin: 0;
-		top: -20px;
-	}
-	.spf-element div{
-		font-size: 20px;
-	}
+.spf-feature{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.spf-feature-description{
+	width: 40%;
+	margin: 10px;
+	font-size: 20px;
+}
+.spf-feature-media{
+	width: 60%;
+	margin: 10px;
 }
 </style>
