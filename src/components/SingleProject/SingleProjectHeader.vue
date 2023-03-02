@@ -33,6 +33,7 @@ export default {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 .sph-overlay{
 	position: absolute;
@@ -56,6 +57,7 @@ export default {
 	font-weight: lighter;
 	margin-left: 20px;
 	line-height: 30px;
+	filter: drop-shadow(0 0 5px rgba(0,0,0,0.4));
 }
 
 .appearFade-enter-active, .appearFade-leave-active {

@@ -45,6 +45,14 @@ const routes = [
 			title: '[Simon Weck] - Imprint',
 		},
 	},
+	{
+		path: '/showreel',
+		name: 'Showreel',
+		component: () => import(/* webpackChunkName: "Showreel" */ './components/showreel/_Showreel.vue'),
+		meta: {
+			title: '[Simon Weck] - Showreel',
+		},
+	},
 ];
 
 const router = createRouter({
