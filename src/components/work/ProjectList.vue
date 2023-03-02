@@ -1,6 +1,6 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
-        <router-link tag="div" :to="'/work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
+        <router-link tag="div" :to="'/Work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
             <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
             <div class="pl-overlay">
                 <div class="p-overlay-title">{{ project.title }}</div>
@@ -23,8 +23,14 @@ export default {
         projectsFiltered(){
             if(!this.projectsSelection)
                 return this.projects;
-
-            return this.projects.filter(project => this.projectsSelection.includes(project.title));
+            
+            let sortedList = [];
+            this.projectsSelection.forEach(project => {
+                let foundProject = this.projects.find(projectThis => projectThis.title == project);
+                if(foundProject)
+                    sortedList.push(foundProject);
+            });
+            return sortedList;
         }
     },
     methods: {

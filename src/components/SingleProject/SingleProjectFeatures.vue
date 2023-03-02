@@ -1,8 +1,8 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<div class="spf-video">
-			<video :src="getMedia('videos/trailer.webm')" muted autoplay loop/>
+		<div class="spf-video" v-if="!project.noTrailer">
+			<video :src="getMedia('videos/Trailer.webm')" muted autoplay loop/>
 		</div>
 
 		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature" :style="{'flexDirection' : index % 2 == 0 ? 'row-reverse' : ''}">
@@ -34,6 +34,8 @@ export default {
 	width: 90%;
 	margin: auto;
 }
+
+/* Main Video */
 .spf-video{
 	width: 80%;
 	margin: auto;
@@ -42,6 +44,26 @@ export default {
 	width: 100%;
 	margin-bottom: 100px;
 }
+
+/* Picture/Video Features */
+.spf-feature{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.spf-feature-description{
+	width: 40%;
+	margin: 30px;
+	font-size: 20px;
+}
+.spf-feature-media{
+	width: 60%;
+	max-height: 60vh;
+	object-fit: cover;
+}
+
+/* 3 Images */
 .spf-headerImages{
 	width: 100%;
 	display: flex;
@@ -51,24 +73,9 @@ export default {
 .spf-headerImages img{
 	width: 33%;
 	padding-right: 20px;
+	object-fit: cover;
 }
 .spf-headerImages img:last-of-type{
 	padding-right: 0px;
-}
-
-.spf-feature{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 50px;
-}
-.spf-feature-description{
-	width: 40%;
-	margin: 10px;
-	font-size: 20px;
-}
-.spf-feature-media{
-	width: 60%;
-	margin: 10px;
 }
 </style>

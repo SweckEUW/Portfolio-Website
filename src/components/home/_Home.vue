@@ -21,7 +21,7 @@
 		<!-- Work -->
 		<div class="ho-work">
 			<h1>[My Work]</h1>
-			<ProjectList :projectsSelection="['Universe Simulation','Emberpoint','Monopoly Animation','AI Image Editor Toolkit','Motile']"/>
+			<ProjectList :projectsSelection="['Monopoly Animation', 'AI Image Editor Toolkit', 'Universe Simulation', 'Emberpoint', 'Motile']"/>
 		</div>
 	</div>
 </template>
