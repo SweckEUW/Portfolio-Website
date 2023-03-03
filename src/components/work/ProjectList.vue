@@ -3,9 +3,8 @@
         <router-link tag="div" :to="'/Work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
             <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
             <div class="pl-overlay">
-                <div class="p-overlay-title">{{ project.title }}</div>
-                <div class="p-overlay-category">{{ project.category }}</div>
-                <div class="p-overlay-shortDescription">{{ project.description_short }}</div>
+                <div class="pl-overlay-title">{{ project.title }}</div>
+                <div class="pl-overlay-category">{{ project.category }}</div>
             </div>
         </router-link>
 	</div>
@@ -39,12 +38,12 @@ export default {
         },
         playVideo(element){
             let video = element.getElementsByTagName("video")[0];
-            element.classList.add("pl-element-active");
+            // element.classList.add("pl-element-active");
             video.play();
         },
         closeVideo(element){
             let video = element.getElementsByTagName("video")[0];
-            element.classList.remove("pl-element-active");
+            // element.classList.remove("pl-element-active");
             video.pause();
         },
         checkScrollDirectionIsUp(){
@@ -59,30 +58,18 @@ export default {
         }
     },
     mounted(){
-        // setTimeout(() => {
-        //     let elements =document.getElementsByClassName("ProjectList")[0].getElementsByClassName("pl-element");
-        //     for (let i = 0; elements.length > i; i++){
-        //         console.log("init");
-        //         let video = elements[i].getElementsByTagName("video")[0];
-        //         video.onended  = () => {
-        //             video.currentTime = 0.1;
-        //             video.play();
-        //             console.log("ended");
-        //         };
-        //     }  
-        // }, 0);
-
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
             let projectList = document.getElementsByClassName("ProjectList")[0];
             let elements = projectList ? projectList.getElementsByClassName("pl-element") : null;
-            if(elements)
+            if(elements){
                 for (let i = 0; elements.length > i; i++){
                     if(elements[i] == document.elementFromPoint(window.innerWidth/2, window.innerHeight/2 + a))
                         this.playVideo(elements[i]);                
                     else         
                         this.closeVideo(elements[i]);    
-            }  
+                }  
+            }
         };
     }
 };
@@ -111,25 +98,32 @@ export default {
     height: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* filter: blur(10px) grayscale(100%); */
     transition: filter 1s cubic-bezier(.54,.08,.01,.95), width 1s cubic-bezier(.54,.08,.01,.95), height 1s cubic-bezier(.54,.08,.01,.95);
-}
-.pl-element-active video{
-    /* filter: blur(1px) grayscale(0%); */
 }
 .pl-overlay{
     position: absolute;
-    width: 20%;
-    height: 10%;
-    left: -1px;
-    top: 120px;
-    background: white;
+    left: -10px;
+    top: 100px;
+    background: rgba(255, 255, 255, 1);
     font-size: 22px;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: drop-shadow(10px 0px 5px rgba(0, 0, 0, 0.2));
 }
-.pl-overlay div{
+.pl-overlay-title{
     color: black;
+    font-size: 36px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+}
+.pl-overlay-category{
+    color: rgb(73, 73, 73);
+    font-size: 22px;
+    margin-left: 30px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
 }
 
 
