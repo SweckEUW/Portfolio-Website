@@ -1,9 +1,7 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<div class="spf-video" v-if="!project.noTrailer">
-			<video :src="getMedia('videos/Trailer.webm')" muted autoplay loop/>
-		</div>
+		<VideoWithButton class="spf-video" :videoPath="'/src/assets/projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
 
 		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature" :style="{'flexDirection' : index % 2 == 0 ? 'row-reverse' : ''}">
 			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
@@ -12,14 +10,17 @@
 		</div>
 		
 		<div class="spf-headerImages">
-			<img v-for="image in project.headerImages" :src="getMedia('pictures/'+image)" alt="">
+			<img v-for="image in project.headerImages" :key="image" :src="getMedia('pictures/'+image)" alt="">
 		</div>
 
 	</div>
 </template>
 
 <script>
+import VideoWithButton from '@/components/shared/VideoWithButton.vue';
+
 export default {
+	components: {VideoWithButton},
 	props: ['project'],
 	methods: {
 		getMedia(media){
@@ -38,11 +39,6 @@ export default {
 /* Main Video */
 .spf-video{
 	width: 80%;
-	margin: auto;
-}
-.spf-video video{
-	width: 100%;
-	margin-bottom: 100px;
 }
 
 /* Picture/Video Features */

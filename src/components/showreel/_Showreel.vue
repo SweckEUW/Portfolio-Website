@@ -1,17 +1,15 @@
 <template>
 	<div>
 		<h1>[Showreel]</h1>
-        <video :src="getMedia('Reel.webm')" :poster="getMedia('ReelPoster.png')" controls/>
+		<VideoWithButton :videoPath="'/src/assets/home/Reel.webm'" :posterPath="'/src/assets/home/ReelPoster.png'"/>
 	</div>
 </template>
 
 <script>
+import VideoWithButton from '@/components/shared/VideoWithButton.vue';
+
 export default {
-    methods: {
-		getMedia(media){
-			return new URL(`/src/assets/home/${media}`, import.meta.url);
-		}
-    },
+	components: {VideoWithButton},
 	mounted(){
 		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}
@@ -20,11 +18,8 @@ export default {
 
 <style scoped>
 div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-video{
-    width: 90%;
+    margin: auto;
+	margin-top: 100px;
+	width: 90%;
 }
 </style>

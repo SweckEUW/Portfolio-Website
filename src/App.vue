@@ -29,7 +29,7 @@ export default {
 		if(path){
 			localStorage.removeItem('path');
 			this.$router.push(path);
-		}	
+		}
 	}
 }
 </script>

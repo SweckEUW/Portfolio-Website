@@ -9,13 +9,14 @@
 					<h1 class="ho-subheader">Technical Director</h1>
 				</div>
 			</transition>
+			
 			<video :src="getMedia('header.webm')" muted loop autoplay/>
 		</div>
 
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<video :src="getMedia('Reel.webm')" :poster="getMedia('ReelPoster.png')" controls/>
+			<VideoWithButton :videoPath="'/src/assets/home/Reel.webm'" :posterPath="'/src/assets/home/ReelPoster.png'"/>
 		</div>
 
 		<!-- Work -->
@@ -27,10 +28,11 @@
 </template>
 
 <script>
+import VideoWithButton from '@/components/shared/VideoWithButton.vue';
 import ProjectList from '@/components/work/ProjectList.vue';
 
 export default {
-	components: {ProjectList},
+	components: {ProjectList, VideoWithButton},
 	methods: {
 		getMedia(media){
 			return new URL(`/src/assets/home/${media}`, import.meta.url);
@@ -80,8 +82,6 @@ export default {
 /* Showreel */
 .ho-reel{
 	margin-bottom: 100px;
-}
-.ho-reel video{
 	width: 90%;
 	display: block;
 	margin: auto;
