@@ -102,17 +102,17 @@ export default {
 }
 .pl-overlay{
     position: absolute;
-    left: -10px;
+    left: -20px;
     top: 100px;
     background: rgba(255, 255, 255, 1);
     font-size: 22px;
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     padding-right: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    filter: drop-shadow(10px 0px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(22px 0px 10px rgba(0, 0, 0, 0.1));
 }
 .pl-overlay-title{
     color: black;

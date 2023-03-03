@@ -40,8 +40,6 @@ const projects = [
 			},
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
 			{ type: "Code", url: "" }
 		]
 	},
@@ -85,11 +83,6 @@ const projects = [
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
 				`
 			},
-		],
-		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
 		]
 	},
 
@@ -133,9 +126,7 @@ const projects = [
 			},
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Autodesk-Maya-AI-Image-Edit-Toolkit" }
 		]
 	},
 
@@ -180,9 +171,7 @@ const projects = [
 			},
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Motile" }
 		]
 	},
 
@@ -221,9 +210,7 @@ const projects = [
 			},
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Universe-Simulation" }
 		]
 	},
 
@@ -267,9 +254,7 @@ const projects = [
 			},
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Whacky-Contraptions" }
 		]
 	},
 
@@ -301,11 +286,6 @@ const projects = [
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
 				`
 			}
-		],
-		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
 		]
 	},
 
@@ -339,9 +319,7 @@ const projects = [
 			}
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Revitalize-Website" }
 		]
 	},
 
@@ -373,11 +351,6 @@ const projects = [
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
 				`
 			}
-		],
-		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
 		]
 	},
 
@@ -410,9 +383,7 @@ const projects = [
 			}
 		],
 		contents: [
-			{ type: "Executeable", url: "" },
-			{ type: "Documentation", url: "" },
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Arcade-Automat" }
 		]
 	}
 	

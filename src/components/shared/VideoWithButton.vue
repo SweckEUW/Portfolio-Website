@@ -53,6 +53,7 @@ export default {
 	height: 100px;
 	left: calc(50% - 50px);
 	top: calc(50% - 50px);
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 .spf-video-background:hover + .spf-video-button, .spf-video-button:hover{
 	transform: scale(1.2);

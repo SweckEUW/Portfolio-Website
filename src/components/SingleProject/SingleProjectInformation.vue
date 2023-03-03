@@ -11,6 +11,10 @@
 			<div>
 				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
 			</div>
+			<h1 v-if="project.contents">[Links]</h1>
+			<div v-for="content in project.contents" :key="content.url">
+				<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="" @click="openLink(content.url)">
+			</div>
 		</div>
 		<div class="spi-description">
 			<div>{{project.description}}</div>
@@ -24,6 +28,12 @@ export default {
 	methods: {
 		getImageFromTool(tool){
 			return new URL(`/src/assets/icons/${tool}.png`, import.meta.url);
+		},
+		getIcon(icon){
+			return new URL(`/src/assets/icons/${icon}`, import.meta.url);
+		},
+		openLink(link){
+			window.open(link, '_blank').focus();
 		}
 	}
 };
@@ -37,6 +47,13 @@ export default {
 	margin-bottom: 100px;
 	align-items: center;
 	padding-top: 50px;
+}
+.spi-link{
+	transition: .3s transform ease;
+	cursor: pointer;
+}
+.spi-link:hover{
+	transform: scale(1.1);
 }
 .spi-description{
 	flex: 65%;
