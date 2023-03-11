@@ -3,7 +3,7 @@
 		
 		<VideoWithButton class="spf-video" :videoPath="'/src/assets/projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
 
-		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature" :style="{'flexDirection' : index % 2 == 0 ? 'row-reverse' : ''}">
+		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
 			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
 			<img v-if="feature.media.includes('.webp')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
 			<div class="spf-feature-description">{{ feature.description }}</div>
@@ -48,6 +48,9 @@ export default {
 	align-items: center;
 	margin-bottom: 100px;
 }
+.spf-feature:nth-of-type(2){
+	flex-direction: row-reverse;
+}
 .spf-feature-description{
 	width: 40%;
 	margin: 30px;
@@ -73,5 +76,31 @@ export default {
 }
 .spf-headerImages img:last-of-type{
 	padding-right: 0px;
+}
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+	.spf-video{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.spf-feature{
+		flex-direction: column !important; 
+		margin-bottom: 30px;
+	}
+	.spf-feature-media{
+		width: 100%;
+	}
+	.spf-feature-description{
+		width: 100%;
+		font-size: 18px;
+	}
+	.spf-headerImages{
+		flex-direction: column !important;
+		margin-bottom: 20px;
+	}
+	.spf-headerImages img{
+		width: 100%;
+	}
 }
 </style>

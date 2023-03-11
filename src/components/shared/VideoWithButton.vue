@@ -40,6 +40,8 @@ export default {
 <style scoped>
 .spf-video{
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	margin: auto;
 	position: relative;
 	margin-bottom: 100px;
@@ -68,6 +70,8 @@ export default {
 }
 .spf-video video{
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	cursor: pointer;
 }
 </style>

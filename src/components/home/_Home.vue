@@ -16,7 +16,7 @@
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<VideoWithButton :videoPath="'/src/assets/home/Reel.webm'" :posterPath="'/src/assets/home/ReelPoster.png'"/>
+			<VideoWithButton class="ho-video" :videoPath="'/src/assets/home/Reel.webm'" :posterPath="'/src/assets/home/ReelPoster.png'"/>
 		</div>
 
 		<!-- Work -->
@@ -98,5 +98,18 @@ export default {
 
 .appearFade-enter-from,.appearFade-leave-to {
   opacity: 0;
+}
+
+@media (max-device-width: 900px){
+	.ho-header{
+		margin-bottom: 50px;
+	}
+	.ho-subheader{
+		font-size: 24px;
+	}
+	.ho-video{
+		height: 50vh;
+		margin-bottom: 50px;
+	}
 }
 </style>

@@ -25,7 +25,6 @@ export default {
 	components: {AppHeader,AppFooter},
 	mounted(){
 		let path = localStorage.getItem('path');
-		localStorage.setItem('path', path);
 		if(path){
 			localStorage.removeItem('path');
 			this.$router.push(path);
@@ -43,6 +42,10 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	scrollbar-width: none;
 	margin: 0;
+	overflow-x: hidden;
+}
+
+#app{
 	overflow-x: hidden;
 }
 
@@ -115,6 +118,18 @@ a{
 	to {
 		transform: translateX(0px);
 		opacity: 1;
+	}
+}
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+	.Page{
+		margin-top: 100px;
+		padding-bottom: 30px;
+	}
+
+	h1{
+		margin-bottom: 20px;
 	}
 }
 </style>

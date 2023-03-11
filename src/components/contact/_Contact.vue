@@ -213,7 +213,6 @@ input{
 /* Mobile */
 @media (max-device-width: 900px){
 	.Contact{
-		margin-top: 100px;
 		margin-bottom: 20px;
 		width: 90%;
 	}
