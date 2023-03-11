@@ -52,7 +52,7 @@ const e="/assets/ProjectList-af2f7192.webm",t="/assets/ProjectList-af2f7192.webm
 					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`}],contents:[{type:"Code",url:"https://github.com/SweckEUW/Autodesk-Maya-AI-Image-Edit-Toolkit"}]},{folder:"Motile",headerImage:"header.webp",title:"Motile",category:"Web Based 3D Product Configurator",description:`
+				`}],contents:[{type:"Code",url:"https://github.com/SweckEUW/Autodesk-Maya-AI-Image-Edit-Toolkit"}]},{folder:"Motile",headerImage:"header.webp",title:"Motile",category:"Web Based 3D Configurator",description:`
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
