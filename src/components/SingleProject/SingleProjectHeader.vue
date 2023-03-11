@@ -70,9 +70,16 @@ export default {
 
 /*MOBILE*/
 @media (max-device-width: 900px){
-    .SingleProjectHeader{
-		margin-top: 50px;
-		width: 85%;
+	.sph-overlay{
+		left: 10px;
+		width: 90%;
+	}
+	.SingleProjectHeader h1{
+		font-size: 32px;
+	}
+	.SingleProjectHeader h2{
+		font-size: 25px;
+		margin-left: 10px;
 	}
 }
 </style>

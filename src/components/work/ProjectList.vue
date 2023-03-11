@@ -105,7 +105,6 @@ export default {
     left: -20px;
     top: 100px;
     background: rgba(255, 255, 255, 1);
-    font-size: 22px;
     font-weight: bold;
     padding: 2rem 2rem;
     padding-right: 5rem;
@@ -130,15 +129,30 @@ export default {
 /*MOBILE*/
 @media (max-device-width: 900px){
     .ProjectList{
-        margin-bottom: 150px;
-        margin-top: 100px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
     .pl-element-active{
         height: 500px;
     }
+    .pl-overlay{
+        width: 85%;
+        padding: 20px 30px;
+        padding-left: 30px;
+        padding-right: 0px;
+        top: 60px;
+    }
     .pl-element{
         padding-bottom: 40px;
         padding-top: 40px;
+        height: 50vh;
+    }
+    .pl-overlay-title{
+        font-size: 24px;
+    }
+    .pl-overlay-category{
+        font-size: 18px;
+        margin-left: 5px;
     }
 }
 </style>

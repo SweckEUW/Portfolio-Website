@@ -88,4 +88,33 @@ export default {
 	margin-bottom: 15px;
 	font-weight: bolder;
 }
+
+
+/* Mobile */
+@media (max-device-width: 900px){
+	.ab-profile{
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	.ab-profile img{
+		margin-right: 0px;
+		width: 100%;
+	}
+	.ab-profile p{
+		width: 100%;
+		font-size: 18px;
+	}
+	.ab-second{
+		flex-direction: column;
+	}
+	.ab-timeline{
+		display: none;
+	}
+
+	.ab-skills{
+		width: 90%;
+		margin-bottom: 50px;
+		font-size: 18px;
+	}
+}
 </style>

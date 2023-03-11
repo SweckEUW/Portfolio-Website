@@ -10,13 +10,35 @@
 			<router-link to="/About">[About Me]</router-link>
 			<router-link to="/Contact">[Contact]</router-link>
 		</div>
+
+		<div class="ap-burger" @click="toggleBurgerMenu()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
 		
+		<transition name="fade" mode="out-in">
+			<div class="ap-burger-menu" v v-show="showBurger">
+				<!-- <div class="ap-burger" @click="toggleBurgerMenu()"/> -->
+				<router-link @click="toggleBurgerMenu()" to="/Work">[Work]</router-link>
+				<router-link @click="toggleBurgerMenu()" to="/About">[About Me]</router-link>
+				<router-link @click="toggleBurgerMenu()" to="/Contact">[Contact]</router-link>
+			</div>
+		</transition>
+
 	</div>
 </template>
 
 <script>
 export default {
+	data: ()=>({
+        showBurger: false
+    }),
 	methods:{
+		toggleBurgerMenu(){
+			this.showBurger = !this.showBurger;
+			document.getElementsByClassName("ap-burger")[0].classList.toggle("change");
+		},
 		scrollToTop(){
 			if(this.$route.path == "/"){
 				document.getElementsByTagName("html")[0].style.scrollBehavior = "smooth";
@@ -44,6 +66,12 @@ export default {
 .ap-right{
 	float: right;
 }
+.ap-burger{
+	display: none;
+}
+.ap-burger-menu{
+	display: none;
+}
 a{
 	display: inline-block;
 	cursor: pointer;
@@ -68,11 +96,55 @@ a:hover{
 
 /*MOBILE*/
 @media (max-device-width: 900px){
-    a{
-		font-size: 14px;
-	}
 	.AppHeader{
 		top: 4px;
+	}
+	a{
+		font-size: 28px;
+		margin: 0px !important;
+		margin-bottom: 40px !important;
+	}
+	.ap-right{
+		display: none;
+	}
+	.ap-burger{
+		display: block;
+		float: right;
+		position: absolute;
+		right: 0;
+		z-index: 99;
+	}
+	.ap-burger-menu{
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		z-index: 2;
+		left: -20px;
+    	top: -5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 4px;
+		background-color: #ffffff;
+		filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+		margin: 6px 0;
+		transition: 0.4s;
+		border-radius: 5px;
+	}
+	.change .bar1 {
+		transform: translate(0, 10px) rotate(-45deg);
+	}
+	.change .bar2 {
+		opacity: 0;
+	}
+	.change .bar3 {
+		transform: translate(0, -10px) rotate(45deg);
 	}
 }
 </style>

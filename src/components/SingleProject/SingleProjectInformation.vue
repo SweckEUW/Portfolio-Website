@@ -90,7 +90,20 @@ img:first-of-type{
 /*MOBILE*/
 @media (max-device-width: 900px){
     .SingleProjectInformation{
-		display: block;
+		flex-direction: column;
+		margin: auto;
+		width: 90%;
+	}
+	.spi-description{
+		order: 1;
+		margin: 0px;
+		font-size: 18px !important;
+		margin-bottom: 20px;
+	}
+	.spi-sideInformation{
+		order: 2;
+		width: 100%;
+		margin-bottom: 50px;
 	}
 }
 </style>

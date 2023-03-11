@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .AppFooter{
-	width: 100%;
+	width: calc(100% - 40px); 
 	background: #B2B2B2;
 	text-align: center;
 	color: white;
@@ -76,5 +76,12 @@ p, .af-imprint a{
 }
 .af-link:hover{
 	color: rgb(211, 211, 211);
+}
+
+/*MOBILE*/
+@media (max-device-width: 900px){
+	p, .af-imprint a{
+		font-size: 13px;
+	}
 }
 </style>
