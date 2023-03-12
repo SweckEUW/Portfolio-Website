@@ -86,9 +86,9 @@ export default {
 	display: block;
 	margin: auto;
 }
-.ho-video{
+/* .ho-video{
 	height: 70vh;
-}
+} */
 
 /* Work */
 .ho-work h1{
