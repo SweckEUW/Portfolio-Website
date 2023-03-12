@@ -1,7 +1,7 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<VideoWithButton class="spf-video" :videoPath="'/src/assets/projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
+		<VideoWithButton class="spf-video" :videoPath="'projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
 
 		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
 			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>

@@ -14,10 +14,10 @@ export default {
     }),
 	methods: {
 		getIcon(){
-			return new URL(`/src/assets/icons/play.svg`, import.meta.url).href;
+			return new URL(`/src/assets/icons/play.svg`, import.meta.url);
 		},
 		getMedia(media){
-			return new URL(media, import.meta.url).href;
+			return new URL(`/src/assets/${media}`, import.meta.url);
 		},
 		playVideo(){
 			this.videoStarted = true;
