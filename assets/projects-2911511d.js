@@ -1,4 +1,4 @@
-const e="/assets/ProjectList-af2f7192.webm",t="/assets/ProjectList-af2f7192.webm",a="/assets/ProjectList-bc1cba0e.webm",o="/assets/ProjectList-9609f5b3.webm",i="/assets/ProjectList-83c6fd0d.webm",s="/assets/ProjectList-6d4d87f2.webm",r="/assets/ProjectList-67eb7eab.webm",m="/assets/ProjectList-0c3846e5.webm",u="/assets/ProjectList-6149891b.webm",d="/assets/ProjectList-c2defe96.webm",n=[{folder:"Emberpoint",headerImage:"header.webp",title:"Emberpoint",category:"Game",description:`
+const e=[{folder:"Emberpoint",headerImage:"header.webp",title:"Emberpoint",category:"Game",description:`
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -143,4 +143,4 @@ const e="/assets/ProjectList-af2f7192.webm",t="/assets/ProjectList-af2f7192.webm
 					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`}],contents:[{type:"Code",url:"https://github.com/SweckEUW/Arcade-Automat"}]}];export{e as _,t as a,a as b,o as c,i as d,s as e,r as f,m as g,u as h,d as i,n as p};
+				`}],contents:[{type:"Code",url:"https://github.com/SweckEUW/Arcade-Automat"}]}];export{e as p};
