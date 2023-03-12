@@ -16,7 +16,7 @@
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<VideoWithButton class="ho-video" :videoPath="'/src/assets/home/Reel.webm'" :posterPath="'/src/assets/home/ReelPoster.png'"/>
+			<VideoWithButton class="ho-video" :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'"/>
 		</div>
 
 		<!-- Work -->
