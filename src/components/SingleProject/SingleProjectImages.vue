@@ -118,7 +118,7 @@ export default {
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.swiper{
 		max-height: none;
 	}

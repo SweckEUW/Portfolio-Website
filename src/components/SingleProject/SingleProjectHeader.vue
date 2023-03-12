@@ -69,7 +69,7 @@ export default {
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.sph-overlay{
 		left: 10px;
 		width: 90%;

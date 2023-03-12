@@ -127,7 +127,7 @@ export default {
 
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
     .ProjectList{
         margin-bottom: 0px;
         margin-top: 0px;

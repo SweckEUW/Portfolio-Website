@@ -68,19 +68,6 @@ a{
 	text-decoration: none;
 	color: white;
 }
-/*DESKTOP SMALL*/
-@media (max-width: 1200px) { 
-    h1{
-        font-size: 100px;
-    }
-}
-  
-/*MOBILE*/
-@media (max-device-width: 900px){
-    h1{
-        font-size: 50px;
-    }
-}
 
 
 .fadeStart-enter-active, .fadeStart-leave-active {
@@ -121,8 +108,15 @@ a{
 	}
 }
 
+/*DESKTOP SMALL*/
+@media (width <= 1200px) { 
+    h1{
+        font-size: 100px;
+    }
+}
+
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.Page{
 		margin-top: 100px;
 		padding-bottom: 30px;

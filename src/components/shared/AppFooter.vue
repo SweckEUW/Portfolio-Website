@@ -79,7 +79,7 @@ p, .af-imprint a{
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	p, .af-imprint a{
 		font-size: 13px;
 	}
