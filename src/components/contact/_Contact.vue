@@ -211,7 +211,7 @@ input{
 }
 
 /* Mobile */
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.Contact{
 		margin-bottom: 20px;
 		width: 90%;

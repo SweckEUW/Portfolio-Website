@@ -79,7 +79,7 @@ export default {
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.spf-video{
 		width: 100%;
 		margin-bottom: 20px;

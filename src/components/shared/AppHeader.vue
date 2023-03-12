@@ -95,7 +95,7 @@ a:hover{
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.AppHeader{
 		top: 4px;
 	}

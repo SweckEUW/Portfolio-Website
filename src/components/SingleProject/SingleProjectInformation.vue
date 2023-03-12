@@ -88,7 +88,7 @@ img:first-of-type{
 }
 
 /*MOBILE*/
-@media (max-device-width: 900px){
+@media (width <= 900px){
     .SingleProjectInformation{
 		flex-direction: column;
 		margin: auto;

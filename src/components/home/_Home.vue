@@ -86,6 +86,9 @@ export default {
 	display: block;
 	margin: auto;
 }
+/* .ho-video{
+	height: 70vh;
+} */
 
 /* Work */
 .ho-work h1{
@@ -100,7 +103,7 @@ export default {
   opacity: 0;
 }
 
-@media (max-device-width: 900px){
+@media (width <= 900px){
 	.ho-header{
 		margin-bottom: 50px;
 	}
