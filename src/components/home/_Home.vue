@@ -86,14 +86,6 @@ export default {
 	display: block;
 	margin: auto;
 }
-/* .ho-video{
-	height: 70vh;
-} */
-
-/* Work */
-.ho-work h1{
-	margin-bottom: 0px;
-}
 
 .appearFade-enter-active, .appearFade-leave-active {
   transition: 1s opacity .5s ease;

@@ -118,11 +118,12 @@ a{
 /*MOBILE*/
 @media (width <= 900px){
 	.Page{
-		margin-top: 100px;
+		margin-top: 130px;
 		padding-bottom: 30px;
 	}
 
 	h1{
+		font-size: 50px;
 		margin-bottom: 20px;
 	}
 }

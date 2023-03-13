@@ -216,9 +216,6 @@ input{
 		margin-bottom: 20px;
 		width: 90%;
 	}
-	h1{
-		margin-bottom: 20px;
-	}
 }
 
 </style>

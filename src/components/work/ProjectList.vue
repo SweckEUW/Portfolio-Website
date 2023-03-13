@@ -90,6 +90,10 @@ export default {
     height: 70vh;
 }
 
+.pl-element:first-of-type{
+    padding-top: 0px;
+}
+
 .pl-element *{
     pointer-events: none;
 }
