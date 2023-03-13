@@ -1,7 +1,7 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
         <router-link tag="div" :to="'/Work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
-            <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
+            <video :src="'/src/assets/projects/' + project.folder + '/videos/ProjectList.webm'" muted loop class="pl-video"/>
             <div class="pl-overlay">
                 <div class="pl-overlay-title">{{ project.title }}</div>
                 <div class="pl-overlay-category">{{ project.category }}</div>
@@ -33,9 +33,6 @@ export default {
         }
     },
     methods: {
-        getTrailer(folder){
-            return new URL(`/src/assets/projects/${folder}/videos/ProjectList.webm`, import.meta.url);
-        },
         playVideo(element){
             let video = element.getElementsByTagName("video")[0];
             // element.classList.add("pl-element-active");

@@ -6,21 +6,21 @@
 
 	<div class="ct-data">
 		<div>
-			<img :src="getIcon('person.svg')" alt="">
+			<img :src="'/src/assets/icons/person.svg'" alt="">
 			<p>Simon Weck</p>
 		</div>
 
 		<div>
-			<img :src="getIcon('location.svg')" alt="">
+			<img :src="'/src/assets/icons/location.svg'" alt="">
 			<p>Kaspar-von-Zumbusch Straße 6, 33378 Rheda-Wiedenbrück</p>
 		</div>
 		<div>
-			<img :src="getIcon('phone.svg')" alt="">
+			<img :src="'.src/assets/icons/phone.svg'" alt="">
 			<p>0176 71236857</p>
 		</div>
 
 		<div>
-			<img :src="getIcon('mail.svg')" alt="">
+			<img :src="'/src/assets/icons/mail.svg'" alt="">
 			<a href="mailto:Simon.Weck98@yahoo.de">Simon.Weck98@yahoo.de</a>
 		</div>
 	</div>
@@ -56,9 +56,6 @@ export default {
        spinnerEnabled: false
     }),
   	methods: {
-		getIcon(icon){
-			return new URL(`/src/assets/icons/${icon}`, import.meta.url);
-		},
 		sendEmail(){
 			this.spinnerEnabled = true;
 			emailjs.sendForm('service_3nfg1cg', 'template_wwwpk9y', this.$refs.form, 'XaE1Tm4qNpspiVMOp')

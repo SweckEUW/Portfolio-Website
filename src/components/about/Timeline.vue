@@ -4,7 +4,7 @@
         <div class="tl-element">
             <!-- Bubble -->
             <div class="tl-bubble tl-bubble-first">
-                <img :src="getIcon(timeline.icon)" alt="">
+                <img :src="'/src/assets/icons/' + timeline.icon" alt="">
             </div>
 
             <!-- Content -->
@@ -31,12 +31,7 @@
 
 <script>
 export default {
-    props: ["timeline"],
-    methods: {
-        getIcon(icon){
-			return new URL(`/src/assets/icons/${icon}`, import.meta.url);
-		}
-    }
+    props: ["timeline"]
 };
 </script>
 
