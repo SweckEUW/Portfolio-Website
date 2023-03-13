@@ -1,16 +1,16 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<VideoWithButton class="spf-video" :videoPath="'projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
+		<VideoWithButton class="spf-video" :videoPath="'projects/' + project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
 
-		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
-			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
-			<img v-if="feature.media.includes('.webp')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
+		<div v-for="feature in project.features" :key="feature.media" class="spf-feature">
+			<video v-if="feature.media.includes('.webm')" :src="'/src/assets/projects/' + project.folder + '/' + feature.media" class="spf-feature-media" muted autoplay loop/>
+			<img v-if="feature.media.includes('.webp')"  :src="'/src/assets/projects/' + project.folder + '/' + feature.media"  class="spf-feature-media" alt="">
 			<div class="spf-feature-description">{{ feature.description }}</div>
 		</div>
 		
 		<div class="spf-headerImages">
-			<img v-for="image in project.headerImages" :key="image" :src="getMedia('pictures/'+image)" alt="">
+			<img v-for="image in project.headerImages" :key="image" :src="'/src/assets/projects/' + project.folder + '/pictures/' + image" alt="">
 		</div>
 
 	</div>
@@ -21,12 +21,7 @@ import VideoWithButton from '@/components/shared/VideoWithButton.vue';
 
 export default {
 	components: {VideoWithButton},
-	props: ['project'],
-	methods: {
-		getMedia(media){
-			return new URL(`/src/assets/projects/${this.project.folder}/${media}`, import.meta.url);
-		}
-	}
+	props: ['project']
 };
 </script>
 

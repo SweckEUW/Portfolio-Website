@@ -10,7 +10,7 @@
 				</div>
 			</transition>
 			
-			<video :src="getMedia('header.webm')" muted loop autoplay/>
+			<video :src="'/src/assets/home/header.webm'" muted loop autoplay/>
 		</div>
 
 		<!-- Showreel -->
@@ -33,11 +33,6 @@ import ProjectList from '@/components/work/ProjectList.vue';
 
 export default {
 	components: {ProjectList, VideoWithButton},
-	methods: {
-		getMedia(media){
-			return new URL(`/src/assets/home/${media}`, import.meta.url);
-		},
-	},
 	mounted(){
 		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}

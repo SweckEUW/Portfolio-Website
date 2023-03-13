@@ -1,8 +1,8 @@
 <template>
 	<div class="spf-video">
 		<div v-if="!videoStarted" @click="playVideo()" class="spf-video-background"/>
-		<img v-if="!videoStarted" @click="playVideo()" :src="getIcon()" alt="" class="spf-video-button">
-		<video :src="'./src/assets/' + videoPath" :poster="posterPath ? ('./src/assets/' + posterPath) : ''" ref="trailer" :muted="muted"/>
+		<img v-if="!videoStarted" @click="playVideo()" :src="'/src/assets/icons/play.svg'" alt="" class="spf-video-button">
+		<video :src="'/src/assets/' + videoPath" :poster="posterPath ? ('/src/assets/' + posterPath) : ''" ref="trailer" :muted="muted"/>
 	</div>
 </template>
 
@@ -13,12 +13,6 @@ export default {
        videoStarted: false
     }),
 	methods: {
-		getIcon(){
-			return new URL(`/src/assets/icons/play.svg`, import.meta.url);
-		},
-		getMedia(media){
-			return new URL(`/src/assets/${media}`, import.meta.url);
-		},
 		playVideo(){
 			this.videoStarted = true;
 			setTimeout(() => {

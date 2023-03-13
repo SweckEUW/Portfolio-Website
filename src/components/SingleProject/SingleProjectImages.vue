@@ -6,7 +6,7 @@
 		<div id="mySwiper" class="swiper mp-gallery">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" v-for="(image,i) in project.images" :key="i">
-					<img :src="getImage(image)" alt="">
+					<img :src="'/src/assets/projects/' + project.folder + '/pictures/' + image " alt="">
 				</div>
 			</div>
 		</div>
@@ -25,11 +25,6 @@ import 'swiper/css/pagination';
 
 export default {
 	props: ['project'],
-	methods: {
-		getImage(url){		
-			return new URL(`/src/assets/projects/${this.project.folder}/pictures/${url}`, import.meta.url);
-		},
-	},
 	mounted(){
 		setTimeout(() => {
             this.swiper = new Swiper('#mySwiper',{
