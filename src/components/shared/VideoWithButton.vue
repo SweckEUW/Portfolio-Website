@@ -2,7 +2,7 @@
 	<div class="spf-video">
 		<div v-if="!videoStarted" @click="playVideo()" class="spf-video-background"/>
 		<img v-if="!videoStarted" @click="playVideo()" :src="getIcon()" alt="" class="spf-video-button">
-		<video :src="'./src/assets/' + videoPath" :poster="posterPath ? ('./src/assets/' + posterPath) : ''" ref="trailer" :muted="muted"/>
+		<video :src="getMedia(videoPath)" :poster="posterPath ? getMedia(posterPath) : ''" ref="trailer" :muted="muted"/>
 	</div>
 </template>
 
