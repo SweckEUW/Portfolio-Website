@@ -4,12 +4,12 @@
 		<div class="af-socials">
 			<!-- LinkedIn -->
 			<a href="https://www.linkedin.com/in/sweck/" target="_blank">
-				<img :src="getIcon('LinkedIn')" titl="LinkedIn" alt="">
+				<img :src="'/src/assets/icons/LinkedIn.png'" titl="LinkedIn" alt="">
 			</a>
 
 			<!-- GitHub -->
 			<a href="https://github.com/SweckEUW/" target="_blank">
-				<img :src="getIcon('GitHub')" titl="GitHub" alt="">
+				<img :src="'/src/assets/icons/GitHub.png'" titl="GitHub" alt="">
 			</a>
 		</div>
 		
@@ -24,9 +24,6 @@
 <script>
 export default {
 	methods: {
-		getIcon(icon){
-			return new URL(`/src/assets/icons/${icon}.png`, import.meta.url);
-		},
 		openLink(link){
 			window.open(link, '_blank').focus();
 		}

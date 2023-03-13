@@ -3,7 +3,7 @@
 		<h1>[About Me]</h1>
 
 		<div class="ab-profile">
-			<img :src="getImage('me.jpg')" alt="">
+			<img :src="'/src/assets/about/me.jpg'" alt="">
 			<p>{{ about.description }}</p>
 		</div>
 		
@@ -33,11 +33,6 @@ export default {
 	data: ()=>({
         about: about
     }),
-	methods: {
-        getImage(image){
-			return new URL(`/src/assets/about/${image}`, import.meta.url);
-		}
-    },
 	mounted(){
 		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}

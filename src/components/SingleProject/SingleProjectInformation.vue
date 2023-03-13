@@ -9,11 +9,11 @@
 			<div>{{project.created}}</div>
 			<h1>[Technology]</h1>
 			<div>
-				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
+				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="'/src/assets/icons/' + tool + '.png'" alt="">
 			</div>
 			<h1 v-if="project.contents">[Links]</h1>
 			<div v-for="content in project.contents" :key="content.url">
-				<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="" @click="openLink(content.url)">
+				<img class="spi-link" v-if="content.type == 'Code'" :src="'/src/assets/icons/GitHub.png'" alt="" @click="openLink(content.url)">
 			</div>
 		</div>
 		<div class="spi-description">
@@ -26,12 +26,6 @@
 export default {
 	props: ['project'],
 	methods: {
-		getImageFromTool(tool){
-			return new URL(`/src/assets/icons/${tool}.png`, import.meta.url);
-		},
-		getIcon(icon){
-			return new URL(`/src/assets/icons/${icon}`, import.meta.url);
-		},
 		openLink(link){
 			window.open(link, '_blank').focus();
 		}
