@@ -4,8 +4,8 @@
 		<VideoWithButton class="spf-video" :videoPath="'projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
 
 		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
-			<video v-if="feature.media.includes('.webm')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
-			<img v-if="feature.media.includes('.webp')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
+			<video v-if="feature.media.includes('.webm')  || feature.media.includes('.mp4')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
+			<img v-if="feature.media.includes('.webp')  || feature.media.includes('.jpg')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
 			<div class="spf-feature-description">{{ feature.description }}</div>
 		</div>
 		

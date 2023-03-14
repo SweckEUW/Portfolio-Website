@@ -12,9 +12,9 @@
 				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
 			</div>
 			<h1 v-if="project.contents">[Links]</h1>
-			<div v-for="content in project.contents" :key="content.url">
-				<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="" @click="openLink(content.url)">
-			</div>
+			<a v-for="content in project.contents" :key="content.url" :href="content.url" target="_blank">
+				<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="">
+			</a>
 		</div>
 		<div class="spi-description">
 			<div>{{project.description}}</div>
@@ -64,7 +64,7 @@ export default {
 	flex: 35%;
 	font-size: 18px;
 }
-.spi-sideInformation div{
+.spi-sideInformation div, .spi-sideInformation a{
 	margin-left: 20px;
 }
 h1{

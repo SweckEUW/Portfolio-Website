@@ -29,7 +29,7 @@ const projects = [
 
 	{
 		folder: "Monopoly Animation",
-		headerImage: 'header.webp',
+		headerImage: '1.jpg',
 		title: 'Monopoly Animation',
 		category: '3D Animation',
 		description: `
@@ -43,10 +43,10 @@ const projects = [
 		types: ["University Project", "Individual Project"],
 		created: "July 2021",
 		tools: ["Autodesk Maya", "Adobe After Effects"],
-		headerImages: ["1.webp","2.webp","3.webp"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		features: [
 			{ 
-				media: 'pictures/10.webp', 
+				media: 'pictures/4.jpg', 
 				description: `
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -54,23 +54,13 @@ const projects = [
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
 				`
-			},
-			{ 
-				media: 'videos/6.webm', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			},
+			}
 		]
 	},
 
 	{
 		folder: "AI Image Editor Toolkit",
-		headerImage: 'header.webp',
+		headerImage: '2.jpg',
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
 		description: `
@@ -84,10 +74,10 @@ const projects = [
 		types: ["University Project", "Individual Project"],
 		created: "May 2022 - August 2022 (4 Months)",
 		tools: ["Autodesk Maya", "Python", "PyQt"],
-		headerImages: ["1.webp","2.webp","3.webp"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		features: [
 			{ 
-				media: 'pictures/10.webp', 
+				media: 'pictures/2.jpg', 
 				description: `
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -95,17 +85,7 @@ const projects = [
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
 				`
-			},
-			{ 
-				media: 'videos/6.webm', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			},
+			}
 		],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Autodesk-Maya-AI-Image-Edit-Toolkit" }
