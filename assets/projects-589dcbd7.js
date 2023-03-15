@@ -1,6 +1,6 @@
 const e=[{folder:"Emberpoint",headerImage:"header.jpg",title:"Emberpoint",category:"Game",description:`
 			Emberpoint is a 3D Survival Game with Base Building Elements from Top-down Perspective. The player has to craft and fight his way out of a Firezone to find Crystals ind hidden Temples. The Game was developed in Unity 
-		`,roles:["Gameplay Programming","Level Design","Environment Design"],types:["University Project","Group Project (5 Members)"],created:"March 2021 - June 2021 (3 Months)",tools:["Unity","C-Sharp"],headerImages:["1.jpg","2.jpg","3.jpg"],features:[{media:"videos/Feature.webm",description:`
+		`,roles:["Gameplay Programming","Level Design","Environment Design"],types:["University Project","Group Project (5 Members)"],created:"March 2021 - June 2021 (3 Months)",tools:["Unity","C-Sharp"],headerImages:["1.jpg","2.jpg","3.jpg"],trailerTitle:"Watch Gameplay",features:[{media:"videos/Feature.webm",description:`
 					FireZone Bla bLA
 				`}],contents:[{type:"Code",url:""}]},{folder:"Monopoly Animation",headerImage:"1.jpg",title:"Monopoly Animation",category:"3D Animation",description:`
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
@@ -8,7 +8,7 @@ const e=[{folder:"Emberpoint",headerImage:"header.jpg",title:"Emberpoint",catego
 			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 			iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-		`,roles:["3D Modelling","3D Animation","Compositing"],types:["University Project","Individual Project"],created:"July 2021",tools:["Autodesk Maya","Adobe After Effects"],headerImages:["1.jpg","2.jpg","3.jpg"],features:[{media:"pictures/4.jpg",description:`
+		`,roles:["3D Modelling","3D Animation","Compositing"],types:["University Project","Individual Project"],created:"July 2021",tools:["Autodesk Maya","Adobe After Effects"],headerImages:["1.jpg","2.jpg","3.jpg"],trailerTitle:"Watch Breakdown",features:[{media:"pictures/4.jpg",description:`
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -32,7 +32,7 @@ const e=[{folder:"Emberpoint",headerImage:"header.jpg",title:"Emberpoint",catego
 			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 			iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-		`,roles:["Frontend Web Developement","Backend Web Developement","Web 3D Programming"],types:["University Project","Group Project (4 Members)"],created:"September 20021 - February 2022 (6 Months)",tools:["React","Babylon.js","Node.js","mongoDB","Python","Blender"],headerImages:["1.webp","2.webp","3.webp"],features:[{media:"pictures/10.webp",description:`
+		`,roles:["Frontend Web Developement","Backend Web Developement","Web 3D Programming"],types:["University Project","Group Project (4 Members)"],created:"September 20021 - February 2022 (6 Months)",tools:["React","Babylon.js","Node.js","mongoDB","Python","Blender"],headerImages:["1.jpg","2.jpg","3.jpg"],features:[{media:"pictures/10.webp",description:`
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
