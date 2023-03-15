@@ -13,6 +13,7 @@ const projects = [
 		created: "March 2021 - June 2021 (3 Months)",
 		tools: ["Unity", "C-Sharp"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		trailerTitle: "Watch Gameplay",
 		features: [
 			{ 
 				media: 'videos/Feature.webm', 
@@ -44,6 +45,7 @@ const projects = [
 		created: "July 2021",
 		tools: ["Autodesk Maya", "Adobe After Effects"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		trailerTitle: "Watch Breakdown",
 		features: [
 			{ 
 				media: 'pictures/4.jpg', 
@@ -109,7 +111,7 @@ const projects = [
 		types: ["University Project", "Group Project (4 Members)"],
 		created: "September 20021 - February 2022 (6 Months)",
 		tools: ["React", "Babylon.js", "Node.js", "mongoDB", "Python", "Blender"],
-		headerImages: ["1.webp","2.webp","3.webp"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		features: [
 			{ 
 				media: 'pictures/10.webp', 

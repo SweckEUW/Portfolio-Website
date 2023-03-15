@@ -99,6 +99,9 @@ export default {
 	.ab-profile img{
 		margin-right: 0px;
 		width: 100%;
+		height: 50vh;
+		flex: none;
+		object-position: -60px 0px;
 	}
 	.ab-profile p{
 		width: 100%;

@@ -1,5 +1,6 @@
 <template>
 	<div class="spf-video">
+		<div v-if="title && !videoStarted" class="spf-title">{{ title }}</div>
 		<div v-if="!videoStarted" @click="playVideo()" class="spf-video-background"/>
 		<img v-if="!videoStarted" @click="playVideo()" :src="getIcon()" alt="" class="spf-video-button">
 		<video :src="getMedia(videoPath)" :poster="posterPath ? getMedia(posterPath) : ''" ref="trailer" :muted="muted"/>
@@ -8,7 +9,7 @@
 
 <script>
 export default {
-	props: ['videoPath','posterPath','muted'],
+	props: ['videoPath','posterPath','muted','title'],
 	data: ()=>({
        videoStarted: false
     }),
@@ -39,6 +40,18 @@ export default {
 	position: relative;
 	margin-bottom: 100px;
 }
+.spf-title{
+	position: absolute;
+	pointer-events: none;
+	font-size: 50px;
+	color: white;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+	z-index: 3;
+	font-weight: bold;
+}
 .spf-video-button{
 	position: absolute;
 	cursor: pointer;
@@ -58,7 +71,7 @@ export default {
 	position: absolute;
 	width: 100%;
 	height: calc(100% - 5px);
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 }
 .spf-video video{
@@ -67,4 +80,12 @@ export default {
 	object-fit: cover;
 	cursor: pointer;
 }
+
+/*MOBILE*/
+@media (width <= 900px){
+	.spf-title{
+		display: none;
+	}
+}
+
 </style>

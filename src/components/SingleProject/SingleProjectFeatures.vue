@@ -1,7 +1,7 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
-		<VideoWithButton class="spf-video" :videoPath="'projects/' + this.project.folder + '/videos/Trailer.webm'" :muted="false" v-if="!project.noTrailer"/>
+		<VideoWithButton class="spf-video" :videoPath="'projects/' + project.folder + '/videos/Trailer.webm'" :muted="false" :title="project.trailerTitle" v-if="!project.noTrailer"/>
 
 		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
 			<video v-if="feature.media.includes('.webm')  || feature.media.includes('.mp4')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
@@ -82,7 +82,8 @@ export default {
 @media (width <= 900px){
 	.spf-video{
 		width: 100%;
-		margin-bottom: 20px;
+		height: 50vh;
+		margin-bottom: 60px;
 	}
 	.spf-feature{
 		flex-direction: column !important; 
@@ -90,10 +91,12 @@ export default {
 	}
 	.spf-feature-media{
 		width: 100%;
+		height: 50vh;
 	}
 	.spf-feature-description{
 		width: 100%;
 		font-size: 18px;
+		margin-top: 10px;
 	}
 	.spf-headerImages{
 		flex-direction: column !important;
@@ -101,6 +104,8 @@ export default {
 	}
 	.spf-headerImages img{
 		width: 100%;
+		height: 50vh;
+		margin-bottom: 10px;
 	}
 }
 </style>
