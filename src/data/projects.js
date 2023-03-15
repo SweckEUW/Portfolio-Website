@@ -6,19 +6,23 @@ const projects = [
 		title: 'Emberpoint',
 		category: 'Game',
 		description: `
-			Emberpoint is a 3D Survival Game with Base Building Elements from Top-down Perspective. The player has to craft and fight his way out of a Firezone to find Crystals ind hidden Temples. The Game was developed in Unity 
+			Emberpoint is a 3D survival game with base building elements from a top-down perspective. 
+			The player has to craft and fight his way out of a firezone to find crystals in hidden temples. 
+			We created the gameplay concept and story as a team and later developed the game using the Unity engine.
 		`,
 		roles: ["Gameplay Programming", "Level Design", "Environment Design"],
 		types: ["University Project", "Group Project (5 Members)"],
 		created: "March 2021 - June 2021 (3 Months)",
 		tools: ["Unity", "C-Sharp"],
-		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		headerImages: ["2.jpg","Logo.png","3.jpg"],
 		trailerTitle: "Watch Gameplay",
 		features: [
 			{ 
 				media: 'videos/Feature.webm', 
 				description: `
-					FireZone Bla bLA
+					I developed the firezone which will be dynamically extendet by the player with so called shield generators. 
+					These are placeable objects that generate a shield in a radius arround them and protect the player from the deadly firezone.
+					I used Unitys Shader Graph to develop a shader for the firezone that fits the artstyle of the game but also represents a threatening dynamic firezone. 
 				`
 			}
 		],
@@ -34,27 +38,23 @@ const projects = [
 		title: 'Monopoly Animation',
 		category: '3D Animation',
 		description: `
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+			In this Animation I integrated computer generated content into live action footage.
+			I modelled, shaded, animated and lighted everything in Maya. Rendering was done using Arnold. 
+			The different render layers then got composited in After Effects and effects like depth of field or motion blur were added 
+			to integrate the cgi elements as seamlessly as possible. 
 		`,
 		roles: ["3D Modelling", "3D Animation", "Compositing"],
 		types: ["University Project", "Individual Project"],
 		created: "July 2021",
 		tools: ["Autodesk Maya", "Adobe After Effects"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		trailerTitle: "Watch Breakdown",
+		trailerTitle: "Watch the Breakdown",
 		features: [
 			{ 
 				media: 'pictures/4.jpg', 
 				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+					To make the cgi assets in the clip more belivable I focused on realistic shading. 
+					I looked at real monopoly figures and tried to mimic the used look by adding scratches and rust to the assets. 
 				`
 			}
 		]
@@ -66,26 +66,24 @@ const projects = [
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
 		description: `
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+			This is a Autodesk Maya plug-in that uses artificial intelligence powered image editing algorithms for fast look development. 
+			The algorithms works on rendered images directly inside the render view of Maya. 
+			Open source implimentations of the algorithms neural style transfer, ai super resolution and deep dream are used.
 		`,
 		roles: ["UI Programming"],
 		types: ["University Project", "Individual Project"],
 		created: "May 2022 - August 2022 (4 Months)",
 		tools: ["Autodesk Maya", "Python", "PyQt"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		trailerTitle: "Watch the Walkthrough",
 		features: [
 			{ 
 				media: 'pictures/2.jpg', 
 				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+					Neural style transfer is a powerful tool that can be used to transfer a style from one image to another.
+					E.g the expressionistic style of a Vincent van Gogh painting can be transfered to a rendered image. 
+					But to work with this algorithm extra software has to be installed and rendered images from Maya need to be exported and than imported to that software. 
+					To make this process faster I integrated the algorithm directly into Maya so users can try out different styles with the click of a button. 
 				`
 			}
 		],
@@ -101,11 +99,10 @@ const projects = [
 		title: 'Motile',
 		category: 'Web Based 3D Configurator',
 		description: `
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-			iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+			Motile is a modular smartphone concept. The idea is to have different modules like a cpu, memory or even a camera that can be replaced easily just like in a pc.
+			We created a website with a configurator where users can create their custom phone configuration. 
+			The configurator has a 3D viewer where the user can drag and drop the parts onto the phone. 
+			The website also includes a basic user management system where users can register and manage their confiurations which get stored in a database
 		`,
 		roles: ["Frontend Web Developement", "Backend Web Developement", "Web 3D Programming"],
 		types: ["University Project", "Group Project (4 Members)"],
@@ -114,25 +111,14 @@ const projects = [
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		features: [
 			{ 
-				media: 'pictures/10.webp', 
+				media: 'pictures/feature.png', 
 				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+					For each configuration the user creates we generate a thumbnail. 
+					To also make high quality previews of the products users create we wanted to make automated photorealistic renderings.
+					To make this possible I wrote a Blender script which recreates the phone configuration inside blender and generates a raytraced rendering.
+					This all works fully autmated on the serverside and stores the rendering inside a database. 
 				`
-			},
-			{ 
-				media: 'videos/6.webm', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			},
+			}
 		],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Motile" }
@@ -157,19 +143,10 @@ const projects = [
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
 			{ 
-				media: 'pictures/10.webp', 
-				description: `
-					I was responsible for 
-				`
-			},
-			{ 
 				media: 'videos/6.webm', 
 				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer'
+					I also wrote a small tool where the user can create a custom earthlike planet by editing noise settings. 
+					The generated planets can be exported as obj files with a custom written exporter.
 				`
 			},
 		],
@@ -196,26 +173,7 @@ const projects = [
 		tools: ["Java", "JavaFX", "OpenGL"],
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
-			{ 
-				media: 'pictures/10.webp', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			},
-			{ 
-				media: 'videos/6.webm', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			},
+			
 		],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Whacky-Contraptions" }
@@ -240,16 +198,7 @@ const projects = [
 		tools: ["Adobe XD", "Adobe Illustrator", "Adobe After Effects"],
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
-			{ 
-				media: 'pictures/feature.webp', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			}
+
 		]
 	},
 
@@ -269,16 +218,14 @@ const projects = [
 		types: ["University Project", "Group Project (3 Members)"],
 		created: "September 2019 - January 2020 (5 Months)",
 		tools: ["Adobe XD", "Adobe Illustrator", "HTML", "CSS", "JavaScript"],
+		noTrailer: true,
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
 			{ 
 				media: 'pictures/feature 1.webp', 
 				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+					Our company is selling natural supplements for athlete and I created a logo for the company. The logo should represent strength but also nature. 
+					To make the shape harmonic I used circles with the size of the fibonacci sequence.
 				`
 			}
 		],
@@ -303,18 +250,8 @@ const projects = [
 		created: "May 2019 - June 2019 (2 Months) ",
 		tools: ["SolidWorks"],
 		noTrailer: true,
-		headerImages: ["1.webp","2.webp","3.webp"],
+		headerImages: ["1.webp","feature.webp","3.webp"],
 		features: [
-			{ 
-				media: 'pictures/feature.webp', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			}
 		]
 	},
 
@@ -335,16 +272,7 @@ const projects = [
 		tools: ["Java","JavaFX"],
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
-			{ 
-				media: 'pictures/feature.webp', 
-				description: `
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-					iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-				`
-			}
+
 		],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Arcade-Automat" }

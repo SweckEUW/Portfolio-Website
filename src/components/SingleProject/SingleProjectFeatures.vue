@@ -3,9 +3,9 @@
 		
 		<VideoWithButton class="spf-video" :videoPath="'projects/' + project.folder + '/videos/Trailer.webm'" :muted="false" :title="project.trailerTitle" v-if="!project.noTrailer"/>
 
-		<div v-for="(feature,index) in project.features" :key="feature.media" class="spf-feature">
+		<div v-for="feature in project.features" :key="feature.media" class="spf-feature">
 			<video v-if="feature.media.includes('.webm')  || feature.media.includes('.mp4')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
-			<img v-if="feature.media.includes('.webp')  || feature.media.includes('.jpg')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
+			<img v-if="feature.media.includes('.webp')  || feature.media.includes('.jpg') || feature.media.includes('.png')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
 			<div class="spf-feature-description">{{ feature.description }}</div>
 		</div>
 		
@@ -59,7 +59,7 @@ export default {
 .spf-feature-media{
 	width: 60%;
 	max-height: 60vh;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 /* 3 Images */
@@ -92,6 +92,7 @@ export default {
 	.spf-feature-media{
 		width: 100%;
 		height: 50vh;
+		object-fit: cover;
 	}
 	.spf-feature-description{
 		width: 100%;
