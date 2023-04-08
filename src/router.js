@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import Home from './components/home/_Home.vue'
+
 const routes = [
 	{
 		path: '/',
 		name: 'Home',
-		component: () => import(/* webpackChunkName: "Home" */ './components/home/_Home.vue'),
+		component: Home,
 		meta: {
 			title: '[Simon Weck]',
 		},
