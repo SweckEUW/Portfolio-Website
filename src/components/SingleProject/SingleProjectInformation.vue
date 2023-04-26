@@ -12,9 +12,13 @@
 				<img v-for="tool in project.tools" :key="tool" :title="tool" :src="getImageFromTool(tool)" alt="">
 			</div>
 			<h1 v-if="project.contents">[Links]</h1>
-			<a v-for="content in project.contents" :key="content.url" :href="content.url" target="_blank">
-				<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="">
-			</a>
+			<div class="spi-links">
+				<a v-for="content in project.contents" :key="content.url" :href="content.url" target="_blank">
+					<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="" title="Open Code">
+					<!-- <img class="spi-link" v-if="content.type == 'Website'" :src="getIcon('Website.png')" alt="" title="Visit Website"> -->
+					<div class="spi-website" v-if="content.type == 'Website'">Visit Website</div>
+				</a>
+			</div>
 		</div>
 		<div class="spi-description">
 			<div>{{project.description}}</div>
@@ -48,12 +52,31 @@ export default {
 	align-items: center;
 	padding-top: 50px;
 }
+.spi-links{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 !important;
+}
 .spi-link{
 	transition: .3s transform ease;
 	cursor: pointer;
 }
 .spi-link:hover{
 	transform: scale(1.1);
+}
+.spi-website{
+	transition: .3s background ease, .3s color ease;
+	cursor: pointer;
+	background: rgb(0, 0, 0);
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	margin: 0% !important;
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+.spi-website:hover{
+	background: rgb(255, 255, 255);
+	color: black;
 }
 .spi-description{
 	flex: 65%;
