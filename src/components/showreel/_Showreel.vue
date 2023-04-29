@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1>[Showreel]</h1>
-		<VideoWithButton :videoPath="'home/Reel.webm'" :posterPath="'ReelPoster.png'"/>
+		<VideoWithButton :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'"/>
 	</div>
 </template>
 
