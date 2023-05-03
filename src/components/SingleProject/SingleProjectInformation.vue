@@ -1,5 +1,7 @@
 <template>
 	<div class="SingleProjectInformation">
+
+		<!-- Side Information -->
 		<div class="spi-sideInformation">
 			<h1>[Role]</h1>
 			<div v-for="role in project.roles" :key="role">{{role}}</div>
@@ -20,9 +22,12 @@
 				</a>
 			</div>
 		</div>
+		
+		<!-- Description -->
 		<div class="spi-description">
 			<div>{{project.description}}</div>
 		</div>
+		
 	</div>
 </template>
 

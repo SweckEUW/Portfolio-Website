@@ -1,21 +1,24 @@
 <template>
 	<div class="SingleProjectFeatures">
 		
+		<!-- Video -->
 		<VideoWithButton class="spf-video" :videoPath="'projects/' + project.folder + '/videos/Trailer.webm'" :muted="false" :title="project.trailerTitle" v-if="!project.noTrailer"/>
 
+		<!-- Features -->
 		<div v-for="feature in project.features" :key="feature.media" class="spf-feature">
 			<video v-if="feature.media.includes('.webm')  || feature.media.includes('.mp4')" :src="getMedia(feature.media)" class="spf-feature-media" muted autoplay loop/>
 			<img v-if="feature.media.includes('.webp')  || feature.media.includes('.jpg') || feature.media.includes('.png')"  :src="getMedia(feature.media)"  class="spf-feature-media" alt="">
 			<div class="spf-feature-description">{{ feature.description }}</div>
 		</div>
 		
+		<!-- Images -->
 		<div class="spf-headerImages">
 			<div class="spf-headerImages-container" v-for="image in project.headerImages" :key="image" >
 				<img class="spf-headerImages-image" :src="getMedia('pictures/'+image)" alt="" @click="openImage(image)">
 			</div>
-			
 		</div>
 
+		<!-- Pop-Up Image -->
 		<transition name="fade" mode="out-in">
 			<div class="sp-enlarged" v-show="enlargeImage" @click="closeImage()">
 				<div class="close" @click="closeImage()"/>
@@ -184,6 +187,9 @@ export default {
 	.spf-headerImages{
 		flex-direction: column !important;
 		margin-bottom: 20px;
+	}
+	.spf-headerImages-container{
+		width: 100%;
 	}
 	.spf-headerImages img{
 		width: 100%;
