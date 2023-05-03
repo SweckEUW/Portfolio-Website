@@ -1,9 +1,15 @@
 <template>
 	<div class="Home">
 
+		<Transition name="fade-in">
+			<div v-show="loadingscreenVisible" class="inactive-blocker">
+				<div class="spinner"/>
+			</div>
+		</Transition>
+
 		<!-- Header -->
 		<div class="ho-header">
-			<transition name="appearFade" appear>
+			<transition name="appearFade">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
 					<h1 class="ho-subheader">Technical Director</h1>
@@ -16,13 +22,13 @@
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<VideoWithButton class="ho-video" :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'"/>
+			<VideoWithButton class="ho-video" :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'" :id="'homeVideo'"/>
 		</div>
 
 		<!-- Work -->
 		<div class="ho-work">
 			<h1>[My Work]</h1>
-			<ProjectList :projectsSelection="['The City of Light', 'Motile', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint']"/>
+			<ProjectList :projectsSelection="['The City of Light', 'Motile Website', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint']"/>
 		</div>
 	</div>
 </template>
@@ -33,13 +39,23 @@ import ProjectList from '@/components/work/ProjectList.vue';
 
 export default {
 	components: {ProjectList, VideoWithButton},
+	data: ()=>({
+        loadingscreenVisible: true
+    }),
 	methods: {
 		getMedia(media){
 			return new URL(`/src/assets/home/${media}`, import.meta.url);
 		},
 	},
 	mounted(){
-		setTimeout(() => { window.scrollTo(0, 0);}, 0);
+		setTimeout(() => { 
+			window.scrollTo(0, 0);
+
+			let video = document.getElementById("homeVideo");
+			video.addEventListener('loadeddata', () => {
+				this.loadingscreenVisible = false;
+			}, false);
+		}, 0);
 	}
 };
 </script>
@@ -93,6 +109,51 @@ export default {
 
 .appearFade-enter-from,.appearFade-leave-to {
   opacity: 0;
+}
+
+/* Spinner */
+.inactive-blocker{
+  position: absolute;
+  z-index:99;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:white;
+}
+.spinner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50%;
+  background-color: #6366F1;
+}
+.spinner *{
+  pointer-events: none;
+}
+.spinner::before{
+	content:'';
+	position:absolute;
+	top:50%;
+	left:50%;
+	height:100%;
+	width: 100%;
+	max-height: 50px; 
+	max-width: 50px;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	border-top: 2px solid #ffffff;
+	background-color: none;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin{
+  0%  {transform: translate(-50%,-50%) rotate(0deg)}
+  100%{transform: translate(-50%,-50%) rotate(360deg)}
+}
+.spinner:hover{
+  background-color: #6366F1;
 }
 
 @media (width <= 900px){

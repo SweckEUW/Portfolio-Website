@@ -2,7 +2,7 @@
 	<div>
 		<h1>[My Work]</h1>
 		<ProjectList  :projectsSelection="[
-			'The City of Light', 'Motile', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint', 
+			'The City of Light', 'Motile Website', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint', 
 			'OpenFile','Revitalize Website', 'Whacky Contraptions', 'Brush Cleaner', 'Arcade Automat'
 		]"/>
 	</div>

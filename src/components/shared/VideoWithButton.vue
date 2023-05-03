@@ -3,13 +3,13 @@
 		<div v-if="title && !videoStarted" class="spf-title">{{ title }}</div>
 		<div v-if="!videoStarted" @click="playVideo()" class="spf-video-background"/>
 		<img v-if="!videoStarted" @click="playVideo()" :src="getIcon()" alt="" class="spf-video-button">
-		<video :src="getMedia(videoPath)" :poster="posterPath ? getMedia(posterPath) : ''" ref="trailer" :muted="muted"/>
+		<video :src="getMedia(videoPath)" :poster="posterPath ? getMedia(posterPath) : ''" ref="trailer" :muted="muted" :id="id"/>
 	</div>
 </template>
 
 <script>
 export default {
-	props: ['videoPath','posterPath','muted','title'],
+	props: ['videoPath','posterPath','muted','title','id'],
 	data: ()=>({
        videoStarted: false
     }),

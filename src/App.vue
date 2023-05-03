@@ -6,7 +6,7 @@
 
 			<!-- Render active component contents with vue transition -->
 			<router-view v-slot="{ Component }">
-				<transition name="fade" mode="out-in">
+				<transition :name="firstTime ? '' : 'fade'" mode="out-in">
 					<component :is="Component" class="Page"/>
 				</transition>
 			</router-view>
@@ -23,12 +23,20 @@ import AppFooter from './components/shared/AppFooter.vue';
 
 export default {
 	components: {AppHeader,AppFooter},
+	data: ()=>({
+        firstTime: true
+    }),
 	mounted(){
 		let path = localStorage.getItem('path');
 		if(path){
 			localStorage.removeItem('path');
 			this.$router.push(path);
 		}
+
+		setTimeout(() => {
+			this.firstTime = false;
+		}, 100);
+
 	}
 }
 </script>
