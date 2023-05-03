@@ -1,20 +1,16 @@
 <template>
-	<transition name="fadeStart" appear>
-		<div>
-			<!-- App header -->
-			<AppHeader/>
+	<!-- App header -->
+	<AppHeader/>
 
-			<!-- Render active component contents with vue transition -->
-			<router-view v-slot="{ Component }">
-				<transition :name="firstTime ? '' : 'fade'" mode="out-in">
-					<component :is="Component" class="Page"/>
-				</transition>
-			</router-view>
+	<!-- Render active component contents with vue transition -->
+	<router-view v-slot="{ Component }">
+		<transition :name="firstTime ? '' : 'fade'" mode="out-in">
+			<component :is="Component" class="Page"/>
+		</transition>
+	</router-view>
 
-			<!-- App footer -->
-			<AppFooter/>
-		</div>
-	</transition>
+	<!-- App footer -->
+	<AppFooter/>
 </template>
 
 <script>
@@ -35,7 +31,7 @@ export default {
 
 		setTimeout(() => {
 			this.firstTime = false;
-		}, 100);
+		}, 0);
 
 	}
 }
@@ -77,14 +73,6 @@ a{
 	color: white;
 }
 
-
-.fadeStart-enter-active, .fadeStart-leave-active {
-  transition: 1s opacity 0s ease;
-}
-
-.fadeStart-enter-from,.fadeStart-leave-to {
-  opacity: 0;
-}
 
 /* Transition Animations */
 .fade-enter-active {

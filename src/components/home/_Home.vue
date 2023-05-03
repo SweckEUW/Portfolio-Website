@@ -1,23 +1,22 @@
 <template>
 	<div class="Home">
 
-		<Transition name="fade-in">
-			<div v-show="loadingscreenVisible" class="inactive-blocker">
-				<div class="spinner"/>
-			</div>
-		</Transition>
-
+		<!-- Loadingscreen -->
+		<!-- <div v-show="loadingscreenVisible" class="inactive-blocker">
+			<div class="spinner"/>
+		</div> -->
+		
 		<!-- Header -->
-		<div class="ho-header">
-			<transition name="appearFade">
+		<transition name="appearFade" appear>
+			<div class="ho-header">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
 					<h1 class="ho-subheader">Technical Director</h1>
 				</div>
-			</transition>
-			
-			<video :src="getMedia('header.webm')" muted loop autoplay/>
-		</div>
+				
+				<video :src="getMedia('header.webm')" muted loop autoplay/>
+			</div>
+		</transition>
 
 		<!-- Showreel -->
 		<div class="ho-reel">
@@ -104,9 +103,8 @@ export default {
 }
 
 .appearFade-enter-active, .appearFade-leave-active {
-  transition: 1s opacity .5s ease;
+  transition: 1s opacity 0.2s ease;
 }
-
 .appearFade-enter-from,.appearFade-leave-to {
   opacity: 0;
 }
