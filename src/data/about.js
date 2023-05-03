@@ -7,7 +7,7 @@ const about = {
     ,
     skills: {
         programming: [
-            { name: "Web Development (HTML, CSS, JavaScipt)", bar: 100 },
+            { name: "Web Development (HTML, CSS, JavaScipt, Typescript)", bar: 100 },
             { name: "Vue", bar: 80 },
             { name: "Babylon.js (WebGL)", bar: 80 },
             { name: "C# (Unity)", bar: 80 },
@@ -17,8 +17,10 @@ const about = {
         ],
         software: [
             { name: "Unity", bar: 80 },
-            { name: "Autodesk Maya", bar: 80 },
+            { name: "Autodesk Maya", bar: 60 },
             { name: "Adobe After Effects", bar: 60 },
+            { name: "Adobe Photoshop", bar: 60 },
+            { name: "Adobe XD", bar: 60 },
             { name: "Blender", bar: 30 },
             { name: "Nuke", bar: 30 }
         ]

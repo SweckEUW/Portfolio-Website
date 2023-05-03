@@ -1,4 +1,63 @@
 const projects = [
+	
+	// {
+	// 	folder: "Emberpoint",
+	// 	headerImage: 'header.jpg',
+	// 	title: 'The City of Light',
+	// 	category: 'Web Based 3D Showroom',
+	// 	description: `
+			
+	// 	`,
+	// 	roles: ["Frontend Web Developement", "Web 3D Programming"],
+	// 	types: ["Project at Raumtänzer GmbH"],
+	// 	created: "January 2022 - June 2022 (5 Months)",
+	// 	tools: ["Vue", "Babylon.js"],
+	// 	headerImages: ["2.jpg","Logo.png","3.jpg"],
+	// 	trailerTitle: "Watch Gameplay",
+	// 	features: [
+	// 		{ 
+	// 			media: 'videos/Feature.webm', 
+	// 			description: `
+	// 				I developed the firezone which will be dynamically extendet by the player with so called shield generators. 
+	// 				These are placeable objects that generate a shield in a radius arround them and protect the player from the deadly firezone.
+	// 				I used Unitys Shader Graph to develop a shader for the firezone that fits the artstyle of the game but also represents a threatening dynamic firezone. 
+	// 			`
+	// 		}
+	// 	],
+	// 	contents: [
+	// 		{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
+	// 	]
+	// },
+
+	// {
+	// 	folder: "Emberpoint",
+	// 	headerImage: 'header.jpg',
+	// 	title: 'Aliaxis Showroom',
+	// 	category: 'Web Based 3D Showroom',
+	// 	description: `
+			
+	// 	`,
+	// 	roles: ["Frontend Web Developement", "Web 3D Programming"],
+	// 	types: ["Project at Raumtänzer GmbH"],
+	// 	created: "January 2022 - June 2022 (5 Months)",
+	// 	tools: ["Vue", "Babylon.js"],
+	// 	headerImages: ["2.jpg","Logo.png","3.jpg"],
+	// 	trailerTitle: "Watch Gameplay",
+	// 	features: [
+	// 		{ 
+	// 			media: 'videos/Feature.webm', 
+	// 			description: `
+	// 				I developed the firezone which will be dynamically extendet by the player with so called shield generators. 
+	// 				These are placeable objects that generate a shield in a radius arround them and protect the player from the deadly firezone.
+	// 				I used Unitys Shader Graph to develop a shader for the firezone that fits the artstyle of the game but also represents a threatening dynamic firezone. 
+	// 			`
+	// 		}
+	// 	],
+	// 	contents: [
+	// 		{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
+	// 	]
+	// },
+
 
 	{
 		folder: "Emberpoint",
@@ -30,7 +89,6 @@ const projects = [
 			{ type: "Code", url: "" }
 		]
 	},
-
 
 	{
 		folder: "Monopoly Animation",
@@ -96,7 +154,7 @@ const projects = [
 	{
 		folder: "Motile",
 		headerImage: 'header.webp',
-		title: 'Motile',
+		title: 'Motile Website',
 		category: 'Web Based 3D Configurator',
 		description: `
 			Motile is a modular smartphone concept. The idea is to have different modules like a cpu, memory or even a camera that can be replaced easily just like in a pc.
@@ -121,7 +179,8 @@ const projects = [
 			}
 		],
 		contents: [
-			{ type: "Code", url: "https://github.com/SweckEUW/Motile" }
+			{ type: "Website", url: "https://sweckeuw.github.io/Motile-Website" },
+			{ type: "Code", url: "https://github.com/SweckEUW/Motile-Website" }
 		]
 	},
 
@@ -172,9 +231,7 @@ const projects = [
 		created: "March 2020 - June 2020 (4 Months)",
 		tools: ["Java", "JavaFX", "OpenGL"],
 		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [
-			
-		],
+		features: [],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Whacky-Contraptions" }
 		]
@@ -197,9 +254,7 @@ const projects = [
 		created: "April 2020 - June 2020 (3 Months)",
 		tools: ["Adobe XD", "Adobe Illustrator", "Adobe After Effects"],
 		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [
-
-		]
+		features: []
 	},
 
 
@@ -230,7 +285,8 @@ const projects = [
 			}
 		],
 		contents: [
-			{ type: "Code", url: "https://github.com/SweckEUW/Revitalize-Website" }
+			{ type: "Website", url: "https://sweckeuw.github.io/Revitalize-Website/" },
+			{ type: "Code", url: "https://github.com/SweckEUW/Revitalize-Website" },
 		]
 	},
 
@@ -251,8 +307,7 @@ const projects = [
 		tools: ["SolidWorks"],
 		noTrailer: true,
 		headerImages: ["1.webp","feature.webp","3.webp"],
-		features: [
-		]
+		features: []
 	},
 
 
@@ -271,9 +326,7 @@ const projects = [
 		created: "April 2019 - July 2019 (4 Months)",
 		tools: ["Java","JavaFX"],
 		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [
-
-		],
+		features: [],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Arcade-Automat" }
 		]
