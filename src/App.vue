@@ -32,7 +32,6 @@ export default {
 		setTimeout(() => {
 			this.firstTime = false;
 		}, 0);
-
 	}
 }
 </script>
@@ -46,19 +45,12 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	scrollbar-width: none;
 	margin: 0;
-	overflow-x: hidden;
 }
-
-#app{
-	overflow-x: hidden;
-}
-
 .Page{
 	margin-top: 200px;
 	padding-bottom: 100px;
 	min-height: calc(100vh - 300px - 80px);
 }
-
 h1{
     text-align: center;
     color: white;
@@ -67,7 +59,6 @@ h1{
 	margin: 0;
 	margin-bottom: 50px;
 }
-
 a{
 	text-decoration: none;
 	color: white;
@@ -103,6 +94,13 @@ a{
 		opacity: 1;
 	}
 }
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade2-enter-from, .fade2-leave-to {
+  opacity: 0;
+}
 
 /*DESKTOP SMALL*/
 @media (width <= 1200px) { 
@@ -117,7 +115,6 @@ a{
 		margin-top: 130px;
 		padding-bottom: 30px;
 	}
-
 	h1{
 		font-size: 50px;
 		margin-bottom: 20px;

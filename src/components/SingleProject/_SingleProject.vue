@@ -3,7 +3,6 @@
 		<SingleProjectHeader :project="project"/>
 		<SingleProjectInformation :project="project"/>
 		<SingleProjectFeatures :project="project"/>
-		<!-- <SingleProjectImages :project="project"/> -->
 	</div>
 </template>
 
@@ -11,12 +10,11 @@
 import SingleProjectHeader from '@/components/SingleProject/SingleProjectHeader.vue';
 import SingleProjectInformation from '@/components/SingleProject/SingleProjectInformation.vue';
 import SingleProjectFeatures from '@/components/SingleProject/SingleProjectFeatures.vue';
-import SingleProjectImages from '@/components/SingleProject/SingleProjectImages.vue';
 
 import projects from "@/data/projects.js"
 
 export default {
-	components: {SingleProjectHeader,SingleProjectInformation,SingleProjectFeatures,SingleProjectImages},
+	components: {SingleProjectHeader, SingleProjectInformation, SingleProjectFeatures},
 	data: ()=>({
        project: null
     }),
@@ -34,5 +32,6 @@ export default {
 .SingleProject{
 	margin-top: 0px;
 	background: white;
+	overflow-x: hidden;
 }
 </style>
