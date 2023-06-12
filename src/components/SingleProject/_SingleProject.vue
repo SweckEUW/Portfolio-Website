@@ -21,9 +21,6 @@ export default {
 	created(){
 		this.project = projects.find(project => project.title === this.$route.params.id.replaceAll("-"," "));
 		document.title = "[Simon Weck] - " + this.project.title;
-	},
-	mounted(){
-		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}
 };
 </script>

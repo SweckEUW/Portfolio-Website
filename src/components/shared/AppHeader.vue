@@ -41,7 +41,6 @@ export default {
 		},
 		scrollToTop(){
 			if(this.$route.path == "/"){
-				document.getElementsByTagName("html")[0].style.scrollBehavior = "smooth";
 				setTimeout(() => {window.scrollTo(0, 0); }, 0);
 				setTimeout(() => { document.getElementsByTagName("html")[0].style.scrollBehavior = ""; }, 1000);
 			}
