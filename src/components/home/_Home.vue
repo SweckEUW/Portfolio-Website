@@ -2,9 +2,11 @@
 	<div class="Home">
 
 		<!-- Loadingscreen -->
-		<!-- <div v-show="loadingscreenVisible" class="inactive-blocker">
-			<div class="spinner"/>
-		</div> -->
+		<transition name="fade2">
+			<div v-show="loadingscreenVisible" class="inactive-blocker">
+				<div class="spinner"/>
+			</div>
+		</transition>
 		
 		<!-- Header -->
 		<transition name="appearFade" appear>
@@ -52,7 +54,9 @@ export default {
 
 			let video = document.getElementById("homeVideo");
 			video.addEventListener('loadeddata', () => {
-				this.loadingscreenVisible = false;
+				setTimeout(() => {
+					this.loadingscreenVisible = false;
+				}, 0);
 			}, false);
 		}, 0);
 	}
