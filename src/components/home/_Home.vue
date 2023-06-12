@@ -50,8 +50,6 @@ export default {
 	},
 	mounted(){
 		setTimeout(() => { 
-			window.scrollTo(0, 0);
-
 			let video = document.getElementById("homeVideo");
 			video.addEventListener('loadeddata', () => {
 				setTimeout(() => {

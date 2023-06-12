@@ -12,10 +12,7 @@
 import ProjectList from '@/components/work/ProjectList.vue';
 
 export default {
-	components: {ProjectList},
-	mounted(){
-		setTimeout(() => { window.scrollTo(0, 0);}, 0);
-	}
+	components: {ProjectList}
 };
 </script>
 
