@@ -13,7 +13,7 @@
 			<div class="ho-header">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
-					<h1 class="ho-subheader">Technical Director</h1>
+					<h1 class="ho-subheader">Web & 3D Developer</h1>
 				</div>
 				
 				<video :src="getMedia('header.webm')" muted loop autoplay/>

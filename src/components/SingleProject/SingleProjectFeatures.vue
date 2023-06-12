@@ -103,7 +103,6 @@ export default {
 	width: 33%;
 	padding-right: 20px;
 	cursor: pointer;
-	overflow: hidden;
 }
 .spf-headerImages-image{
 	width: 100%;

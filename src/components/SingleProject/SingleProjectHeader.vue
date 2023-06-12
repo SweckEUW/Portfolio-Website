@@ -37,7 +37,6 @@ export default {
 }
 .sph-overlay{
 	position: absolute;
-	width: 100%;
 	color: white;
 	z-index: 1;
 	bottom: 40px;
