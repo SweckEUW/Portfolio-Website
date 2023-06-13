@@ -1,62 +1,75 @@
 const projects = [
 	
-	// {
-	// 	folder: "Emberpoint",
-	// 	headerImage: 'header.jpg',
-	// 	title: 'The City of Light',
-	// 	category: 'Web Based 3D Showroom',
-	// 	description: `
-			
-	// 	`,
-	// 	roles: ["Frontend Web Developement", "Web 3D Programming"],
-	// 	types: ["Project at Raumtänzer GmbH"],
-	// 	created: "January 2022 - June 2022 (5 Months)",
-	// 	tools: ["Vue", "Babylon.js"],
-	// 	headerImages: ["2.jpg","Logo.png","3.jpg"],
-	// 	trailerTitle: "Watch Gameplay",
-	// 	features: [
-	// 		{ 
-	// 			media: 'videos/Feature.webm', 
-	// 			description: `
-	// 				I developed the firezone which will be dynamically extendet by the player with so called shield generators. 
-	// 				These are placeable objects that generate a shield in a radius arround them and protect the player from the deadly firezone.
-	// 				I used Unitys Shader Graph to develop a shader for the firezone that fits the artstyle of the game but also represents a threatening dynamic firezone. 
-	// 			`
-	// 		}
-	// 	],
-	// 	contents: [
-	// 		{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
-	// 	]
-	// },
+	{
+		folder: "BiPo Open",
+		headerImage: 'header.jpg',
+		title: 'Weck BiPo Open Website',
+		category: 'Website',
+		categories: ["Web"],
+		description: `
+			Every year I host a Beer Pong Tournament called "Weck BiPo Open". 
+			This year I decided to create a website to manage the tournament and display additional information.
+			This Website has a backend to manage tournaments (create teams and groups, set game results etc.).
+		`,
+		roles: ["Frontend Web Developement", "Backend Developement", "Web Design"],
+		types: ["Personal Project"],
+		created: "April 2023 - June 2023 (3 Months)",
+		tools: ["Vue", "Node.js", "mongoDB"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+		features: [],
+		contents: [
+			{ type: "Website", url: "https://bipoopen.de/" },
+			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" },
+			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Backend" }
+		]
+	},
 
-	// {
-	// 	folder: "Emberpoint",
-	// 	headerImage: 'header.jpg',
-	// 	title: 'Aliaxis Showroom',
-	// 	category: 'Web Based 3D Showroom',
-	// 	description: `
-			
-	// 	`,
-	// 	roles: ["Frontend Web Developement", "Web 3D Programming"],
-	// 	types: ["Project at Raumtänzer GmbH"],
-	// 	created: "January 2022 - June 2022 (5 Months)",
-	// 	tools: ["Vue", "Babylon.js"],
-	// 	headerImages: ["2.jpg","Logo.png","3.jpg"],
-	// 	trailerTitle: "Watch Gameplay",
-	// 	features: [
-	// 		{ 
-	// 			media: 'videos/Feature.webm', 
-	// 			description: `
-	// 				I developed the firezone which will be dynamically extendet by the player with so called shield generators. 
-	// 				These are placeable objects that generate a shield in a radius arround them and protect the player from the deadly firezone.
-	// 				I used Unitys Shader Graph to develop a shader for the firezone that fits the artstyle of the game but also represents a threatening dynamic firezone. 
-	// 			`
-	// 		}
-	// 	],
-	// 	contents: [
-	// 		{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
-	// 	]
-	// },
+	{
+		folder: "City of Light",
+		headerImage: 'header.webp',
+		title: 'The City of Light',
+		category: 'Web Based 3D Showroom',
+		categories: ["3D","Web"],
+		description: `
+			The City of Light is a Web Based 3D Showroom for the client eku Kabel & Systeme GmbH & Co. KG.
+			The Showroom is used to display their communication technology. 
+			I did all the frontend and 3D development in this project.
+		`,
+		roles: ["Frontend Web Developement", "Web 3D Programming"],
+		types: ["Project at Raumtänzer GmbH"],
+		created: "January 2022 - June 2022 (5 Months)",
+		tools: ["Vue", "Babylon.js"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+		features: [],
+		contents: [
+			{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
+		]
+	},
+
+	{
+		folder: "Aliaxis",
+		headerImage: '1.jpg',
+		title: 'Aliaxis Showroom',
+		category: 'Web Based 3D Showroom',
+		categories: ["3D","Web"],
+		description: `
+			This is a Web Based 3D Shorwoom for the client Aliaxis Deutschland GmbH.
+			Aliaxis develops and sells plastic pipe systems and showcases this in this interactive 3D World.
+			The user can select pipes and products to get more information.
+		`,
+		roles: ["Frontend Web Developement", "Web 3D Programming"],
+		types: ["Project at Raumtänzer GmbH"],
+		created: "January 2022 - June 2022 (5 Months)",
+		tools: ["Vue", "Babylon.js"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+		features: [],
+		contents: [
+			{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
+		]
+	},
 
 
 	{
@@ -64,6 +77,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Emberpoint',
 		category: 'Game',
+		categories: ["3D"],
 		description: `
 			Emberpoint is a 3D survival game with base building elements from a top-down perspective. 
 			The player has to craft and fight his way out of a firezone to find crystals in hidden temples. 
@@ -86,7 +100,7 @@ const projects = [
 			}
 		],
 		contents: [
-			{ type: "Code", url: "" }
+			{ type: "Code", url: "https://github.com/SweckEUW/Emberpoint" }
 		]
 	},
 
@@ -95,6 +109,7 @@ const projects = [
 		headerImage: '1.jpg',
 		title: 'Monopoly Animation',
 		category: '3D Animation',
+		categories: ["3D"],
 		description: `
 			In this Animation I integrated computer generated content into live action footage.
 			I modelled, shaded, animated and lighted everything in Maya. Rendering was done using Arnold. 
@@ -123,6 +138,7 @@ const projects = [
 		headerImage: '2.jpg',
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
+		categories: [],
 		description: `
 			This is a Autodesk Maya plug-in that uses artificial intelligence powered image editing algorithms for fast look development. 
 			The algorithms works on rendered images directly inside the render view of Maya. 
@@ -156,13 +172,14 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'Motile Website',
 		category: 'Web Based 3D Configurator',
+		categories: ["3D","Web"],
 		description: `
 			Motile is a modular smartphone concept. The idea is to have different modules like a cpu, memory or even a camera that can be replaced easily just like in a pc.
 			We created a website with a configurator where users can create their custom phone configuration. 
 			The configurator has a 3D viewer where the user can drag and drop the parts onto the phone. 
 			The website also includes a basic user management system where users can register and manage their confiurations which get stored in a database
 		`,
-		roles: ["Frontend Web Developement", "Backend Web Developement", "Web 3D Programming"],
+		roles: ["Frontend Web Developement", "Backend Developement", "Web 3D Programming"],
 		types: ["University Project", "Group Project (4 Members)"],
 		created: "September 20021 - February 2022 (6 Months)",
 		tools: ["React", "Babylon.js", "Node.js", "mongoDB", "Python", "Blender"],
@@ -185,10 +202,35 @@ const projects = [
 	},
 
 	{
+		folder: "CVDesign",
+		headerImage: '1.jpg',
+		title: 'CVDesign Website',
+		category: 'Website',
+		categories: ["Web"],
+		description: `
+			I worked from September 2020 until February 2022 at the University of Applied Sciences Hamm-Lippstadt as a working student to develop a page to present student projects of the
+			study course Visual Computing and Design. CVDesign is the result of this work. 
+			We started to design the website and made prototypes in Adobe XD.
+			After the Design process was done, we programmed the website using vue.
+			We also used a self hosted Headless CMS to manage the projects that are displayed on the site.
+		`,
+		roles: ["Frontend Web Developement", "Web Design"],
+		types: ["Project at Hochschule Hamm-Lippstadt", "Group Project (3 Members)"],
+		created: "September 2020 - February 2022 (16 Months)",
+		tools: ["Vue", "Adobe XD"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+		contents: [
+			{ type: "Website", url: "https://cvdesign.hshl.de/" }
+		]
+	},
+
+	{
 		folder: "Universe Simulation",
 		headerImage: 'header.webp',
 		title: 'Universe Simulation',
 		category: 'Interactive 3D Visualization',
+		categories: ["3D"],
 		description: `
 			We created this application for a Computer Graphics and Image Processing course. 
 			You can create your own universe by scanning an image. Simply draw an image by hand and scan the image with the application to create a proceduraly generated 3D universe. 
@@ -220,6 +262,7 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'Whacky Contraptions',
 		category: 'Physics Simulation Game',
+		categories: ["3D"],
 		description: `
 			"Whacky Contraptions" is the name of the game we create for a simulation course at my university.
 			We create a 2D physics engine that includes algorithms for physically correct collision handling.
@@ -243,6 +286,7 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'OpenFile App',
 		category: 'App Concept',
+		categories: [],
 		description: `
 			"Open File" is the name for our file hosting app, which we created for a User Experience Design course. 
 			The task was to create a Natural User Interface which transmits trust and safety. 
@@ -263,13 +307,14 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'Revitalize Website',
 		category: 'Corporate Design & Website',
+		categories: ["Web"],
 		description: `
 			We created this website for a Web Development and Corporate Design course. 
 			We designed a complete corporate identity including a logo, a target group and a corporate philosophy. 
 			Based on the corporate identity, we design the web pages starting with wireframes and went to create interactive prototypes in Adobe XD. 
 			After the Design process was done, we programmed the website using plain HTML, CSS and JavaScript.
 		`,
-		roles: ["Frontend Web Developement", "Corporate Design", "Web Design", "UX Design"],
+		roles: ["Frontend Web Developement", "Corporate Design", "Web Design"],
 		types: ["University Project", "Group Project (3 Members)"],
 		created: "September 2019 - January 2020 (5 Months)",
 		tools: ["Adobe XD", "Adobe Illustrator", "HTML", "CSS", "JavaScript"],
@@ -295,6 +340,7 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'Brush Cleaner',
 		category: 'Product Concept',
+		categories: ["3D"],
 		description: `
 			This is a product concept for a Computer-Aided Design course. 
 			It's a cleaning tool for makeup brushes, which is a 2 part set that can be put together to save space in the bathroom. 
@@ -316,6 +362,7 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'Arcade Automat',
 		category: 'Game',
+		categories: [],
 		description: `
 			This Application was created for a Data Structures & Algorithms course, where we implemented algorithms, which were taught at the Lecture.
 			We decided to make the classic arcade Automate games Pac-Man and Snake. 

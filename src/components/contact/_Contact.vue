@@ -12,7 +12,7 @@
 
 		<div>
 			<img :src="getIcon('location.svg')" alt="">
-			<p>Kaspar-von-Zumbusch Straße 6, 33378 Rheda-Wiedenbrück</p>
+			<p>Bahnhofstraße 4, 33602 Bielefeld</p>
 		</div>
 		<div>
 			<img :src="getIcon('phone.svg')" alt="">
@@ -71,9 +71,6 @@ export default {
 					this.spinnerEnabled = false;
 				});
 		}
-	},
-	mounted(){
-		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}
 }
 </script>

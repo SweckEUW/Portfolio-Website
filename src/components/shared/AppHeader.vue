@@ -19,7 +19,6 @@
 		
 		<transition name="fade" mode="out-in">
 			<div class="ap-burger-menu" v v-show="showBurger">
-				<!-- <div class="ap-burger" @click="toggleBurgerMenu()"/> -->
 				<router-link @click="toggleBurgerMenu()" to="/Work">[Work]</router-link>
 				<router-link @click="toggleBurgerMenu()" to="/About">[About Me]</router-link>
 				<router-link @click="toggleBurgerMenu()" to="/Contact">[Contact]</router-link>
@@ -41,7 +40,6 @@ export default {
 		},
 		scrollToTop(){
 			if(this.$route.path == "/"){
-				document.getElementsByTagName("html")[0].style.scrollBehavior = "smooth";
 				setTimeout(() => {window.scrollTo(0, 0); }, 0);
 				setTimeout(() => { document.getElementsByTagName("html")[0].style.scrollBehavior = ""; }, 1000);
 			}

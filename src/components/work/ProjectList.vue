@@ -1,12 +1,25 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
-        <router-link tag="div" :to="'/Work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
-            <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
-            <div class="pl-overlay">
-                <div class="pl-overlay-title">{{ project.title }}</div>
-                <div class="pl-overlay-category">{{ project.category }}</div>
+
+        <div class="dropdown">
+            <span>{{filter ? filter : 'Filter'}}</span>
+            <div class="dropdown-content">
+                <p @click="selectFilter('Web')" :class="{'pl-filter-selected' : filter == 'Web'}">Web</p>
+                <p @click="selectFilter('3D')" :class="{'pl-filter-selected' : filter == '3D'}" style="margin-bottom: 0px;">3D</p>
             </div>
-        </router-link>
+        </div>
+
+        <transition name="fade" mode="out-in">
+            <div :key="filter">
+                <router-link :to="'/Work/' + project.title.replaceAll(' ','-')" v-for="project in projectsFiltered ? projectsFiltered : projects" :key="project.title" class="pl-element">
+                    <video :src="getTrailer(project.folder)" muted loop class="pl-video"/>
+                    <div class="pl-overlay">
+                        <div class="pl-overlay-title">{{ project.title }}</div>
+                        <div class="pl-overlay-category">{{ project.category }}</div>
+                    </div>
+                </router-link>
+            </div>
+        </transition>
 	</div>
 </template>
 
@@ -16,7 +29,8 @@ import projects from "@/data/projects.js"
 export default {
     props: ["projectsSelection"],
 	data: ()=>({
-        projects: projects
+        projects: projects,
+        filter: null,
     }),
     computed: {
         projectsFiltered(){
@@ -29,10 +43,20 @@ export default {
                 if(foundProject)
                     sortedList.push(foundProject);
             });
+
+            if(this.filter)
+                sortedList = sortedList.filter(projectThis => projectThis.categories.find(category => category == this.filter));
+
             return sortedList;
         }
     },
     methods: {
+        selectFilter(filter){
+            if(this.filter == filter)
+                this.filter = null;
+            else
+                this.filter = filter;
+        },
         getTrailer(folder){
             return new URL(`/src/assets/projects/${folder}/videos/ProjectList.webm`, import.meta.url);
         },
@@ -58,6 +82,13 @@ export default {
         }
     },
     mounted(){
+        let searchParams = new URLSearchParams(window.location.search);
+        let param = searchParams.get('filter');
+        if(param){  
+            this.filter = param;
+            searchParams.delete("filter");
+        }
+
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
             let projectList = document.getElementsByClassName("ProjectList")[0];
@@ -76,13 +107,69 @@ export default {
 </script>
 
 <style scoped>
+.dropdown {
+    display: inline-block;
+    text-align: center;
+
+    position: sticky;
+    top: 43px;
+    z-index: 99;
+    left: calc(50% - 90px);
+}
+.dropdown span{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    transition: .2s background ease, .2s color ease;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+.dropdown span:hover{
+    background: black;
+    color: white;
+}
+.dropdown-content{
+    top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+    left: -27px;
+}
+.pl-filter-selected{
+    background: black;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content p{
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: .2s background ease, .2s color ease;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.dropdown-content p:hover{
+    background: black;
+    color: white;
+}
+
 .pl-element{
     display: flex;
     align-content: center;
     position: relative;
     margin: auto;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     cursor: pointer;
     will-change: transform, filter;
     justify-content: center;

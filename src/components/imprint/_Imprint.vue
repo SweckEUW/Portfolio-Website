@@ -6,9 +6,9 @@
         <p>
             Simon Weck
             <br/>
-            Kaspar-von-Zumbusch Straße 6
+            Bahnhofstraße 4
             <br/>
-            33378 Rheda-Wiedenbrück
+            33602 Bielefeld
         </p>
 
         <h2>Vertreten durch:</h2>
@@ -25,9 +25,9 @@
         <p>
             Simon Weck
             <br/>
-            Kaspar-von-Zumbusch Straße 6
+            Bahnhofstraße 4
             <br/>
-            33378 Rheda-Wiedenbrück
+            33602 Bielefeld
         </p>
 
         <h2 style="margin-bottom: 0;">Haftungsausschluss:</h2>
@@ -64,14 +64,6 @@
 
 	</div>
 </template>
-
-<script>
-export default {
-	mounted(){
-		setTimeout(() => { window.scrollTo(0, 0);}, 0);
-	}
-}
-</script>
 
 <style scoped>
 .Imprint{

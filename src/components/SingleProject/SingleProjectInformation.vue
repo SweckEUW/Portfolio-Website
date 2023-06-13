@@ -17,7 +17,6 @@
 			<div class="spi-links">
 				<a v-for="content in project.contents" :key="content.url" :href="content.url" target="_blank">
 					<img class="spi-link" v-if="content.type == 'Code'" :src="getIcon('GitHub.png')" alt="" title="Open Code">
-					<!-- <img class="spi-link" v-if="content.type == 'Website'" :src="getIcon('Website.png')" alt="" title="Visit Website"> -->
 					<div class="spi-website" v-if="content.type == 'Website'">Visit Website</div>
 				</a>
 			</div>
