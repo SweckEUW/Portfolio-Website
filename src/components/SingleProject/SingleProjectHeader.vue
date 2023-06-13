@@ -29,7 +29,7 @@ export default {
 .sph-image{
 	width: 100%;
 	height: 100%;
-	filter: blur(3px) drop-shadow(0 0 20px rgba(0,0,0,0.2));
+	filter: blur(3px) drop-shadow(0 0 20px rgba(0,0,0,0.2)) brightness(0.7);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
