@@ -2,8 +2,9 @@
 	<div>
 		<h1>[My Work]</h1>
 		<ProjectList  :projectsSelection="[
-			'Weck BiPo Open Website', 'The City of Light', 'Motile Website', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 'Monopoly Animation', 'CVDesign Website', 'Universe Simulation', 'Emberpoint', 
-			'OpenFile','Revitalize Website', 'Whacky Contraptions', 'Brush Cleaner', 'Arcade Automat'
+			'Motile Website', 'The City of Light', 'Weck BiPo Open Website', 'Aliaxis Showroom', 'AI Image Editor Toolkit', 
+			'Monopoly Animation', 'CVDesign Website', 'Universe Simulation', 'Emberpoint', 'OpenFile','Revitalize Website', 
+			'Whacky Contraptions', 'Brush Cleaner', 'Arcade Automat'
 		]"/>
 	</div>
 </template>
