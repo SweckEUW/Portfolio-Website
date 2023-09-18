@@ -20,8 +20,7 @@ const projects = [
 		features: [],
 		contents: [
 			{ type: "Website", url: "https://bipoopen.de/" },
-			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" },
-			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Backend" }
+			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" }
 		]
 	},
 
