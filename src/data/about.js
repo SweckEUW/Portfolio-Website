@@ -31,6 +31,12 @@ const about = {
             icon: "education.svg",
             points: [
                 {
+                    year: "09/2023 - 02/2026",
+                    title: "Media Production B.A.",
+                    place: "OWL University of Applied Sciences and Arts",
+                    description: "Focus: CGI for Film & Television (Simulation, Pipeline Development & Virtual Production)"
+                },
+                {
                     year: "09/2022 - 03/2023",
                     title: "Technical Directing",
                     place: "Filmakademie Baden-Württemberg",
