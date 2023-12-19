@@ -6,7 +6,7 @@
         <p>
             Simon Weck
             <br/>
-            Bahnhofstraße 4
+            Heinrichstraße 9B
             <br/>
             33602 Bielefeld
         </p>
@@ -25,7 +25,7 @@
         <p>
             Simon Weck
             <br/>
-            Bahnhofstraße 4
+            Heinrichstraße 9B
             <br/>
             33602 Bielefeld
         </p>
@@ -83,5 +83,13 @@ h2{
 }
 p{
     margin: 0;
+}
+
+/* Mobile */
+@media (width <= 900px){
+	.Imprint{
+		margin-bottom: 20px;
+		width: 90%;
+	}
 }
 </style>

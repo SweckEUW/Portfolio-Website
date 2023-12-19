@@ -12,7 +12,7 @@
 
 		<div>
 			<img :src="getIcon('location.svg')" alt="">
-			<p>Bahnhofstraße 4, 33602 Bielefeld</p>
+			<p>Heinrichstraße 9B, 33602 Bielefeld</p>
 		</div>
 		<div>
 			<img :src="getIcon('phone.svg')" alt="">
@@ -214,5 +214,4 @@ input{
 		width: 90%;
 	}
 }
-
 </style>
