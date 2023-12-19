@@ -110,7 +110,6 @@ export default {
 .dropdown {
     display: inline-block;
     text-align: center;
-
     position: sticky;
     top: 43px;
     z-index: 99;
@@ -127,6 +126,8 @@ export default {
     color: white;
     font-size: 20px;
     filter: drop-shadow(0px 0px 5px black);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
 }
 .dropdown span:hover{
     background: black;
@@ -244,6 +245,12 @@ export default {
     .pl-overlay-category{
         font-size: 18px;
         margin-left: 5px;
+    }
+
+    .dropdown {
+        z-index: 1;
+        top: 70px;
+        left: calc(50% - 80px);
     }
 }
 </style>

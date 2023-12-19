@@ -2,7 +2,7 @@
 	<div class="AppHeader">
 
 		<div class="ap-left">
-			<router-link to="/" @click="scrollToTop()">[Simon Weck]</router-link>
+			<router-link style="margin-bottom: 0px !important;" to="/" @click="scrollToTop()">[Simon Weck]</router-link>
 		</div>
 		
 		<div class="ap-right">
