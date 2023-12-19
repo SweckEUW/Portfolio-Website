@@ -54,7 +54,7 @@ export default {
 	mounted(){
 		setTimeout(() => { 
 			let video = document.getElementById("homeVideo");
-			video.addEventListener('loadeddata', () => {
+			video.addEventListener('canplaythrough', () => {
 				setTimeout(() => {
 					this.loadingscreenVisible = false;
 				}, 0);
