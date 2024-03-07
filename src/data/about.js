@@ -8,7 +8,7 @@ const about = {
     skills: {
         programming: [
             { name: "Web Development (HTML, CSS, JavaScipt, Typescript)", bar: 100 },
-            { name: "Vue", bar: 80 },
+            { name: "Vue", bar: 100 },
             { name: "Babylon.js (WebGL)", bar: 80 },
             { name: "C# (Unity)", bar: 80 },
             { name: "Python", bar: 60 },
@@ -17,7 +17,7 @@ const about = {
         ],
         software: [
             { name: "Unity", bar: 80 },
-            { name: "Autodesk Maya", bar: 60 },
+            { name: "Autodesk Maya", bar: 80 },
             { name: "Adobe After Effects", bar: 60 },
             { name: "Adobe Photoshop", bar: 60 },
             { name: "Adobe XD", bar: 60 },
@@ -55,7 +55,7 @@ const about = {
             icon: "work.svg",
             points: [
                 {
-                    year: "09/2020 - 03/2023",
+                    year: "09/2020 - Today",
                     title: "Working Student - Web Development",
                     place: "Raumtänzer GmbH",
                     description: "Development of custom 3D applications and tools for the web such as 3D product Viewers, Interactive Showrooms, 3D Configurators"
