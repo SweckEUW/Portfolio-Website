@@ -30,8 +30,8 @@
 		<div class="ho-work">
 			<h1>[My Work]</h1>
 			<ProjectList :projectsSelection="[
-				 'Motile Website', 'The City of Light', 'Weck BiPo Open Website', 'Aliaxis Showroom', 
-				'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
+				'Oriono', 'AI Image Editor Toolkit', 'Weck BiPo Open Website', 'Aliaxis Showroom', 
+				'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
 			]"/>
 		</div>
 	</div>
