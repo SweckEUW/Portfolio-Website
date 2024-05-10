@@ -1,6 +1,26 @@
 const projects = [
 	
 	{
+		folder: "Oriono",
+		headerImage: 'header.jpg',
+		title: 'Oriono',
+		category: 'Animation',
+		categories: ["Animation"],
+		description: `
+			Oriono is a 7 minute 3D animated short film about Armin Nielsen, who lands on the distant planet Uraban 5. 
+			During his exploration, he experiences both triumphant and life-threatening moments, captured by a documenting drone, revealing the challenges and hopes of his unique journey. 
+			On this project I worked as Pipeline TD and did some character animation. 
+			I established workflows using the Prism Pipeline in combination with Autodesk Flow Production Tracking which helped us get 51 Shots done in about 2 Months. 
+		`,
+		roles: ["Pipeline TD", "Character Animator"],
+		types: ["University Project"],
+		created: "October 2023 - January 2024 (4 Months)",
+		tools: ["Autodesk Flow Production Tracking", "Prism Pipeline", "Autodesk Maya", "Blender"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+	},
+
+	{
 		folder: "BiPo Open",
 		headerImage: 'header.jpg',
 		title: 'Weck BiPo Open Website',
@@ -17,7 +37,6 @@ const projects = [
 		tools: ["Vue", "Node.js", "mongoDB"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		noTrailer: true,
-		features: [],
 		contents: [
 			{ type: "Website", url: "https://bipoopen.de/" },
 			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" }
@@ -41,7 +60,6 @@ const projects = [
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		noTrailer: true,
-		features: [],
 		contents: [
 			{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
 		]
@@ -64,12 +82,10 @@ const projects = [
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
 		noTrailer: true,
-		features: [],
 		contents: [
 			{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
 		]
 	},
-
 
 	{
 		folder: "Emberpoint",
@@ -273,7 +289,6 @@ const projects = [
 		created: "March 2020 - June 2020 (4 Months)",
 		tools: ["Java", "JavaFX", "OpenGL"],
 		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Whacky-Contraptions" }
 		]
@@ -372,7 +387,6 @@ const projects = [
 		created: "April 2019 - July 2019 (4 Months)",
 		tools: ["Java","JavaFX"],
 		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [],
 		contents: [
 			{ type: "Code", url: "https://github.com/SweckEUW/Arcade-Automat" }
 		]
