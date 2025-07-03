@@ -13,7 +13,7 @@
 			<div class="ho-header">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
-					<h1 class="ho-subheader">Web & 3D Developer</h1>
+					<h1 class="ho-subheader">Pipeline TD</h1>
 				</div>
 				
 				<video :src="getMedia('header.webm')" muted loop autoplay/>
@@ -30,8 +30,9 @@
 		<div class="ho-work">
 			<h1>[My Work]</h1>
 			<ProjectList :projectsSelection="[
-				'Oriono', 'AI Image Editor Toolkit', 'Weck BiPo Open Website', 'Aliaxis Showroom', 
-				'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
+				'Mission Meltdown', 'Seacarus', 'Oriono', 'AI Image Editor Toolkit', 
+				
+				'Aliaxis Showroom', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
 			]"/>
 		</div>
 	</div>

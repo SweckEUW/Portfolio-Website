@@ -1,10 +1,46 @@
 const projects = [
 	
 	{
+		folder: "Mission Meltdown",
+		headerImage: 'header.jpg',
+		title: 'Mission Meltdown',
+		category: '3D Animation',
+		categories: ["Animation"],
+		description: `
+			In a world getting too warm, the determined penguin Piku hauls his chair up a colder nearby mountain. What follows is a chaotic, slapstick-filled journey full of falls, frustration, and frozen perseverance.
+		`,
+		roles: ["Director", "Pipeline TD", "Character Animator"],
+		types: ["University Project"],
+		created: "January 2025 - April 2025 (4 Months)",
+		tools: ["Blender", "Autodesk Maya", "Houdini"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+	},
+
+	{
+		folder: "Seacarus",
+		headerImage: 'header.jpg',
+		title: 'Seacarus',
+		category: '3D Animation',
+		categories: ["Animation"],
+		description: `
+			The 3D animated short film SEACARUS directed by Jan Brakhage tells the humorous story of a fisherman who encounters a clever octopus on the high seas. 
+			Through a series of unexpected events, an exciting struggle over a fish unfolds, ultimately leading to an unusual collaboration.
+			Based on Autodesk Flow Production Tracking I established a production pipeline for the project. Furthermore I did cloth and water simulations in Houdini.
+		`,
+		roles: ["Pipeline TD", "Effects Artist"],
+		types: ["University Project"],
+		created: "October 2024 - January 2025 (4 Months)",
+		tools: ["Autodesk Flow Production Tracking", "Houdini",  "Autodesk Maya", "Blender"],
+		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		noTrailer: true,
+	},
+
+	{
 		folder: "Oriono",
 		headerImage: 'header.jpg',
 		title: 'Oriono',
-		category: 'Animation',
+		category: '3D Animation',
 		categories: ["Animation"],
 		description: `
 			Oriono is a 7 minute 3D animated short film about Armin Nielsen, who lands on the distant planet Uraban 5. 
