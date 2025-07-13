@@ -1,7 +1,7 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
 
-        <div class="dropdown">
+        <div class="dropdown" v-if="displayFilter">
             <span>{{filter ? filter : 'Filter'}}</span>
             <div class="dropdown-content">
                 <p @click="selectFilter('Web')" :class="{'pl-filter-selected' : filter == 'Web'}">Web</p>
@@ -27,7 +27,7 @@
 import projects from "@/data/projects.js"
 
 export default {
-    props: ["projectsSelection"],
+    props: ["projectsSelection","displayFilter"],
 	data: ()=>({
         projects: projects,
         filter: null,

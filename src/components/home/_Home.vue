@@ -29,11 +29,7 @@
 		<!-- Work -->
 		<div class="ho-work">
 			<h1>[My Work]</h1>
-			<ProjectList :projectsSelection="[
-				'Mission Meltdown', 'Seacarus', 'Oriono', 'AI Image Editor Toolkit', 
-				
-				'Aliaxis Showroom', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
-			]"/>
+			<ProjectList :displayFilter="false" :projectsSelection="['Mission Meltdown', 'Seacarus', 'Oriono', 'AI Image Editor Toolkit']"/>
 		</div>
 	</div>
 </template>

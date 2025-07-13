@@ -5,7 +5,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Mission Meltdown',
 		category: '3D Animation',
-		categories: ["Animation"],
+		categories: ["3D"],
 		description: `
 			In a world getting too warm, the determined penguin Piku hauls his chair up a colder nearby mountain. What follows is a chaotic, slapstick-filled journey full of falls, frustration, and frozen perseverance.
 		`,
@@ -22,7 +22,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Seacarus',
 		category: '3D Animation',
-		categories: ["Animation"],
+		categories: ["3D"],
 		description: `
 			The 3D animated short film SEACARUS directed by Jan Brakhage tells the humorous story of a fisherman who encounters a clever octopus on the high seas. 
 			Through a series of unexpected events, an exciting struggle over a fish unfolds, ultimately leading to an unusual collaboration.
@@ -41,7 +41,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Oriono',
 		category: '3D Animation',
-		categories: ["Animation"],
+		categories: ["3D"],
 		description: `
 			Oriono is a 7 minute 3D animated short film about Armin Nielsen, who lands on the distant planet Uraban 5. 
 			During his exploration, he experiences both triumphant and life-threatening moments, captured by a documenting drone, revealing the challenges and hopes of his unique journey. 
