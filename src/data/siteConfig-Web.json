@@ -1,0 +1,22 @@
+{
+  "subheader": "3D Web Developer",
+  "headerVideo": "home/Header-Web.webm",
+
+  "showreel": "home/Reel-Web.webm",
+  "posterPath": "home/ReelPoster-Web.png",
+
+  "homeProjects": [
+    "Aliaxis Showroom", 
+    "Automations-Robotic-Maschine Showcase", 
+    "Motile Website", 
+    "Stübbe Showroom", 
+    "The City of Light", 
+    "Weck BiPo Open Website"
+  ],
+
+  "workProjects": [
+    "Aliaxis Showroom","Automations-Robotic-Maschine Showcase", "Motile Website", "Stübbe Showroom", "The City of Light", 
+
+    "Weck BiPo Open Website","CVDesign Website", "Universe Simulation", "Emberpoint", "OpenFile App"
+  ]
+}

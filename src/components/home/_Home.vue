@@ -13,26 +13,28 @@
 			<div class="ho-header">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
-					<h1 class="ho-subheader">Web & 3D Developer</h1>
+					<h1 class="ho-subheader">{{ getConfig().subheader }}</h1>
 				</div>
 				
-				<video :src="getMedia('header.webm')" muted loop autoplay/>
+				<video :src="getMedia(getConfig().headerVideo)" muted loop autoplay/>
 			</div>
 		</transition>
 
 		<!-- Showreel -->
 		<div class="ho-reel">
 			<h1>[Showreel]</h1>
-			<VideoWithButton class="ho-video" :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'" :id="'homeVideo'"/>
+			<VideoWithButton class="ho-video" :videoPath="getConfig().showreel" :posterPath="getConfig().posterPath" :id="'homeVideo'"/>
 		</div>
 
 		<!-- Work -->
 		<div class="ho-work">
 			<h1>[My Work]</h1>
-			<ProjectList :projectsSelection="[
-				 'Motile Website', 'The City of Light', 'Weck BiPo Open Website', 'Aliaxis Showroom', 
-				'AI Image Editor Toolkit', 'Monopoly Animation', 'Universe Simulation', 'Emberpoint'
-			]"/>
+				<ProjectList :displayFilter="false" :projectsSelection="getConfig().homeProjects"/>
+
+			<!-- Button zu weiteren Projekten -->
+			<div style="text-align:center; margin-top: 32px;">
+				<button @click="$router.push('/work')" class="more-projects-btn">Weitere Projekte ansehen</button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -40,15 +42,17 @@
 <script>
 import VideoWithButton from '@/components/shared/VideoWithButton.vue';
 import ProjectList from '@/components/work/ProjectList.vue';
+import { getConfig } from '@/data/SiteConfig.js';
 
 export default {
 	components: {ProjectList, VideoWithButton},
 	data: ()=>({
-        loadingscreenVisible: true
+        loadingscreenVisible: true,
     }),
 	methods: {
+		getConfig,
 		getMedia(media){
-			return new URL(`/src/assets/home/${media}`, import.meta.url);
+			return new URL(`/src/assets/${media}`, import.meta.url);
 		},
 	},
 	mounted(){
@@ -159,6 +163,24 @@ export default {
   background-color: #6366F1;
 }
 
+.more-projects-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    transition: .2s background ease, .2s color ease;
+    color: white;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 5px black);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+.more-projects-btn:hover {
+	background: black;
+    color: white;
+}
+
 @media (width <= 900px){
 	.ho-header{
 		margin-bottom: 50px;
@@ -172,3 +194,4 @@ export default {
 	}
 }
 </style>
+>>>>>>> Stashed changes

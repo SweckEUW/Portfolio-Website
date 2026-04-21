@@ -1,0 +1,20 @@
+{
+  "subheader": "Pipeline TD",
+  "headerVideo": "home/Header-TD.webm",
+
+  "showreel": "home/Reel-Animation.webm",
+  "posterPath": "home/ReelPoster-TD.png",
+
+  "homeProjects": [
+    "AI Image Editor Toolkit",
+    "Mission Meltdown", 
+    "Seacarus", 
+    "Oriono"
+  ],
+
+  "workProjects": [
+    "AI Image Editor Toolkit", "Mission Meltdown", "Seacarus", "Oriono", 
+
+    "Motile Website", "The City of Light", "Weck BiPo Open Website", "Aliaxis Showroom", "CVDesign Website", "Universe Simulation", "Emberpoint", "OpenFile App"
+  ]
+}
