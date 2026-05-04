@@ -12,7 +12,7 @@
 
 		<div>
 			<img :src="getIcon('location.svg')" alt="">
-			<p>Heinrichstraße 9B, 33602 Bielefeld</p>
+			<p>Varenseller Straße 8, 33378 Rheda-Wiedenbrück</p>
 		</div>
 		<div>
 			<img :src="getIcon('phone.svg')" alt="">

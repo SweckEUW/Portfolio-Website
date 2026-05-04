@@ -21,10 +21,10 @@
 		</transition>
 
 		<!-- Showreel -->
-		<div class="ho-reel">
+		<!-- <div class="ho-reel">
 			<h1>[Showreel]</h1>
 			<VideoWithButton class="ho-video" :videoPath="getConfig().showreel" :posterPath="getConfig().posterPath" :id="'homeVideo'"/>
-		</div>
+		</div> -->
 
 		<!-- Work -->
 		<div class="ho-work">

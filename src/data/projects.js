@@ -1,39 +1,22 @@
 const projects = [
 	
 	{
-		folder: "Automations-Robotic",
-		headerImage: 'header.webp',
-		title: 'Automations-Robotic-Maschine Showcase',
-		category: 'Web Based 3D Showroom',
-		categories: ["Web"],
-		description: `
-			
-		`,
-		roles: ["Frontend Web Developement"],
-		types: ["Project at Raumtänzer GmbH"],
-		created: "May 2022 - June 2022 (2 Months)",
-		tools: ["Vue"],
-		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
-		contents: [
-			{ type: "Website", url: "https://automationsrobotic.z1.web.core.windows.net/holzmaschine/" }
-		]
-	},
-
-	{
 		folder: "Stuebbe-Showroom",
-		headerImage: 'header.webp',
+		headerImage: 'header.png',
 		title: 'Stübbe Showroom',
 		category: 'Web Based 3D Showroom',
 		categories: ["Web"],
 		description: `
-			
+			For the industrial manufacturer STÜBBE, I developed an immersive 360° virtual showroom designed to digitally showcase their advanced centrifugal pumps and valve systems. 
+			The core architecture of this web application revolves around a high-performance panoramic environment where users can seamlessly navigate between distinct virtual rooms. 
+			I engineered a robust spatial hotspot system within these 360° scenes, allowing users to interact with specific spatial coordinates to trigger dynamic content. 
+			This required building a flexible media integration layer to support embedded 3D product viewers for interactive functional models, alongside complex UI components for rendering videos, PDF specifications, and image galleries. A major technical focus was optimizing the loading pipelines for heavy media assets and ensuring fluid, state-driven room transitions to provide a seamless exploration experience.
 		`,
 		roles: ["Frontend Web Developement"],
 		types: ["Project at Raumtänzer GmbH"],
 		created: "March 2024 - May 2024 (3 Months)",
 		tools: ["Vue", "Babylon.js"],
-		headerImages: ["1.jpg","2.jpg","3.jpg"],
+		headerImages: ["1.png","2.png","3.png"],
 		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://stuebbe.flux-cms.de/" }
@@ -103,9 +86,7 @@ const projects = [
 		category: 'Website',
 		categories: ["Web"],
 		description: `
-			Every year I host a Beer Pong Tournament called "Weck BiPo Open". 
-			This year I decided to create a website to manage the tournament and display additional information.
-			This Website has a backend to manage tournaments (create teams and groups, set game results etc.).
+			The 'Weck BiPo Open' platform is a comprehensive full-stack web application developed to streamline and track Beer Pong Tournaments and Games. Utilizing Vue for the frontend alongside a Node.js and MongoDB backend, I engineered a robust system to handle complex event logistics. The backend architecture features dedicated administrative tools for dynamically generating teams, managing group stages, and processing match results. To enhance user engagement, I implemented a personalized user system. This includes secure file handling for profile picture uploads and complex database queries to aggregate historical match data, dynamically calculating and displaying detailed player performance statistics
 		`,
 		roles: ["Frontend Web Developement", "Backend Developement", "Web Design"],
 		types: ["Personal Project"],
@@ -126,9 +107,11 @@ const projects = [
 		category: 'Web Based 3D Showroom',
 		categories: ["3D","Web"],
 		description: `
-			The City of Light is a Web Based 3D Showroom for the client eku Kabel & Systeme GmbH & Co. KG.
-			The Showroom is used to display their communication technology. 
-			I did all the frontend and 3D development in this project.
+			The City of Light is an interactive, web-based 3D showroom developed for eku Kabel & Systeme GmbH & Co. KG to digitally present their communication technology. 
+			Taking full ownership of both the frontend architecture and the 3D development, I built the application leveraging Vue and Babylon.js. 
+			I engineered smooth, interactive camera animations that seamlessly guide users through the virtual environment to specific product hotspots. 
+			To provide a comprehensive product exploration experience at these nodes, I developed a dynamic media integration system. 
+			This allows users to engage with dedicated 3D product viewers featuring playable component animations, alongside embedded rich media such as videos, PDFs, and image galleries.
 		`,
 		roles: ["Frontend Web Developement", "Web 3D Programming"],
 		types: ["Project at Raumtänzer GmbH"],
@@ -148,9 +131,10 @@ const projects = [
 		category: 'Web Based 3D Showroom',
 		categories: ["3D","Web"],
 		description: `
-			This is a Web Based 3D Shorwoom for the client Aliaxis Deutschland GmbH.
-			Aliaxis develops and sells plastic pipe systems and showcases this in this interactive 3D World.
-			The user can select pipes and products to get more information.
+			For the client Aliaxis Deutschland GmbH, I developed an interactive web-based 3D showroom to digitally showcase their plastic pipe systems. 
+			Leveraging Vue and Babylon.js, I engineered an immersive product exploration experience. 
+			A core focus of the frontend development was the implementation of fluid, interactive camera animations that smoothly navigate users between defined product hotspots. 
+			To ensure both high performance and visual fidelity, I programmed dynamic visibility states for various 3D elements, paired with a custom system that seamlessly swaps pre-rendered lightmaps in real-time based on user interaction and the current scene state.
 		`,
 		roles: ["Frontend Web Developement", "Web 3D Programming"],
 		types: ["Project at Raumtänzer GmbH"],
@@ -265,10 +249,12 @@ const projects = [
 		category: 'Web Based 3D Configurator',
 		categories: ["3D","Web"],
 		description: `
-			Motile is a modular smartphone concept. The idea is to have different modules like a cpu, memory or even a camera that can be replaced easily just like in a pc.
-			We created a website with a configurator where users can create their custom phone configuration. 
-			The configurator has a 3D viewer where the user can drag and drop the parts onto the phone. 
-			The website also includes a basic user management system where users can register and manage their confiurations which get stored in a database
+		Motile is a modular smartphone concept designed to let users seamlessly swap hardware components like CPUs, memory, or cameras. 
+		For this project, I engineered the entire backend infrastructure and developed key interactive features for the frontend. 
+		On the client side, I utilized React and integrated Babylon.js to build a high-performance, real-time 3D configurator.
+		A major technical focus was implementing complex spatial drag-and-drop mechanics, enabling users to intuitively assemble their custom devices directly within the 3D viewport.
+		To support this interactive frontend, I built a robust Node.js backend from the ground up, paired with a MongoDB database. 
+		This encompassed designing the API, implementing a secure user management and authentication system, and architecting the database schema to efficiently store, manage, and retrieve users' personalized 3D configurations across sessions.	
 		`,
 		roles: ["Frontend Web Developement", "Backend Developement", "Web 3D Programming"],
 		types: ["University Project", "Group Project (4 Members)"],
@@ -279,10 +265,9 @@ const projects = [
 			{ 
 				media: 'pictures/feature.png', 
 				description: `
-					For each configuration the user creates we generate a thumbnail. 
-					To also make high quality previews of the products users create we wanted to make automated photorealistic renderings.
-					To make this possible I wrote a Blender script which recreates the phone configuration inside blender and generates a raytraced rendering.
-					This all works fully autmated on the serverside and stores the rendering inside a database. 
+					To complement standard thumbnails with high-fidelity product previews, I engineered an automated server-side rendering pipeline. 
+					I developed a custom Blender script that dynamically reconstructs the user's specific 3D phone assembly within the Blender environment. 
+					This fully automated backend process executes raytraced rendering directly on the server, generating photorealistic images of the customized devices that are seamlessly stored and managed within the database alongside the user's configuration data.
 				`
 			}
 		],

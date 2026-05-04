@@ -7,7 +7,6 @@
 
   "homeProjects": [
     "Aliaxis Showroom", 
-    "Automations-Robotic-Maschine Showcase", 
     "Motile Website", 
     "Stübbe Showroom", 
     "The City of Light", 
@@ -15,7 +14,7 @@
   ],
 
   "workProjects": [
-    "Aliaxis Showroom","Automations-Robotic-Maschine Showcase", "Motile Website", "Stübbe Showroom", "The City of Light", 
+    "Aliaxis Showroom", "Motile Website", "Stübbe Showroom", "The City of Light", 
 
     "Weck BiPo Open Website","CVDesign Website", "Universe Simulation", "Emberpoint", "OpenFile App"
   ]
