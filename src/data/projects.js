@@ -96,7 +96,7 @@
 		roles: ["Pipeline TD", "Effects Artist"],
 		types: ["University Project"],
 		created: "October 2024 - January 2025 (4 Months)",
-		tools: ["Autodesk Flow Production Tracking", "Houdini",  "Autodesk Maya", "Blender"],
+		tools: ["Autodesk Flow Production Tracking", "USD", "Houdini",  "Autodesk Maya", "Blender"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
 	},
 
