@@ -1,0 +1,35 @@
+{
+  "subheader": "Pipeline TD & Fullstack Developer",
+  "headerVideo": "home/Header-TD.webm",
+
+  "showreel": "home/Reel-Animation.webm",
+  "posterPath": "home/ReelPoster-TD.png",
+
+  "homeProjects": [
+    "Flowpipe Web Editor",
+    "AI Image Editor Toolkit",
+    "On the Road to Caen VFX",
+    "Bachelor Arbeit",
+    "Aliaxis Showroom", 
+    "Mission Meltdown", 
+    "Seacarus",
+    "Weck BiPo Open Website"
+  ],
+
+  "workProjects": [
+    "Flowpipe Web Editor",
+    "AI Image Editor Toolkit",
+    "On the Road to Caen VFX",
+    "Aliaxis Showroom", 
+    "Mission Meltdown", 
+    "Seacarus",
+    "Stübbe Showroom", 
+    "Motile Website", 
+    "The City of Light", 
+    "Weck BiPo Open Website",
+    "CVDesign Website", 
+    "Universe Simulation", 
+    "Emberpoint", 
+    "OpenFile App"
+  ]
+}

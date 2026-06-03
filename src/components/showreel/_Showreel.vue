@@ -1,16 +1,23 @@
 <template>
 	<div>
 		<h1>[Showreel]</h1>
-		<VideoWithButton :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'"/>
+		<VideoWithButton :videoPath="getConfig().showreel" :posterPath="getConfig().posterPath"/>
 	</div>
 </template>
 
 <script>
 import VideoWithButton from '@/components/shared/VideoWithButton.vue';
+import { getConfig } from '@/data/SiteConfig.js';
 
 export default {
-	components: {VideoWithButton},
-	mounted(){
+	components: { VideoWithButton },
+	methods: {
+		getConfig,
+		getMedia(media){
+			return new URL(`/src/assets/home/${media}`, import.meta.url);
+		},
+	},
+	async mounted() {
 		setTimeout(() => { window.scrollTo(0, 0);}, 0);
 	}
 };
