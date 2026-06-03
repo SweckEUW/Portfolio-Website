@@ -1,5 +1,49 @@
-const projects = [
-	
+﻿const projects = [
+		
+	{
+		folder: "Bachelor",
+		headerImage: 'header.png',
+		title: 'Flowpipe Web Editor',
+		category: 'Pipeline Tool',
+		categories: ["Pipeline Development"],
+		description: `
+			For my ongoing Bachelor thesis, I am developing a browser-based visual pipeline editor for Flowpipe, an open-source pipeline orchestration tool used in VFX and data production. 
+			Built with Vue 3, TypeScript, and Baklava.js, the editor provides an interactive node-graph canvas for composing, inspecting, and executing pipelines directly in the browser. 
+			The project will extend the core editor with an integration into Autodesk Flow Production Tracking (ShotGrid) for production and asset management. 
+			Additionally, I am currently working on establishing a Deadline render farm at the TH-OWL, which will be directly connected to the editor for dispatching and monitoring render jobs.
+		`,
+		roles: ["Pipeline TD"],
+		types: ["University Project"],
+		created: "June 2026 - September 2026 (4 Months)",
+		tools: ["Vue", "Autodesk Flow Production Tracking"],
+		headerImages: [],
+		contents: [
+			{ type: "Website", url: "https://sweckeuw.github.io/Flowpipe-Web-Editor/" },
+			{ type: "Code", url: "https://github.com/SweckEUW/Flowpipe-Web-Editor" }
+		]
+	},
+
+	{
+		folder: "Caen",
+		headerImage: 'header.png',
+		title: 'On the Road to Caen VFX',
+		category: 'Compositing',
+		categories: ["Compositing"],
+		description: `
+				On the Road to Caen is an 18-minute historical noir road movie following refugees on the eve of D-Day.
+				The project features 100+ VFX shots, seamlessly compositing green screen performances with background plates and digital environment extensions to create an atmospheric nighttime escape.
+				I contributed 3D tracking and Blender renderings of detailed 1940s vehicle models, integrating them into the live-action footage.
+				The film was presented at FMX.
+			`,
+		roles: ["Compositing Artist"],
+		types: ["University Project"],
+		created: "October 2025 - July 2026 (10 Months)",
+		tools: ["Nuke", "Blender"],
+		headerImages: ["1.png","2.png","3.png"],
+		trailer: { url: "projects/Caen/videos/Trailer.webm", title: "Watch the VFX Breakdown" },
+		contents: []
+	},
+
 	{
 		folder: "Stuebbe-Showroom",
 		headerImage: 'header.png',
@@ -7,17 +51,16 @@ const projects = [
 		category: 'Web Based 3D Showroom',
 		categories: ["Web"],
 		description: `
-			For the industrial manufacturer STÜBBE, I developed an immersive 360° virtual showroom designed to digitally showcase their advanced centrifugal pumps and valve systems. 
+			For the industrial manufacturer STÃœBBE, I developed an immersive 360Â° virtual showroom designed to digitally showcase their advanced centrifugal pumps and valve systems. 
 			The core architecture of this web application revolves around a high-performance panoramic environment where users can seamlessly navigate between distinct virtual rooms. 
-			I engineered a robust spatial hotspot system within these 360° scenes, allowing users to interact with specific spatial coordinates to trigger dynamic content. 
+			I engineered a robust spatial hotspot system within these 360Â° scenes, allowing users to interact with specific spatial coordinates to trigger dynamic content. 
 			This required building a flexible media integration layer to support embedded 3D product viewers for interactive functional models, alongside complex UI components for rendering videos, PDF specifications, and image galleries. A major technical focus was optimizing the loading pipelines for heavy media assets and ensuring fluid, state-driven room transitions to provide a seamless exploration experience.
 		`,
 		roles: ["Frontend Web Developement"],
-		types: ["Project at Raumtänzer GmbH"],
+		types: ["Project at RaumtÃ¤nzer GmbH"],
 		created: "March 2024 - May 2024 (3 Months)",
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.png","2.png","3.png"],
-		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://stuebbe.flux-cms.de/" }
 		]
@@ -37,7 +80,6 @@ const projects = [
 		created: "January 2025 - April 2025 (4 Months)",
 		tools: ["Blender", "Autodesk Maya", "Houdini"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 	},
 
 	{
@@ -45,18 +87,17 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Seacarus',
 		category: '3D Animation',
-		categories: ["3D"],
+		categories: ["3D", "Pipeline Development"],
 		description: `
 			The 3D animated short film SEACARUS directed by Jan Brakhage tells the humorous story of a fisherman who encounters a clever octopus on the high seas. 
 			Through a series of unexpected events, an exciting struggle over a fish unfolds, ultimately leading to an unusual collaboration.
-			Based on Autodesk Flow Production Tracking I established a production pipeline for the project. Furthermore I did cloth and water simulations in Houdini.
+			Based on Autodesk Flow Production Tracking I built a USD pipeline for the project, including custom publishers and loaders as well as HDAs to publish USD assets from Houdini, load them in Maya, and bring the animation back into Houdini as USD. Furthermore I did cloth and water simulations in Houdini.
 		`,
 		roles: ["Pipeline TD", "Effects Artist"],
 		types: ["University Project"],
 		created: "October 2024 - January 2025 (4 Months)",
 		tools: ["Autodesk Flow Production Tracking", "Houdini",  "Autodesk Maya", "Blender"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 	},
 
 	{
@@ -64,7 +105,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Oriono',
 		category: '3D Animation',
-		categories: ["3D"],
+		categories: ["3D", "Pipeline Development"],
 		description: `
 			Oriono is a 7 minute 3D animated short film about Armin Nielsen, who lands on the distant planet Uraban 5. 
 			During his exploration, he experiences both triumphant and life-threatening moments, captured by a documenting drone, revealing the challenges and hopes of his unique journey. 
@@ -76,7 +117,6 @@ const projects = [
 		created: "October 2023 - January 2024 (4 Months)",
 		tools: ["Autodesk Flow Production Tracking", "Prism Pipeline", "Autodesk Maya", "Blender"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 	},
 
 	{
@@ -93,7 +133,6 @@ const projects = [
 		created: "April 2023 - June 2023 (3 Months)",
 		tools: ["Vue", "Node.js", "mongoDB"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://bipoopen.de/" },
 			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" }
@@ -105,7 +144,7 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'The City of Light',
 		category: 'Web Based 3D Showroom',
-		categories: ["3D","Web"],
+		categories: ["Web"],
 		description: `
 			The City of Light is an interactive, web-based 3D showroom developed for eku Kabel & Systeme GmbH & Co. KG to digitally present their communication technology. 
 			Taking full ownership of both the frontend architecture and the 3D development, I built the application leveraging Vue and Babylon.js. 
@@ -114,11 +153,10 @@ const projects = [
 			This allows users to engage with dedicated 3D product viewers featuring playable component animations, alongside embedded rich media such as videos, PDFs, and image galleries.
 		`,
 		roles: ["Frontend Web Developement", "Web 3D Programming"],
-		types: ["Project at Raumtänzer GmbH"],
+		types: ["Project at RaumtÃ¤nzer GmbH"],
 		created: "January 2022 - June 2022 (5 Months)",
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
 		]
@@ -129,7 +167,7 @@ const projects = [
 		headerImage: '1.jpg',
 		title: 'Aliaxis Showroom',
 		category: 'Web Based 3D Showroom',
-		categories: ["3D","Web"],
+		categories: ["Web"],
 		description: `
 			For the client Aliaxis Deutschland GmbH, I developed an interactive web-based 3D showroom to digitally showcase their plastic pipe systems. 
 			Leveraging Vue and Babylon.js, I engineered an immersive product exploration experience. 
@@ -137,11 +175,10 @@ const projects = [
 			To ensure both high performance and visual fidelity, I programmed dynamic visibility states for various 3D elements, paired with a custom system that seamlessly swaps pre-rendered lightmaps in real-time based on user interaction and the current scene state.
 		`,
 		roles: ["Frontend Web Developement", "Web 3D Programming"],
-		types: ["Project at Raumtänzer GmbH"],
+		types: ["Project at RaumtÃ¤nzer GmbH"],
 		created: "January 2022 - June 2022 (5 Months)",
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
 		]
@@ -163,7 +200,7 @@ const projects = [
 		created: "March 2021 - June 2021 (3 Months)",
 		tools: ["Unity", "C-Sharp"],
 		headerImages: ["2.jpg","Logo.png","3.jpg"],
-		trailerTitle: "Watch Gameplay",
+		trailer: { url: "projects/Emberpoint/videos/Trailer.webm", title: "Watch Gameplay" },
 		features: [
 			{ 
 				media: 'videos/Feature.webm', 
@@ -196,7 +233,7 @@ const projects = [
 		created: "July 2021",
 		tools: ["Autodesk Maya", "Adobe After Effects"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		trailerTitle: "Watch the Breakdown",
+		trailer: { url: "projects/Monopoly Animation/videos/Trailer.webm", title: "Watch the Breakdown" },
 		features: [
 			{ 
 				media: 'pictures/4.jpg', 
@@ -213,7 +250,7 @@ const projects = [
 		headerImage: '2.jpg',
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
-		categories: [],
+		categories: ["Pipeline Development"],
 		description: `
 			This is a Autodesk Maya plug-in that uses artificial intelligence powered image editing algorithms for fast look development. 
 			The algorithms works on rendered images directly inside the render view of Maya. 
@@ -224,7 +261,7 @@ const projects = [
 		created: "May 2022 - August 2022 (4 Months)",
 		tools: ["Autodesk Maya", "Python", "PyQt"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		trailerTitle: "Watch the Walkthrough",
+		trailer: { url: "projects/AI Image Editor Toolkit/videos/Trailer.webm", title: "Watch the Walkthrough" },
 		features: [
 			{ 
 				media: 'pictures/2.jpg', 
@@ -295,7 +332,6 @@ const projects = [
 		created: "September 2020 - February 2022 (16 Months)",
 		tools: ["Vue", "Adobe XD"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
 		contents: [
 			{ type: "Website", url: "https://cvdesign.hshl.de/" }
 		]
@@ -393,10 +429,9 @@ const projects = [
 		types: ["University Project", "Group Project (3 Members)"],
 		created: "September 2019 - January 2020 (5 Months)",
 		tools: ["Adobe XD", "Adobe Illustrator", "HTML", "CSS", "JavaScript"],
-		noTrailer: true,
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
-			{ 
+			{
 				media: 'pictures/feature 1.webp', 
 				description: `
 					Our company is selling natural supplements for athlete and I created a logo for the company. The logo should represent strength but also nature. 
@@ -426,7 +461,6 @@ const projects = [
 		types: ["University Project", "Individual Project"],
 		created: "May 2019 - June 2019 (2 Months) ",
 		tools: ["SolidWorks"],
-		noTrailer: true,
 		headerImages: ["1.webp","feature.webp","3.webp"],
 		features: []
 	},

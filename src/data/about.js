@@ -1,10 +1,19 @@
 const about = {
     description: 
-        `Hello there,
-        my name is Simon Weck and I'm a Computer Graphics enthusiast. One of the things that excites me most about computer graphics is the ability to create compelling and immersive experiences that can transport audiences to new worlds 🪐. I am constantly seeking out new creative challenges, and I enjoy working on projects that allow me to push the boundaries of what is possible.
-        
-        I have a Bachelor's degree in Computer Science and have gained experience in various software applications, such as Autodesk Maya, Adobe Photoshop, and After Effects. In addition, I am proficient in programming languages such as C#, JavaScript, and Python, and have experience with game engines such as Unity. I also have experience as a Web Developer, where I focused on developing 3D applications for the web. If you have any ideas for projects or are interested in collaborating, feel free to contact me 📞`
-    ,
+    `
+        As a tech-driven developer with a strong focus on computer graphics, I love bridging the gap between creative vision and technical execution. 
+
+        Over the past five years, I have gained extensive hands-on experience in full-stack development for interactive 3D web applications (Vue.js, TypeScript, Babylon.js). Alongside my strong background in web development, I am also highly passionate about the film and animation industry. My current studies in Media Production (focusing on CGI for Film & TV) and my time studying Technical Directing at the Animationsinstitut have deeply fueled my enthusiasm for VFX and Pipeline Development.
+
+        I am fascinated by building robust 3D pipelines and optimizing workflows to help artists push creative boundaries. Whether it involves data management, automation, or the integration of complex systems—I enjoy diving deep into the logic behind the scenes.
+
+        My Core Focus & Interests:
+        - Pipeline & VFX: Workflow optimization, Universal Scene Description (USD), ShotGrid, Python tooling
+        - 3D / CGI: Autodesk Maya, Houdini, Blender
+        - Web & Architecture: Interactive 3D applications, Fullstack development (Node.js, Vue.js), DevOps & Databases
+
+        I already hold a B.Sc. in Media Informatics (Computer Visualistics and Design) and am currently completing my second degree in Media Production, with graduation expected in July 2026. I am always open to connecting over new technologies, creative challenges, and exciting projects.
+    `,
     skills: {
         programming: [
             { name: "Frontend Web Development (HTML/CSS, Typescript, Tailwind, Primefaces)", bar: 100 },

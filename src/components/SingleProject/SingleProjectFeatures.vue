@@ -2,7 +2,7 @@
 	<div class="SingleProjectFeatures">
 		
 		<!-- Video -->
-		<VideoWithButton class="spf-video" :videoPath="'projects/' + project.folder + '/videos/Trailer.webm'" :muted="false" :title="project.trailerTitle" v-if="!project.noTrailer"/>
+		<VideoWithButton class="spf-video" :videoPath="project.trailer.url" :muted="false" :title="project.trailer.title" v-if="project.trailer"/>
 
 		<!-- Features -->
 		<div v-for="feature in project.features" :key="feature.media" class="spf-feature">

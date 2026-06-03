@@ -89,7 +89,10 @@ a:last-child{
 	margin-right: 0;
 }
 a:hover{
-	color: rgb(160, 160, 160);
+	color: #96144d;
+}
+.router-link-active{
+	color: #96144d;
 }
 
 /*MOBILE*/

@@ -100,11 +100,11 @@ p{
 	margin: 0;
 }
 a{
-	color: rgb(116, 118, 197);
+	color: #96144d;
 	transition: .3s color ease;
 }
 a:hover{
-	color: rgb(63, 64, 116);
+	color: #6e0e39;
 }
 .ct-form{
 	padding: 3% 4%;
@@ -171,7 +171,7 @@ input{
   align-items: center;
   gap: 8px;
   border-radius: 50%;
-  background-color: #6366F1;
+  background-color: #96144d;
 }
 .spinner *{
   pointer-events: none;
@@ -186,8 +186,8 @@ input{
 	max-height: 96px; 
 	max-width: 96px;
 	border-radius: 50%;
-	border: 2px solid #6366F1;
-	border-top: 2px solid #3739c2;
+	border: 2px solid #96144d;
+	border-top: 2px solid #6e0e39;
 	background-color: none;
 	animation: spin 2s linear infinite;
 }
@@ -196,7 +196,7 @@ input{
   100%{transform: translate(-50%,-50%) rotate(360deg)}
 }
 .spinner:hover{
-  background-color: #6366F1;
+  background-color: #96144d;
 }
 
 /* Spinner Transition */

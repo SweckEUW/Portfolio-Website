@@ -3,9 +3,7 @@
 
 		<!-- Loadingscreen -->
 		<transition name="fade2">
-			<div v-show="loadingscreenVisible" class="inactive-blocker">
-				<div class="spinner"/>
-			</div>
+			<div v-show="loadingscreenVisible" class="spinner"/>
 		</transition>
 		
 		<!-- Header -->
@@ -16,7 +14,7 @@
 					<h1 class="ho-subheader">{{ getConfig().subheader }}</h1>
 				</div>
 				
-				<video :src="getMedia(getConfig().headerVideo)" muted loop autoplay/>
+				<video ref="headerVideo" :src="getMedia(getConfig().headerVideo)" muted loop autoplay/>
 			</div>
 		</transition>
 
@@ -39,33 +37,24 @@
 	</div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue';
 import VideoWithButton from '@/components/shared/VideoWithButton.vue';
 import ProjectList from '@/components/work/ProjectList.vue';
 import { getConfig } from '@/data/SiteConfig.js';
 
-export default {
-	components: {ProjectList, VideoWithButton},
-	data: ()=>({
-        loadingscreenVisible: true,
-    }),
-	methods: {
-		getConfig,
-		getMedia(media){
-			return new URL(`/src/assets/${media}`, import.meta.url);
-		},
-	},
-	mounted(){
-		setTimeout(() => { 
-			let video = document.getElementById("homeVideo");
-			video.addEventListener('canplaythrough', () => {
-				setTimeout(() => {
-					this.loadingscreenVisible = false;
-				}, 0);
-			}, false);
-		}, 0);
-	}
-};
+const loadingscreenVisible = ref(true);
+const headerVideo = ref(null);
+
+function getMedia(media) {
+	return new URL(`/src/assets/${media}`, import.meta.url);
+}
+
+onMounted(() => {
+	headerVideo.value.addEventListener('canplay', () => {
+		loadingscreenVisible.value = false;
+	}, { once: true });
+});
 </script>
 
 <style scoped>
@@ -119,23 +108,15 @@ export default {
 }
 
 /* Spinner */
-.inactive-blocker{
-  position: absolute;
-  z-index:99;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  background-color:white;
-}
 .spinner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  position: fixed;
+  z-index: 99;
+  bottom: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #6366F1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .spinner *{
   pointer-events: none;
@@ -160,7 +141,7 @@ export default {
   100%{transform: translate(-50%,-50%) rotate(360deg)}
 }
 .spinner:hover{
-  background-color: #6366F1;
+  background-color: #96144d;
 }
 
 .more-projects-btn {
@@ -194,4 +175,3 @@ export default {
 	}
 }
 </style>
->>>>>>> Stashed changes

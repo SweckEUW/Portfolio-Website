@@ -3,7 +3,7 @@
 		<h1>[About Me]</h1>
 
 		<div class="ab-profile">
-			<img :src="getImage('me.jpg')" alt="">
+			<img :src="getImage('me2.jpeg')" alt="">
 			<p>{{ about.description }}</p>
 		</div>
 		
@@ -60,7 +60,7 @@ export default {
 	flex: 1;
 	margin-right: 50px;
 	max-height: 600px;
-	object-fit: cover;
+	object-fit: contain;
 }
 .ab-profile p{
 	width: 40%;

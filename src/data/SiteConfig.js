@@ -1,5 +1,4 @@
-import config from './siteConfig-Web.json';
-// import config from './siteConfig-TD.json';
+import config from './siteConfig.json';
 
 export function getConfig() {
     return config;

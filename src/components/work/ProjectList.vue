@@ -1,11 +1,12 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
 
-        <div class="dropdown">
-            <span>{{filter ? filter : 'Filter'}}</span>
-            <div class="dropdown-content">
+        <div class="dropdown" v-click-outside="() => dropdownOpen = false">
+            <span @click="dropdownOpen = !dropdownOpen">{{filter ? filter : 'Filter'}}</span>
+            <div class="dropdown-content" v-if="dropdownOpen">
+                <p @click="selectFilter('Pipeline Development')" :class="{'pl-filter-selected' : filter == 'Pipeline Development'}" style="margin-bottom: 0px;">Pipeline Development</p>
                 <p @click="selectFilter('Web')" :class="{'pl-filter-selected' : filter == 'Web'}">Web</p>
-                <p @click="selectFilter('3D')" :class="{'pl-filter-selected' : filter == '3D'}" style="margin-bottom: 0px;">3D</p>
+                <p @click="selectFilter('3D')" :class="{'pl-filter-selected' : filter == '3D'}">3D</p>
             </div>
         </div>
 
@@ -28,9 +29,21 @@ import projects from "@/data/projects.js"
 
 export default {
     props: ["projectsSelection"],
+    directives: {
+        clickOutside: {
+            mounted(el, binding) {
+                el._clickOutside = (e) => { if(!el.contains(e.target)) binding.value(e); };
+                document.addEventListener('click', el._clickOutside);
+            },
+            unmounted(el) {
+                document.removeEventListener('click', el._clickOutside);
+            }
+        }
+    },
 	data: ()=>({
         projects: projects,
         filter: null,
+        dropdownOpen: false,
     }),
     computed: {
         projectsFiltered(){
@@ -56,6 +69,7 @@ export default {
                 this.filter = null;
             else
                 this.filter = filter;
+            this.dropdownOpen = false;
         },
         getTrailer(folder){
             return new URL(`/src/assets/projects/${folder}/videos/ProjectList.webm`, import.meta.url);
@@ -82,12 +96,8 @@ export default {
         }
     },
     mounted(){
-        let searchParams = new URLSearchParams(window.location.search);
-        let param = searchParams.get('filter');
-        if(param){  
-            this.filter = param;
-            searchParams.delete("filter");
-        }
+        const param = this.$route.query.filter;
+        if(param) this.filter = param;
 
         window.onscroll = () => {
             let a = this.checkScrollDirectionIsUp() ? -100 : 100;
@@ -135,7 +145,6 @@ export default {
 }
 .dropdown-content{
     top: 50px;
-    display: none;
     position: absolute;
     background-color: #f9f9f9;
     width: 200px;
@@ -149,9 +158,6 @@ export default {
     color: white;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
-}
 .dropdown-content p{
     padding: 12px 16px;
     cursor: pointer;
