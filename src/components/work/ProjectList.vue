@@ -1,16 +1,10 @@
 <template>
 	<div class="ProjectList" @scroll="scroll()">
 
-<<<<<<< HEAD
-        <div class="dropdown" v-if="displayFilter">
-            <span>{{filter ? filter : 'Filter'}}</span>
-            <div class="dropdown-content">
-=======
         <div class="dropdown" v-click-outside="() => dropdownOpen = false">
             <span @click="dropdownOpen = !dropdownOpen">{{filter ? filter : 'Filter'}}</span>
             <div class="dropdown-content" v-if="dropdownOpen">
                 <p @click="selectFilter('Pipeline Development')" :class="{'pl-filter-selected' : filter == 'Pipeline Development'}" style="margin-bottom: 0px;">Pipeline Development</p>
->>>>>>> dev
                 <p @click="selectFilter('Web')" :class="{'pl-filter-selected' : filter == 'Web'}">Web</p>
                 <p @click="selectFilter('3D')" :class="{'pl-filter-selected' : filter == '3D'}">3D</p>
             </div>
@@ -34,9 +28,6 @@
 import projects from "@/data/projects.js"
 
 export default {
-<<<<<<< HEAD
-    props: ["projectsSelection","displayFilter"],
-=======
     props: ["projectsSelection"],
     directives: {
         clickOutside: {
@@ -49,7 +40,6 @@ export default {
             }
         }
     },
->>>>>>> dev
 	data: ()=>({
         projects: projects,
         filter: null,

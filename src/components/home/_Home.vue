@@ -3,13 +3,7 @@
 
 		<!-- Loadingscreen -->
 		<transition name="fade2">
-<<<<<<< HEAD
-			<div v-show="loadingscreenVisible" class="inactive-blocker">
-				<div class="spinner"/>
-			</div>
-=======
 			<div v-show="loadingscreenVisible" class="spinner"/>
->>>>>>> dev
 		</transition>
 		
 		<!-- Header -->
@@ -17,77 +11,32 @@
 			<div class="ho-header">
 				<div class="ho-container">
 					<h1>Simon Weck</h1>
-<<<<<<< HEAD
-					<h1 class="ho-subheader">Pipeline TD</h1>
-				</div>
-				
-				<video :src="getMedia('header.webm')" muted loop autoplay/>
-=======
 					<h1 class="ho-subheader">{{ getConfig().subheader }}</h1>
 				</div>
 				
 				<video ref="headerVideo" :src="getMedia(getConfig().headerVideo)" muted loop autoplay/>
->>>>>>> dev
 			</div>
 		</transition>
 
 		<!-- Showreel -->
-<<<<<<< HEAD
-		<div class="ho-reel">
-			<h1>[Showreel]</h1>
-			<VideoWithButton class="ho-video" :videoPath="'home/Reel.webm'" :posterPath="'home/ReelPoster.png'" :id="'homeVideo'"/>
-		</div>
-=======
 		<!-- <div class="ho-reel">
 			<h1>[Showreel]</h1>
 			<VideoWithButton class="ho-video" :videoPath="getConfig().showreel" :posterPath="getConfig().posterPath" :id="'homeVideo'"/>
 		</div> -->
->>>>>>> dev
 
 		<!-- Work -->
 		<div class="ho-work">
 			<h1>[My Work]</h1>
-<<<<<<< HEAD
-			<ProjectList :displayFilter="false" :projectsSelection="['Mission Meltdown', 'Seacarus', 'Oriono', 'AI Image Editor Toolkit']"/>
-=======
 				<ProjectList :displayFilter="false" :projectsSelection="getConfig().homeProjects"/>
 
 			<!-- Button zu weiteren Projekten -->
 			<div style="text-align:center; margin-top: 32px;">
 				<button @click="$router.push('/work')" class="more-projects-btn">Weitere Projekte ansehen</button>
 			</div>
->>>>>>> dev
 		</div>
 	</div>
 </template>
 
-<<<<<<< HEAD
-<script>
-import VideoWithButton from '@/components/shared/VideoWithButton.vue';
-import ProjectList from '@/components/work/ProjectList.vue';
-
-export default {
-	components: {ProjectList, VideoWithButton},
-	data: ()=>({
-        loadingscreenVisible: true
-    }),
-	methods: {
-		getMedia(media){
-			return new URL(`/src/assets/home/${media}`, import.meta.url);
-		},
-	},
-	mounted(){
-		setTimeout(() => { 
-			let video = document.getElementById("homeVideo");
-			video.addEventListener('canplaythrough', () => {
-				setTimeout(() => {
-					this.loadingscreenVisible = false;
-				}, 0);
-			}, false);
-		}, 0);
-	}
-};
-=======
 <script setup>
 import { ref, onMounted } from 'vue';
 import VideoWithButton from '@/components/shared/VideoWithButton.vue';
@@ -106,7 +55,6 @@ onMounted(() => {
 		loadingscreenVisible.value = false;
 	}, { once: true });
 });
->>>>>>> dev
 </script>
 
 <style scoped>
@@ -160,25 +108,6 @@ onMounted(() => {
 }
 
 /* Spinner */
-<<<<<<< HEAD
-.inactive-blocker{
-  position: absolute;
-  z-index:99;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  background-color:white;
-}
-.spinner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 50%;
-  background-color: #6366F1;
-=======
 .spinner{
   position: fixed;
   z-index: 99;
@@ -188,7 +117,6 @@ onMounted(() => {
   height: 40px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
->>>>>>> dev
 }
 .spinner *{
   pointer-events: none;
@@ -213,9 +141,6 @@ onMounted(() => {
   100%{transform: translate(-50%,-50%) rotate(360deg)}
 }
 .spinner:hover{
-<<<<<<< HEAD
-  background-color: #6366F1;
-=======
   background-color: #96144d;
 }
 
@@ -235,7 +160,6 @@ onMounted(() => {
 .more-projects-btn:hover {
 	background: black;
     color: white;
->>>>>>> dev
 }
 
 @media (width <= 900px){

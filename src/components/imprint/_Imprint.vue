@@ -6,11 +6,7 @@
         <p>
             Simon Weck
             <br/>
-<<<<<<< HEAD
-            Kaspar-von-Zumbusch-Straße 6
-=======
             Varenseller Straße 8
->>>>>>> dev
             <br/>
             33378 Rheda-Wiedenbrück
         </p>
@@ -29,11 +25,7 @@
         <p>
             Simon Weck
             <br/>
-<<<<<<< HEAD
-            Kaspar-von-Zumbusch-Straße 6
-=======
             Varenseller Straße 8
->>>>>>> dev
             <br/>
             33378 Rheda-Wiedenbrück
         </p>

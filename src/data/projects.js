@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-const projects = [
-	
-=======
 ﻿const projects = [
 		
 	{
@@ -70,7 +66,6 @@ const projects = [
 		]
 	},
 
->>>>>>> dev
 	{
 		folder: "Mission Meltdown",
 		headerImage: 'header.jpg',
@@ -85,10 +80,6 @@ const projects = [
 		created: "January 2025 - April 2025 (4 Months)",
 		tools: ["Blender", "Autodesk Maya", "Houdini"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 	},
 
 	{
@@ -96,29 +87,17 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Seacarus',
 		category: '3D Animation',
-<<<<<<< HEAD
-		categories: ["3D"],
-		description: `
-			The 3D animated short film SEACARUS directed by Jan Brakhage tells the humorous story of a fisherman who encounters a clever octopus on the high seas. 
-			Through a series of unexpected events, an exciting struggle over a fish unfolds, ultimately leading to an unusual collaboration.
-			Based on Autodesk Flow Production Tracking I established a production pipeline for the project. Furthermore I did cloth and water simulations in Houdini.
-=======
 		categories: ["3D", "Pipeline Development"],
 		description: `
 			The 3D animated short film SEACARUS directed by Jan Brakhage tells the humorous story of a fisherman who encounters a clever octopus on the high seas. 
 			Through a series of unexpected events, an exciting struggle over a fish unfolds, ultimately leading to an unusual collaboration.
 			Based on Autodesk Flow Production Tracking I built a USD pipeline for the project, including custom publishers and loaders as well as HDAs to publish USD assets from Houdini, load them in Maya, and bring the animation back into Houdini as USD. Furthermore I did cloth and water simulations in Houdini.
->>>>>>> dev
 		`,
 		roles: ["Pipeline TD", "Effects Artist"],
 		types: ["University Project"],
 		created: "October 2024 - January 2025 (4 Months)",
 		tools: ["Autodesk Flow Production Tracking", "Houdini",  "Autodesk Maya", "Blender"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 	},
 
 	{
@@ -126,11 +105,7 @@ const projects = [
 		headerImage: 'header.jpg',
 		title: 'Oriono',
 		category: '3D Animation',
-<<<<<<< HEAD
-		categories: ["3D"],
-=======
 		categories: ["3D", "Pipeline Development"],
->>>>>>> dev
 		description: `
 			Oriono is a 7 minute 3D animated short film about Armin Nielsen, who lands on the distant planet Uraban 5. 
 			During his exploration, he experiences both triumphant and life-threatening moments, captured by a documenting drone, revealing the challenges and hopes of his unique journey. 
@@ -142,10 +117,6 @@ const projects = [
 		created: "October 2023 - January 2024 (4 Months)",
 		tools: ["Autodesk Flow Production Tracking", "Prism Pipeline", "Autodesk Maya", "Blender"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 	},
 
 	{
@@ -155,23 +126,13 @@ const projects = [
 		category: 'Website',
 		categories: ["Web"],
 		description: `
-<<<<<<< HEAD
-			Every year I host a Beer Pong Tournament called "Weck BiPo Open". 
-			This year I decided to create a website to manage the tournament and display additional information.
-			This Website has a backend to manage tournaments (create teams and groups, set game results etc.).
-=======
 			The 'Weck BiPo Open' platform is a comprehensive full-stack web application developed to streamline and track Beer Pong Tournaments and Games. Utilizing Vue for the frontend alongside a Node.js and MongoDB backend, I engineered a robust system to handle complex event logistics. The backend architecture features dedicated administrative tools for dynamically generating teams, managing group stages, and processing match results. To enhance user engagement, I implemented a personalized user system. This includes secure file handling for profile picture uploads and complex database queries to aggregate historical match data, dynamically calculating and displaying detailed player performance statistics
->>>>>>> dev
 		`,
 		roles: ["Frontend Web Developement", "Backend Developement", "Web Design"],
 		types: ["Personal Project"],
 		created: "April 2023 - June 2023 (3 Months)",
 		tools: ["Vue", "Node.js", "mongoDB"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 		contents: [
 			{ type: "Website", url: "https://bipoopen.de/" },
 			{ type: "Code", url: "https://github.com/SweckEUW/BiPoOpen-Website" }
@@ -183,20 +144,6 @@ const projects = [
 		headerImage: 'header.webp',
 		title: 'The City of Light',
 		category: 'Web Based 3D Showroom',
-<<<<<<< HEAD
-		categories: ["3D","Web"],
-		description: `
-			The City of Light is a Web Based 3D Showroom for the client eku Kabel & Systeme GmbH & Co. KG.
-			The Showroom is used to display their communication technology. 
-			I did all the frontend and 3D development in this project.
-		`,
-		roles: ["Frontend Web Developement", "Web 3D Programming"],
-		types: ["Project at Raumtänzer GmbH"],
-		created: "January 2022 - June 2022 (5 Months)",
-		tools: ["Vue", "Babylon.js"],
-		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
-=======
 		categories: ["Web"],
 		description: `
 			The City of Light is an interactive, web-based 3D showroom developed for eku Kabel & Systeme GmbH & Co. KG to digitally present their communication technology. 
@@ -210,7 +157,6 @@ const projects = [
 		created: "January 2022 - June 2022 (5 Months)",
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
->>>>>>> dev
 		contents: [
 			{ type: "Website", url: "https://eku-kabel.flux-cms.de/" }
 		]
@@ -221,20 +167,6 @@ const projects = [
 		headerImage: '1.jpg',
 		title: 'Aliaxis Showroom',
 		category: 'Web Based 3D Showroom',
-<<<<<<< HEAD
-		categories: ["3D","Web"],
-		description: `
-			This is a Web Based 3D Shorwoom for the client Aliaxis Deutschland GmbH.
-			Aliaxis develops and sells plastic pipe systems and showcases this in this interactive 3D World.
-			The user can select pipes and products to get more information.
-		`,
-		roles: ["Frontend Web Developement", "Web 3D Programming"],
-		types: ["Project at Raumtänzer GmbH"],
-		created: "January 2022 - June 2022 (5 Months)",
-		tools: ["Vue", "Babylon.js"],
-		headerImages: ["1.jpg","2.jpg","3.jpg"],
-		noTrailer: true,
-=======
 		categories: ["Web"],
 		description: `
 			For the client Aliaxis Deutschland GmbH, I developed an interactive web-based 3D showroom to digitally showcase their plastic pipe systems. 
@@ -247,7 +179,6 @@ const projects = [
 		created: "January 2022 - June 2022 (5 Months)",
 		tools: ["Vue", "Babylon.js"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
->>>>>>> dev
 		contents: [
 			{ type: "Website", url: "https://www.aliaxis.de/de/showroom" }
 		]
@@ -269,11 +200,7 @@ const projects = [
 		created: "March 2021 - June 2021 (3 Months)",
 		tools: ["Unity", "C-Sharp"],
 		headerImages: ["2.jpg","Logo.png","3.jpg"],
-<<<<<<< HEAD
-		trailerTitle: "Watch Gameplay",
-=======
 		trailer: { url: "projects/Emberpoint/videos/Trailer.webm", title: "Watch Gameplay" },
->>>>>>> dev
 		features: [
 			{ 
 				media: 'videos/Feature.webm', 
@@ -306,11 +233,7 @@ const projects = [
 		created: "July 2021",
 		tools: ["Autodesk Maya", "Adobe After Effects"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		trailerTitle: "Watch the Breakdown",
-=======
 		trailer: { url: "projects/Monopoly Animation/videos/Trailer.webm", title: "Watch the Breakdown" },
->>>>>>> dev
 		features: [
 			{ 
 				media: 'pictures/4.jpg', 
@@ -327,11 +250,7 @@ const projects = [
 		headerImage: '2.jpg',
 		title: 'AI Image Editor Toolkit',
 		category: 'Autodesk Maya Plugin',
-<<<<<<< HEAD
-		categories: [],
-=======
 		categories: ["Pipeline Development"],
->>>>>>> dev
 		description: `
 			This is a Autodesk Maya plug-in that uses artificial intelligence powered image editing algorithms for fast look development. 
 			The algorithms works on rendered images directly inside the render view of Maya. 
@@ -342,11 +261,7 @@ const projects = [
 		created: "May 2022 - August 2022 (4 Months)",
 		tools: ["Autodesk Maya", "Python", "PyQt"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		trailerTitle: "Watch the Walkthrough",
-=======
 		trailer: { url: "projects/AI Image Editor Toolkit/videos/Trailer.webm", title: "Watch the Walkthrough" },
->>>>>>> dev
 		features: [
 			{ 
 				media: 'pictures/2.jpg', 
@@ -371,19 +286,12 @@ const projects = [
 		category: 'Web Based 3D Configurator',
 		categories: ["3D","Web"],
 		description: `
-<<<<<<< HEAD
-			Motile is a modular smartphone concept. The idea is to have different modules like a cpu, memory or even a camera that can be replaced easily just like in a pc.
-			We created a website with a configurator where users can create their custom phone configuration. 
-			The configurator has a 3D viewer where the user can drag and drop the parts onto the phone. 
-			The website also includes a basic user management system where users can register and manage their confiurations which get stored in a database
-=======
 		Motile is a modular smartphone concept designed to let users seamlessly swap hardware components like CPUs, memory, or cameras. 
 		For this project, I engineered the entire backend infrastructure and developed key interactive features for the frontend. 
 		On the client side, I utilized React and integrated Babylon.js to build a high-performance, real-time 3D configurator.
 		A major technical focus was implementing complex spatial drag-and-drop mechanics, enabling users to intuitively assemble their custom devices directly within the 3D viewport.
 		To support this interactive frontend, I built a robust Node.js backend from the ground up, paired with a MongoDB database. 
 		This encompassed designing the API, implementing a secure user management and authentication system, and architecting the database schema to efficiently store, manage, and retrieve users' personalized 3D configurations across sessions.	
->>>>>>> dev
 		`,
 		roles: ["Frontend Web Developement", "Backend Developement", "Web 3D Programming"],
 		types: ["University Project", "Group Project (4 Members)"],
@@ -394,16 +302,9 @@ const projects = [
 			{ 
 				media: 'pictures/feature.png', 
 				description: `
-<<<<<<< HEAD
-					For each configuration the user creates we generate a thumbnail. 
-					To also make high quality previews of the products users create we wanted to make automated photorealistic renderings.
-					To make this possible I wrote a Blender script which recreates the phone configuration inside blender and generates a raytraced rendering.
-					This all works fully autmated on the serverside and stores the rendering inside a database. 
-=======
 					To complement standard thumbnails with high-fidelity product previews, I engineered an automated server-side rendering pipeline. 
 					I developed a custom Blender script that dynamically reconstructs the user's specific 3D phone assembly within the Blender environment. 
 					This fully automated backend process executes raytraced rendering directly on the server, generating photorealistic images of the customized devices that are seamlessly stored and managed within the database alongside the user's configuration data.
->>>>>>> dev
 				`
 			}
 		],
@@ -431,10 +332,6 @@ const projects = [
 		created: "September 2020 - February 2022 (16 Months)",
 		tools: ["Vue", "Adobe XD"],
 		headerImages: ["1.jpg","2.jpg","3.jpg"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 		contents: [
 			{ type: "Website", url: "https://cvdesign.hshl.de/" }
 		]
@@ -532,16 +429,9 @@ const projects = [
 		types: ["University Project", "Group Project (3 Members)"],
 		created: "September 2019 - January 2020 (5 Months)",
 		tools: ["Adobe XD", "Adobe Illustrator", "HTML", "CSS", "JavaScript"],
-<<<<<<< HEAD
-		noTrailer: true,
-		headerImages: ["1.webp","2.webp","3.webp"],
-		features: [
-			{ 
-=======
 		headerImages: ["1.webp","2.webp","3.webp"],
 		features: [
 			{
->>>>>>> dev
 				media: 'pictures/feature 1.webp', 
 				description: `
 					Our company is selling natural supplements for athlete and I created a logo for the company. The logo should represent strength but also nature. 
@@ -571,10 +461,6 @@ const projects = [
 		types: ["University Project", "Individual Project"],
 		created: "May 2019 - June 2019 (2 Months) ",
 		tools: ["SolidWorks"],
-<<<<<<< HEAD
-		noTrailer: true,
-=======
->>>>>>> dev
 		headerImages: ["1.webp","feature.webp","3.webp"],
 		features: []
 	},
@@ -603,8 +489,4 @@ const projects = [
 	
 ];
 
-<<<<<<< HEAD
 export default projects;
-=======
-export default projects;
->>>>>>> dev
